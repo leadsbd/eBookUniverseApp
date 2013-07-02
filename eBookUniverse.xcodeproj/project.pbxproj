@@ -7,9 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE67797A17829B9400FED5FA /* Buy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE67797917829B9400FED5FA /* Buy.png */; };
+		AE707A421781907A0029877F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE707A411781907A0029877F /* SettingsViewController.m */; };
+		AE707A45178191390029877F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE707A44178191390029877F /* SearchViewController.m */; };
+		AE707A48178192230029877F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE707A47178192230029877F /* AboutViewController.m */; };
+		AE707A4A1781A68D0029877F /* libPico.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE707A491781A68D0029877F /* libPico.a */; };
+		AE8CFD231778207C007EC1CA /* AmazonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CFD211778207C007EC1CA /* AmazonWebViewController.m */; };
+		AEA55ED6177C059300F9BD18 /* CustomCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA55ED5177C059300F9BD18 /* CustomCellClass.m */; };
+		AEA55ED8177C3F2900F9BD18 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */; };
+		AEA55EDA177C3F4F00F9BD18 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */; };
+		AEA55EE2177C448200F9BD18 /* S.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA55EE1177C448200F9BD18 /* S.png */; };
+		AEA55EE4177C44E000F9BD18 /* fb-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA55EE3177C44E000F9BD18 /* fb-button.png */; };
+		AEA55EE7177C506600F9BD18 /* NSString+stripHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA55EE6177C506500F9BD18 /* NSString+stripHtml.m */; };
+		BF04BA4817734315000C94EC /* AmazonPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF04BA4717734315000C94EC /* AmazonPagerViewController.m */; };
+		BF14F9BE1775936D0097E266 /* FreeiBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9BD1775936D0097E266 /* FreeiBookTableViewController.m */; };
+		BF14F9C1177593850097E266 /* PaidiBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C0177593850097E266 /* PaidiBookTableViewController.m */; };
+		BF14F9C4177594CD0097E266 /* BookDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C3177594CD0097E266 /* BookDetailsTableViewController.m */; };
+		BF14F9CA1775AC210097E266 /* LookupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C91775AC210097E266 /* LookupViewController.m */; };
+		BF14F9CE1775AC9D0097E266 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9CD1775AC9D0097E266 /* Toast+UIView.m */; };
 		BF682C401773199C00174FA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C3F1773199C00174FA4 /* UIKit.framework */; };
 		BF682C421773199C00174FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C411773199C00174FA4 /* Foundation.framework */; };
-		BF682C441773199C00174FA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C431773199C00174FA4 /* CoreGraphics.framework */; };
 		BF682C4A1773199C00174FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF682C481773199C00174FA4 /* InfoPlist.strings */; };
 		BF682C4C1773199C00174FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C4B1773199C00174FA4 /* main.m */; };
 		BF682C501773199C00174FA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C4F1773199C00174FA4 /* AppDelegate.m */; };
@@ -18,10 +35,10 @@
 		BF682C561773199C00174FA4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C551773199C00174FA4 /* Default-568h@2x.png */; };
 		BF682C591773199C00174FA4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF682C571773199C00174FA4 /* MainStoryboard_iPhone.storyboard */; };
 		BF682C5C1773199C00174FA4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF682C5A1773199C00174FA4 /* MainStoryboard_iPad.storyboard */; };
-		BF682C5F1773199C00174FA4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C5E1773199C00174FA4 /* FirstViewController.m */; };
+		BF682C5F1773199C00174FA4 /* AmazonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C5E1773199C00174FA4 /* AmazonTableViewController.m */; };
 		BF682C611773199C00174FA4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C601773199C00174FA4 /* first.png */; };
 		BF682C631773199C00174FA4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C621773199C00174FA4 /* first@2x.png */; };
-		BF682C661773199C00174FA4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C651773199C00174FA4 /* SecondViewController.m */; };
+		BF682C661773199C00174FA4 /* IBookStorePagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */; };
 		BF682C681773199C00174FA4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C671773199C00174FA4 /* second.png */; };
 		BF682C6A1773199C00174FA4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C691773199C00174FA4 /* second@2x.png */; };
 		BF682C721773199C00174FA4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C711773199C00174FA4 /* SenTestingKit.framework */; };
@@ -29,6 +46,156 @@
 		BF682C741773199C00174FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C411773199C00174FA4 /* Foundation.framework */; };
 		BF682C7C1773199C00174FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF682C7A1773199C00174FA4 /* InfoPlist.strings */; };
 		BF682C7F1773199C00174FA4 /* eBookUniverseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C7E1773199C00174FA4 /* eBookUniverseTests.m */; };
+		BF682C8D17731A5800174FA4 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C8A17731A5800174FA4 /* ECSlidingViewController.m */; };
+		BF682C8E17731A5800174FA4 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C8C17731A5800174FA4 /* UIImage+ImageWithUIView.m */; };
+		BF682C9C17731B5700174FA4 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C9517731B5700174FA4 /* ParentViewController.m */; };
+		BF682C9D17731B5700174FA4 /* RightAmazonMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C9717731B5700174FA4 /* RightAmazonMenuViewController.m */; };
+		BF682CA117731B7900174FA4 /* LeftAmazonMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CA017731B7900174FA4 /* LeftAmazonMenuViewController.m */; };
+		BF682CA417731C6B00174FA4 /* InitAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CA317731C6B00174FA4 /* InitAmazonViewController.m */; };
+		BF682CEA1773215C00174FA4 /* AWSECommerceServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CE71773215C00174FA4 /* AWSECommerceServiceClient.m */; };
+		BF682CEB1773215C00174FA4 /* AmazonAuthUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CE91773215C00174FA4 /* AmazonAuthUtils.m */; };
+		BF682E131773217900174FA4 /* Accessory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CF01773217700174FA4 /* Accessory.m */; };
+		BF682E141773217900174FA4 /* Accessories.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CF21773217700174FA4 /* Accessories.m */; };
+		BF682E151773217900174FA4 /* Argument.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CF51773217700174FA4 /* Argument.m */; };
+		BF682E161773217900174FA4 /* Arguments.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CF71773217700174FA4 /* Arguments.m */; };
+		BF682E171773217900174FA4 /* BinParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CFA1773217700174FA4 /* BinParameter.m */; };
+		BF682E181773217900174FA4 /* Bin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CFC1773217700174FA4 /* Bin.m */; };
+		BF682E191773217900174FA4 /* Ancestors.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682CFF1773217700174FA4 /* Ancestors.m */; };
+		BF682E1A1773217900174FA4 /* Children.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D011773217700174FA4 /* Children.m */; };
+		BF682E1B1773217900174FA4 /* Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D031773217700174FA4 /* Properties.m */; };
+		BF682E1C1773217900174FA4 /* BrowseNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D051773217700174FA4 /* BrowseNode.m */; };
+		BF682E1D1773217900174FA4 /* BrowseNodeLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D071773217700174FA4 /* BrowseNodeLookup.m */; };
+		BF682E1E1773217900174FA4 /* BrowseNodeLookupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D091773217700174FA4 /* BrowseNodeLookupRequest.m */; };
+		BF682E1F1773217900174FA4 /* BrowseNodeLookupResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D0B1773217700174FA4 /* BrowseNodeLookupResponse.m */; };
+		BF682E201773217900174FA4 /* BrowseNodes.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D0D1773217700174FA4 /* BrowseNodes.m */; };
+		BF682E211773217900174FA4 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D0F1773217700174FA4 /* Cart.m */; };
+		BF682E221773217900174FA4 /* CartAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D111773217700174FA4 /* CartAdd.m */; };
+		BF682E231773217900174FA4 /* CartAddItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D151773217700174FA4 /* CartAddItem.m */; };
+		BF682E241773217900174FA4 /* CartAddItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D171773217700174FA4 /* CartAddItems.m */; };
+		BF682E251773217900174FA4 /* CartAddRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D191773217700174FA4 /* CartAddRequest.m */; };
+		BF682E261773217900174FA4 /* CartAddResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D1B1773217700174FA4 /* CartAddResponse.m */; };
+		BF682E271773217900174FA4 /* CartClear.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D1D1773217700174FA4 /* CartClear.m */; };
+		BF682E281773217900174FA4 /* CartClearRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D1F1773217700174FA4 /* CartClearRequest.m */; };
+		BF682E291773217900174FA4 /* CartClearResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D211773217700174FA4 /* CartClearResponse.m */; };
+		BF682E2A1773217900174FA4 /* CartCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D231773217700174FA4 /* CartCreate.m */; };
+		BF682E2B1773217900174FA4 /* ItemMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D281773217700174FA4 /* ItemMetaData.m */; };
+		BF682E2C1773217900174FA4 /* CartCreateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D2A1773217800174FA4 /* CartCreateItem.m */; };
+		BF682E2D1773217900174FA4 /* CartCreateItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D2C1773217800174FA4 /* CartCreateItems.m */; };
+		BF682E2E1773217900174FA4 /* CartCreateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D2E1773217800174FA4 /* CartCreateRequest.m */; };
+		BF682E2F1773217900174FA4 /* CartCreateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D301773217800174FA4 /* CartCreateResponse.m */; };
+		BF682E301773217900174FA4 /* CartGet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D321773217800174FA4 /* CartGet.m */; };
+		BF682E311773217900174FA4 /* CartGetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D341773217800174FA4 /* CartGetRequest.m */; };
+		BF682E321773217900174FA4 /* CartGetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D361773217800174FA4 /* CartGetResponse.m */; };
+		BF682E331773217900174FA4 /* KeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D3A1773217800174FA4 /* KeyValuePair.m */; };
+		BF682E341773217900174FA4 /* MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D3C1773217800174FA4 /* MetaData.m */; };
+		BF682E351773217900174FA4 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D3E1773217800174FA4 /* CartItem.m */; };
+		BF682E361773217900174FA4 /* CartItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D401773217800174FA4 /* CartItems.m */; };
+		BF682E371773217900174FA4 /* CartModify.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D421773217800174FA4 /* CartModify.m */; };
+		BF682E381773217900174FA4 /* CartModifyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D461773217800174FA4 /* CartModifyItem.m */; };
+		BF682E391773217900174FA4 /* CartModifyItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D481773217800174FA4 /* CartModifyItems.m */; };
+		BF682E3A1773217900174FA4 /* CartModifyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D4A1773217800174FA4 /* CartModifyRequest.m */; };
+		BF682E3B1773217900174FA4 /* CartModifyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D4C1773217800174FA4 /* CartModifyResponse.m */; };
+		BF682E3C1773217900174FA4 /* AWSECommerceServicePortType_SOAPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D4F1773217800174FA4 /* AWSECommerceServicePortType_SOAPClient.m */; };
+		BF682E3D1773217900174FA4 /* AWSECommerceServicePortType_XMLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D511773217800174FA4 /* AWSECommerceServicePortType_XMLClient.m */; };
+		BF682E3E1773217900174FA4 /* CollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D551773217800174FA4 /* CollectionItem.m */; };
+		BF682E3F1773217900174FA4 /* CollectionParent.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D571773217800174FA4 /* CollectionParent.m */; };
+		BF682E401773217900174FA4 /* CollectionSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D591773217800174FA4 /* CollectionSummary.m */; };
+		BF682E411773217900174FA4 /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D5B1773217800174FA4 /* Collection.m */; };
+		BF682E421773217900174FA4 /* Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D5D1773217800174FA4 /* Collections.m */; };
+		BF682E431773217900174FA4 /* CorrectedQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D611773217800174FA4 /* CorrectedQuery.m */; };
+		BF682E441773217900174FA4 /* CustomerReviews.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D631773217800174FA4 /* CustomerReviews.m */; };
+		BF682E451773217900174FA4 /* DecimalWithUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D651773217800174FA4 /* DecimalWithUnits.m */; };
+		BF682E461773217900174FA4 /* EditorialReview.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D671773217800174FA4 /* EditorialReview.m */; };
+		BF682E471773217900174FA4 /* EditorialReviews.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D691773217800174FA4 /* EditorialReviews.m */; };
+		BF682E481773217900174FA4 /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D6C1773217800174FA4 /* Error.m */; };
+		BF682E491773217900174FA4 /* Errors.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D6E1773217800174FA4 /* Errors.m */; };
+		BF682E4A1773217900174FA4 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D711773217800174FA4 /* Header.m */; };
+		BF682E4B1773217900174FA4 /* HTTPHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D731773217800174FA4 /* HTTPHeaders.m */; };
+		BF682E4C1773217900174FA4 /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D751773217800174FA4 /* Image.m */; };
+		BF682E4D1773217900174FA4 /* ImageSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D771773217800174FA4 /* ImageSet.m */; };
+		BF682E4E1773217900174FA4 /* AlternateVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D7B1773217800174FA4 /* AlternateVersion.m */; };
+		BF682E4F1773217900174FA4 /* AlternateVersions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D7D1773217800174FA4 /* AlternateVersions.m */; };
+		BF682E501773217900174FA4 /* ImageSets.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D7F1773217800174FA4 /* ImageSets.m */; };
+		BF682E511773217900174FA4 /* Subjects.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D811773217800174FA4 /* Subjects.m */; };
+		BF682E521773217900174FA4 /* VariationAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D831773217800174FA4 /* VariationAttributes.m */; };
+		BF682E531773217900174FA4 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D851773217800174FA4 /* Item.m */; };
+		BF682E541773217900174FA4 /* CatalogNumberList.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D881773217800174FA4 /* CatalogNumberList.m */; };
+		BF682E551773217900174FA4 /* Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D8A1773217800174FA4 /* Creator.m */; };
+		BF682E561773217900174FA4 /* EANList.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D8C1773217800174FA4 /* EANList.m */; };
+		BF682E571773217900174FA4 /* ItemDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D8E1773217800174FA4 /* ItemDimensions.m */; };
+		BF682E581773217900174FA4 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D911773217800174FA4 /* Language.m */; };
+		BF682E591773217900174FA4 /* Languages.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D931773217800174FA4 /* Languages.m */; };
+		BF682E5A1773217900174FA4 /* PackageDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D951773217800174FA4 /* PackageDimensions.m */; };
+		BF682E5B1773217900174FA4 /* UPCList.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D971773217800174FA4 /* UPCList.m */; };
+		BF682E5C1773217900174FA4 /* ItemAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D991773217800174FA4 /* ItemAttributes.m */; };
+		BF682E5D1773217900174FA4 /* ItemLink.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D9B1773217800174FA4 /* ItemLink.m */; };
+		BF682E5E1773217900174FA4 /* ItemLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D9D1773217800174FA4 /* ItemLinks.m */; };
+		BF682E5F1773217900174FA4 /* ItemLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682D9F1773217800174FA4 /* ItemLookup.m */; };
+		BF682E601773217900174FA4 /* ItemLookupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DA11773217800174FA4 /* ItemLookupRequest.m */; };
+		BF682E611773217900174FA4 /* ItemLookupResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DA31773217800174FA4 /* ItemLookupResponse.m */; };
+		BF682E621773217900174FA4 /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DA51773217800174FA4 /* Items.m */; };
+		BF682E631773217900174FA4 /* ItemSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DA71773217800174FA4 /* ItemSearch.m */; };
+		BF682E641773217900174FA4 /* ItemSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DA91773217800174FA4 /* ItemSearchRequest.m */; };
+		BF682E651773217900174FA4 /* ItemSearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DAB1773217800174FA4 /* ItemSearchResponse.m */; };
+		BF682E661773217900174FA4 /* LoyaltyPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DAD1773217800174FA4 /* LoyaltyPoints.m */; };
+		BF682E671773217900174FA4 /* Merchant.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DAF1773217800174FA4 /* Merchant.m */; };
+		BF682E681773217900174FA4 /* NewRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DB21773217800174FA4 /* NewRelease.m */; };
+		BF682E691773217900174FA4 /* NewReleases.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DB41773217800174FA4 /* NewReleases.m */; };
+		BF682E6A1773217900174FA4 /* NonNegativeIntegerWithUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DB61773217800174FA4 /* NonNegativeIntegerWithUnits.m */; };
+		BF682E6B1773217900174FA4 /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DB81773217800174FA4 /* Offer.m */; };
+		BF682E6C1773217900174FA4 /* OfferAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DBA1773217800174FA4 /* OfferAttributes.m */; };
+		BF682E6D1773217900174FA4 /* AvailabilityAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DBD1773217800174FA4 /* AvailabilityAttributes.m */; };
+		BF682E6E1773217900174FA4 /* OfferListing.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DBF1773217800174FA4 /* OfferListing.m */; };
+		BF682E6F1773217900174FA4 /* Offers.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DC11773217800174FA4 /* Offers.m */; };
+		BF682E701773217900174FA4 /* OfferSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DC31773217800174FA4 /* OfferSummary.m */; };
+		BF682E711773217900174FA4 /* OperationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DC51773217800174FA4 /* OperationRequest.m */; };
+		BF682E721773217900174FA4 /* OtherCategoriesSimilarProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DC81773217800174FA4 /* OtherCategoriesSimilarProduct.m */; };
+		BF682E731773217900174FA4 /* OtherCategoriesSimilarProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DCA1773217800174FA4 /* OtherCategoriesSimilarProducts.m */; };
+		BF682E741773217900174FA4 /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DCC1773217800174FA4 /* Price.m */; };
+		BF682E751773217900174FA4 /* Summary.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DCF1773217800174FA4 /* Summary.m */; };
+		BF682E761773217900174FA4 /* Promotion.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DD11773217800174FA4 /* Promotion.m */; };
+		BF682E771773217900174FA4 /* Promotions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DD31773217800174FA4 /* Promotions.m */; };
+		BF682E781773217900174FA4 /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DD51773217800174FA4 /* Property.m */; };
+		BF682E791773217900174FA4 /* RelatedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DD71773217800174FA4 /* RelatedItem.m */; };
+		BF682E7A1773217900174FA4 /* RelatedItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DD91773217800174FA4 /* RelatedItems.m */; };
+		BF682E7B1773217900174FA4 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DDB1773217800174FA4 /* Request.m */; };
+		BF682E7C1773217900174FA4 /* SavedForLaterItems.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DDD1773217800174FA4 /* SavedForLaterItems.m */; };
+		BF682E7D1773217900174FA4 /* SearchBinSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DDF1773217800174FA4 /* SearchBinSet.m */; };
+		BF682E7E1773217900174FA4 /* SearchBinSets.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DE11773217800174FA4 /* SearchBinSets.m */; };
+		BF682E7F1773217900174FA4 /* SearchIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DE41773217800174FA4 /* SearchIndex.m */; };
+		BF682E801773217900174FA4 /* SearchResultsMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DE61773217800174FA4 /* SearchResultsMap.m */; };
+		BF682E811773217900174FA4 /* SimilarityLookup.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DE81773217800174FA4 /* SimilarityLookup.m */; };
+		BF682E821773217900174FA4 /* SimilarityLookupRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DEA1773217800174FA4 /* SimilarityLookupRequest.m */; };
+		BF682E831773217900174FA4 /* SimilarityLookupResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DEC1773217800174FA4 /* SimilarityLookupResponse.m */; };
+		BF682E841773217900174FA4 /* SimilarProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DEF1773217800174FA4 /* SimilarProduct.m */; };
+		BF682E851773217900174FA4 /* SimilarProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DF11773217800174FA4 /* SimilarProducts.m */; };
+		BF682E861773217900174FA4 /* SimilarViewedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DF41773217800174FA4 /* SimilarViewedProduct.m */; };
+		BF682E871773217900174FA4 /* SimilarViewedProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DF61773217800174FA4 /* SimilarViewedProducts.m */; };
+		BF682E881773217900174FA4 /* StringWithUnits.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DF81773217800174FA4 /* StringWithUnits.m */; };
+		BF682E891773217900174FA4 /* TopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DFB1773217900174FA4 /* TopItem.m */; };
+		BF682E8A1773217900174FA4 /* TopItemSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682DFD1773217900174FA4 /* TopItemSet.m */; };
+		BF682E8B1773217900174FA4 /* TopSeller.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E001773217900174FA4 /* TopSeller.m */; };
+		BF682E8C1773217900174FA4 /* TopSellers.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E021773217900174FA4 /* TopSellers.m */; };
+		BF682E8D1773217900174FA4 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E061773217900174FA4 /* Track.m */; };
+		BF682E8E1773217900174FA4 /* Disc.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E081773217900174FA4 /* Disc.m */; };
+		BF682E8F1773217900174FA4 /* Tracks.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E0A1773217900174FA4 /* Tracks.m */; };
+		BF682E901773217900174FA4 /* VariationAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E0C1773217900174FA4 /* VariationAttribute.m */; };
+		BF682E911773217900174FA4 /* VariationDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E0E1773217900174FA4 /* VariationDimensions.m */; };
+		BF682E921773217900174FA4 /* Variations.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E101773217900174FA4 /* Variations.m */; };
+		BF682E931773217900174FA4 /* VariationSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E121773217900174FA4 /* VariationSummary.m */; };
+		BF682E95177321D500174FA4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682E94177321D500174FA4 /* libxml2.dylib */; };
+		BF682E9A177339FA00174FA4 /* PaidAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E99177339F900174FA4 /* PaidAmazonViewController.m */; };
+		BF682E9D17733A0900174FA4 /* FreeAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E9C17733A0900174FA4 /* FreeAmazonViewController.m */; };
+		BFBE0F4E17758510002D3CCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C431773199C00174FA4 /* CoreGraphics.framework */; };
+		BFBE0F5017758675002D3CCC /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = BFBE0F4F17758675002D3CCC /* menu.png */; };
+		BFBE0F5217758707002D3CCC /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BFBE0F5117758707002D3CCC /* home.png */; };
+		BFFC93B11776F00F00AB332E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC93B01776F00F00AB332E /* Accounts.framework */; };
+		BFFC93B31776F01D00AB332E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC93B21776F01D00AB332E /* AdSupport.framework */; };
+		BFFC93B51776F02C00AB332E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC93B41776F02C00AB332E /* libsqlite3.dylib */; };
+		BFFC93B71776F03400AB332E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC93B61776F03400AB332E /* Security.framework */; };
+		BFFC93B91776F03E00AB332E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC93B81776F03E00AB332E /* Social.framework */; };
+		BFFC93BE1776F09500AB332E /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFFC93BC1776F09500AB332E /* FacebookSDKResources.bundle */; };
+		BFFC93BF1776F09500AB332E /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFFC93BD1776F09500AB332E /* FBUserSettingsViewResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +209,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE67797917829B9400FED5FA /* Buy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Buy.png; sourceTree = "<group>"; };
+		AE707A401781907A0029877F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		AE707A411781907A0029877F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		AE707A43178191390029877F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		AE707A44178191390029877F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		AE707A46178192230029877F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		AE707A47178192230029877F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		AE707A491781A68D0029877F /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../../../../../Library/Developer/Xcode/DerivedData/eBookUniverseWorkSpace-eypjnlfjuokfmqathbrneoaeyzji/Build/Products/Debug-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		AE707A4C1781ABCD0029877F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		AE707A4D1781ABCD0029877F /* PicoBindable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoBindable.h; sourceTree = "<group>"; };
+		AE707A4E1781ABCD0029877F /* PicoClassSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoClassSchema.h; sourceTree = "<group>"; };
+		AE707A4F1781ABCD0029877F /* PicoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConfig.h; sourceTree = "<group>"; };
+		AE707A501781ABCD0029877F /* PicoConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoConstants.h; sourceTree = "<group>"; };
+		AE707A511781ABCD0029877F /* PicoPropertySchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoPropertySchema.h; sourceTree = "<group>"; };
+		AE707A521781AC010029877F /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		AE707A531781AC010029877F /* PicoSOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoSOAPClient.h; sourceTree = "<group>"; };
+		AE707A541781AC010029877F /* PicoSOAPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoSOAPRequestOperation.h; sourceTree = "<group>"; };
+		AE707A551781AC010029877F /* PicoXMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLClient.h; sourceTree = "<group>"; };
+		AE707A561781AC010029877F /* PicoXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLElement.h; sourceTree = "<group>"; };
+		AE707A571781AC010029877F /* PicoXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicoXMLRequestOperation.h; sourceTree = "<group>"; };
+		AE707A581781AC010029877F /* SOAP11Fault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAP11Fault.h; sourceTree = "<group>"; };
+		AE707A591781AC1D0029877F /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		AE707A5A1781AC1D0029877F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		AE8CFD211778207C007EC1CA /* AmazonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonWebViewController.m; sourceTree = "<group>"; };
+		AE8CFD221778207C007EC1CA /* AmazonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonWebViewController.h; sourceTree = "<group>"; };
+		AEA55ED4177C059300F9BD18 /* CustomCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellClass.h; sourceTree = "<group>"; };
+		AEA55ED5177C059300F9BD18 /* CustomCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellClass.m; sourceTree = "<group>"; };
+		AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AEA55EE1177C448200F9BD18 /* S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S.png; sourceTree = "<group>"; };
+		AEA55EE3177C44E000F9BD18 /* fb-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-button.png"; sourceTree = "<group>"; };
+		AEA55EE5177C506500F9BD18 /* NSString+stripHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stripHtml.h"; sourceTree = "<group>"; };
+		AEA55EE6177C506500F9BD18 /* NSString+stripHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+stripHtml.m"; sourceTree = "<group>"; };
+		BF04BA4617734315000C94EC /* AmazonPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPagerViewController.h; sourceTree = "<group>"; };
+		BF04BA4717734315000C94EC /* AmazonPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPagerViewController.m; sourceTree = "<group>"; };
+		BF14F9BC1775936D0097E266 /* FreeiBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeiBookTableViewController.h; sourceTree = "<group>"; };
+		BF14F9BD1775936D0097E266 /* FreeiBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeiBookTableViewController.m; sourceTree = "<group>"; };
+		BF14F9BF177593850097E266 /* PaidiBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidiBookTableViewController.h; sourceTree = "<group>"; };
+		BF14F9C0177593850097E266 /* PaidiBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidiBookTableViewController.m; sourceTree = "<group>"; };
+		BF14F9C2177594CD0097E266 /* BookDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailsTableViewController.h; sourceTree = "<group>"; };
+		BF14F9C3177594CD0097E266 /* BookDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailsTableViewController.m; sourceTree = "<group>"; };
+		BF14F9C6177595940097E266 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		BF14F9C7177595F30097E266 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		BF14F9C81775AC210097E266 /* LookupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupViewController.h; sourceTree = "<group>"; };
+		BF14F9C91775AC210097E266 /* LookupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupViewController.m; sourceTree = "<group>"; };
+		BF14F9CC1775AC9D0097E266 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		BF14F9CD1775AC9D0097E266 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		BF682C3C1773199C00174FA4 /* eBookUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBookUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF682C3F1773199C00174FA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF682C411773199C00174FA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,12 +271,12 @@
 		BF682C551773199C00174FA4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF682C581773199C00174FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		BF682C5B1773199C00174FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		BF682C5D1773199C00174FA4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BF682C5E1773199C00174FA4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BF682C5D1773199C00174FA4 /* AmazonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonTableViewController.h; sourceTree = "<group>"; };
+		BF682C5E1773199C00174FA4 /* AmazonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonTableViewController.m; sourceTree = "<group>"; };
 		BF682C601773199C00174FA4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		BF682C621773199C00174FA4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		BF682C641773199C00174FA4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BF682C651773199C00174FA4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BF682C641773199C00174FA4 /* IBookStorePagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBookStorePagerViewController.h; sourceTree = "<group>"; };
+		BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBookStorePagerViewController.m; sourceTree = "<group>"; };
 		BF682C671773199C00174FA4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BF682C691773199C00174FA4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BF682C701773199C00174FA4 /* eBookUniverseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBookUniverseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +285,298 @@
 		BF682C7B1773199C00174FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF682C7D1773199C00174FA4 /* eBookUniverseTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eBookUniverseTests.h; sourceTree = "<group>"; };
 		BF682C7E1773199C00174FA4 /* eBookUniverseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eBookUniverseTests.m; sourceTree = "<group>"; };
+		BF682C8917731A5800174FA4 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		BF682C8A17731A5800174FA4 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		BF682C8B17731A5800174FA4 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		BF682C8C17731A5800174FA4 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		BF682C9417731B5700174FA4 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		BF682C9517731B5700174FA4 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
+		BF682C9617731B5700174FA4 /* RightAmazonMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightAmazonMenuViewController.h; sourceTree = "<group>"; };
+		BF682C9717731B5700174FA4 /* RightAmazonMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightAmazonMenuViewController.m; sourceTree = "<group>"; };
+		BF682C9F17731B7900174FA4 /* LeftAmazonMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftAmazonMenuViewController.h; sourceTree = "<group>"; };
+		BF682CA017731B7900174FA4 /* LeftAmazonMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftAmazonMenuViewController.m; sourceTree = "<group>"; };
+		BF682CA217731C6B00174FA4 /* InitAmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitAmazonViewController.h; sourceTree = "<group>"; };
+		BF682CA317731C6B00174FA4 /* InitAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitAmazonViewController.m; sourceTree = "<group>"; };
+		BF682CE61773215C00174FA4 /* AWSECommerceServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSECommerceServiceClient.h; sourceTree = "<group>"; };
+		BF682CE71773215C00174FA4 /* AWSECommerceServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSECommerceServiceClient.m; sourceTree = "<group>"; };
+		BF682CE81773215C00174FA4 /* AmazonAuthUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonAuthUtils.h; sourceTree = "<group>"; };
+		BF682CE91773215C00174FA4 /* AmazonAuthUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonAuthUtils.m; sourceTree = "<group>"; };
+		BF682CEF1773217700174FA4 /* Accessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accessory.h; sourceTree = "<group>"; };
+		BF682CF01773217700174FA4 /* Accessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accessory.m; sourceTree = "<group>"; };
+		BF682CF11773217700174FA4 /* Accessories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Accessories.h; sourceTree = "<group>"; };
+		BF682CF21773217700174FA4 /* Accessories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Accessories.m; sourceTree = "<group>"; };
+		BF682CF41773217700174FA4 /* Argument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Argument.h; sourceTree = "<group>"; };
+		BF682CF51773217700174FA4 /* Argument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Argument.m; sourceTree = "<group>"; };
+		BF682CF61773217700174FA4 /* Arguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arguments.h; sourceTree = "<group>"; };
+		BF682CF71773217700174FA4 /* Arguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arguments.m; sourceTree = "<group>"; };
+		BF682CF91773217700174FA4 /* BinParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinParameter.h; sourceTree = "<group>"; };
+		BF682CFA1773217700174FA4 /* BinParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinParameter.m; sourceTree = "<group>"; };
+		BF682CFB1773217700174FA4 /* Bin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bin.h; sourceTree = "<group>"; };
+		BF682CFC1773217700174FA4 /* Bin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bin.m; sourceTree = "<group>"; };
+		BF682CFE1773217700174FA4 /* Ancestors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ancestors.h; sourceTree = "<group>"; };
+		BF682CFF1773217700174FA4 /* Ancestors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ancestors.m; sourceTree = "<group>"; };
+		BF682D001773217700174FA4 /* Children.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Children.h; sourceTree = "<group>"; };
+		BF682D011773217700174FA4 /* Children.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Children.m; sourceTree = "<group>"; };
+		BF682D021773217700174FA4 /* Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
+		BF682D031773217700174FA4 /* Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Properties.m; sourceTree = "<group>"; };
+		BF682D041773217700174FA4 /* BrowseNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseNode.h; sourceTree = "<group>"; };
+		BF682D051773217700174FA4 /* BrowseNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseNode.m; sourceTree = "<group>"; };
+		BF682D061773217700174FA4 /* BrowseNodeLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseNodeLookup.h; sourceTree = "<group>"; };
+		BF682D071773217700174FA4 /* BrowseNodeLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseNodeLookup.m; sourceTree = "<group>"; };
+		BF682D081773217700174FA4 /* BrowseNodeLookupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseNodeLookupRequest.h; sourceTree = "<group>"; };
+		BF682D091773217700174FA4 /* BrowseNodeLookupRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseNodeLookupRequest.m; sourceTree = "<group>"; };
+		BF682D0A1773217700174FA4 /* BrowseNodeLookupResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseNodeLookupResponse.h; sourceTree = "<group>"; };
+		BF682D0B1773217700174FA4 /* BrowseNodeLookupResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseNodeLookupResponse.m; sourceTree = "<group>"; };
+		BF682D0C1773217700174FA4 /* BrowseNodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseNodes.h; sourceTree = "<group>"; };
+		BF682D0D1773217700174FA4 /* BrowseNodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseNodes.m; sourceTree = "<group>"; };
+		BF682D0E1773217700174FA4 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		BF682D0F1773217700174FA4 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		BF682D101773217700174FA4 /* CartAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartAdd.h; sourceTree = "<group>"; };
+		BF682D111773217700174FA4 /* CartAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartAdd.m; sourceTree = "<group>"; };
+		BF682D141773217700174FA4 /* CartAddItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartAddItem.h; sourceTree = "<group>"; };
+		BF682D151773217700174FA4 /* CartAddItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartAddItem.m; sourceTree = "<group>"; };
+		BF682D161773217700174FA4 /* CartAddItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartAddItems.h; sourceTree = "<group>"; };
+		BF682D171773217700174FA4 /* CartAddItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartAddItems.m; sourceTree = "<group>"; };
+		BF682D181773217700174FA4 /* CartAddRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartAddRequest.h; sourceTree = "<group>"; };
+		BF682D191773217700174FA4 /* CartAddRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartAddRequest.m; sourceTree = "<group>"; };
+		BF682D1A1773217700174FA4 /* CartAddResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartAddResponse.h; sourceTree = "<group>"; };
+		BF682D1B1773217700174FA4 /* CartAddResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartAddResponse.m; sourceTree = "<group>"; };
+		BF682D1C1773217700174FA4 /* CartClear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartClear.h; sourceTree = "<group>"; };
+		BF682D1D1773217700174FA4 /* CartClear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartClear.m; sourceTree = "<group>"; };
+		BF682D1E1773217700174FA4 /* CartClearRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartClearRequest.h; sourceTree = "<group>"; };
+		BF682D1F1773217700174FA4 /* CartClearRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartClearRequest.m; sourceTree = "<group>"; };
+		BF682D201773217700174FA4 /* CartClearResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartClearResponse.h; sourceTree = "<group>"; };
+		BF682D211773217700174FA4 /* CartClearResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartClearResponse.m; sourceTree = "<group>"; };
+		BF682D221773217700174FA4 /* CartCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCreate.h; sourceTree = "<group>"; };
+		BF682D231773217700174FA4 /* CartCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCreate.m; sourceTree = "<group>"; };
+		BF682D271773217700174FA4 /* ItemMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemMetaData.h; sourceTree = "<group>"; };
+		BF682D281773217700174FA4 /* ItemMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemMetaData.m; sourceTree = "<group>"; };
+		BF682D291773217800174FA4 /* CartCreateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCreateItem.h; sourceTree = "<group>"; };
+		BF682D2A1773217800174FA4 /* CartCreateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCreateItem.m; sourceTree = "<group>"; };
+		BF682D2B1773217800174FA4 /* CartCreateItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCreateItems.h; sourceTree = "<group>"; };
+		BF682D2C1773217800174FA4 /* CartCreateItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCreateItems.m; sourceTree = "<group>"; };
+		BF682D2D1773217800174FA4 /* CartCreateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCreateRequest.h; sourceTree = "<group>"; };
+		BF682D2E1773217800174FA4 /* CartCreateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCreateRequest.m; sourceTree = "<group>"; };
+		BF682D2F1773217800174FA4 /* CartCreateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCreateResponse.h; sourceTree = "<group>"; };
+		BF682D301773217800174FA4 /* CartCreateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCreateResponse.m; sourceTree = "<group>"; };
+		BF682D311773217800174FA4 /* CartGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartGet.h; sourceTree = "<group>"; };
+		BF682D321773217800174FA4 /* CartGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartGet.m; sourceTree = "<group>"; };
+		BF682D331773217800174FA4 /* CartGetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartGetRequest.h; sourceTree = "<group>"; };
+		BF682D341773217800174FA4 /* CartGetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartGetRequest.m; sourceTree = "<group>"; };
+		BF682D351773217800174FA4 /* CartGetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartGetResponse.h; sourceTree = "<group>"; };
+		BF682D361773217800174FA4 /* CartGetResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartGetResponse.m; sourceTree = "<group>"; };
+		BF682D391773217800174FA4 /* KeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValuePair.h; sourceTree = "<group>"; };
+		BF682D3A1773217800174FA4 /* KeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValuePair.m; sourceTree = "<group>"; };
+		BF682D3B1773217800174FA4 /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaData.h; sourceTree = "<group>"; };
+		BF682D3C1773217800174FA4 /* MetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaData.m; sourceTree = "<group>"; };
+		BF682D3D1773217800174FA4 /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		BF682D3E1773217800174FA4 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		BF682D3F1773217800174FA4 /* CartItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItems.h; sourceTree = "<group>"; };
+		BF682D401773217800174FA4 /* CartItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItems.m; sourceTree = "<group>"; };
+		BF682D411773217800174FA4 /* CartModify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartModify.h; sourceTree = "<group>"; };
+		BF682D421773217800174FA4 /* CartModify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartModify.m; sourceTree = "<group>"; };
+		BF682D451773217800174FA4 /* CartModifyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartModifyItem.h; sourceTree = "<group>"; };
+		BF682D461773217800174FA4 /* CartModifyItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartModifyItem.m; sourceTree = "<group>"; };
+		BF682D471773217800174FA4 /* CartModifyItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartModifyItems.h; sourceTree = "<group>"; };
+		BF682D481773217800174FA4 /* CartModifyItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartModifyItems.m; sourceTree = "<group>"; };
+		BF682D491773217800174FA4 /* CartModifyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartModifyRequest.h; sourceTree = "<group>"; };
+		BF682D4A1773217800174FA4 /* CartModifyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartModifyRequest.m; sourceTree = "<group>"; };
+		BF682D4B1773217800174FA4 /* CartModifyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartModifyResponse.h; sourceTree = "<group>"; };
+		BF682D4C1773217800174FA4 /* CartModifyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartModifyResponse.m; sourceTree = "<group>"; };
+		BF682D4E1773217800174FA4 /* AWSECommerceServicePortType_SOAPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSECommerceServicePortType_SOAPClient.h; sourceTree = "<group>"; };
+		BF682D4F1773217800174FA4 /* AWSECommerceServicePortType_SOAPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSECommerceServicePortType_SOAPClient.m; sourceTree = "<group>"; };
+		BF682D501773217800174FA4 /* AWSECommerceServicePortType_XMLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSECommerceServicePortType_XMLClient.h; sourceTree = "<group>"; };
+		BF682D511773217800174FA4 /* AWSECommerceServicePortType_XMLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSECommerceServicePortType_XMLClient.m; sourceTree = "<group>"; };
+		BF682D541773217800174FA4 /* CollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionItem.h; sourceTree = "<group>"; };
+		BF682D551773217800174FA4 /* CollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionItem.m; sourceTree = "<group>"; };
+		BF682D561773217800174FA4 /* CollectionParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionParent.h; sourceTree = "<group>"; };
+		BF682D571773217800174FA4 /* CollectionParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionParent.m; sourceTree = "<group>"; };
+		BF682D581773217800174FA4 /* CollectionSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionSummary.h; sourceTree = "<group>"; };
+		BF682D591773217800174FA4 /* CollectionSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionSummary.m; sourceTree = "<group>"; };
+		BF682D5A1773217800174FA4 /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		BF682D5B1773217800174FA4 /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		BF682D5C1773217800174FA4 /* Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collections.h; sourceTree = "<group>"; };
+		BF682D5D1773217800174FA4 /* Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collections.m; sourceTree = "<group>"; };
+		BF682D5F1773217800174FA4 /* CommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTypes.h; sourceTree = "<group>"; };
+		BF682D601773217800174FA4 /* CorrectedQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorrectedQuery.h; sourceTree = "<group>"; };
+		BF682D611773217800174FA4 /* CorrectedQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorrectedQuery.m; sourceTree = "<group>"; };
+		BF682D621773217800174FA4 /* CustomerReviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerReviews.h; sourceTree = "<group>"; };
+		BF682D631773217800174FA4 /* CustomerReviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerReviews.m; sourceTree = "<group>"; };
+		BF682D641773217800174FA4 /* DecimalWithUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecimalWithUnits.h; sourceTree = "<group>"; };
+		BF682D651773217800174FA4 /* DecimalWithUnits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecimalWithUnits.m; sourceTree = "<group>"; };
+		BF682D661773217800174FA4 /* EditorialReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorialReview.h; sourceTree = "<group>"; };
+		BF682D671773217800174FA4 /* EditorialReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorialReview.m; sourceTree = "<group>"; };
+		BF682D681773217800174FA4 /* EditorialReviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorialReviews.h; sourceTree = "<group>"; };
+		BF682D691773217800174FA4 /* EditorialReviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorialReviews.m; sourceTree = "<group>"; };
+		BF682D6B1773217800174FA4 /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		BF682D6C1773217800174FA4 /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
+		BF682D6D1773217800174FA4 /* Errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Errors.h; sourceTree = "<group>"; };
+		BF682D6E1773217800174FA4 /* Errors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Errors.m; sourceTree = "<group>"; };
+		BF682D701773217800174FA4 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		BF682D711773217800174FA4 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		BF682D721773217800174FA4 /* HTTPHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHeaders.h; sourceTree = "<group>"; };
+		BF682D731773217800174FA4 /* HTTPHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHeaders.m; sourceTree = "<group>"; };
+		BF682D741773217800174FA4 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		BF682D751773217800174FA4 /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		BF682D761773217800174FA4 /* ImageSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSet.h; sourceTree = "<group>"; };
+		BF682D771773217800174FA4 /* ImageSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSet.m; sourceTree = "<group>"; };
+		BF682D7A1773217800174FA4 /* AlternateVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternateVersion.h; sourceTree = "<group>"; };
+		BF682D7B1773217800174FA4 /* AlternateVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternateVersion.m; sourceTree = "<group>"; };
+		BF682D7C1773217800174FA4 /* AlternateVersions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternateVersions.h; sourceTree = "<group>"; };
+		BF682D7D1773217800174FA4 /* AlternateVersions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternateVersions.m; sourceTree = "<group>"; };
+		BF682D7E1773217800174FA4 /* ImageSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSets.h; sourceTree = "<group>"; };
+		BF682D7F1773217800174FA4 /* ImageSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSets.m; sourceTree = "<group>"; };
+		BF682D801773217800174FA4 /* Subjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subjects.h; sourceTree = "<group>"; };
+		BF682D811773217800174FA4 /* Subjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subjects.m; sourceTree = "<group>"; };
+		BF682D821773217800174FA4 /* VariationAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationAttributes.h; sourceTree = "<group>"; };
+		BF682D831773217800174FA4 /* VariationAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationAttributes.m; sourceTree = "<group>"; };
+		BF682D841773217800174FA4 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		BF682D851773217800174FA4 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		BF682D871773217800174FA4 /* CatalogNumberList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogNumberList.h; sourceTree = "<group>"; };
+		BF682D881773217800174FA4 /* CatalogNumberList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogNumberList.m; sourceTree = "<group>"; };
+		BF682D891773217800174FA4 /* Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creator.h; sourceTree = "<group>"; };
+		BF682D8A1773217800174FA4 /* Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creator.m; sourceTree = "<group>"; };
+		BF682D8B1773217800174FA4 /* EANList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EANList.h; sourceTree = "<group>"; };
+		BF682D8C1773217800174FA4 /* EANList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EANList.m; sourceTree = "<group>"; };
+		BF682D8D1773217800174FA4 /* ItemDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDimensions.h; sourceTree = "<group>"; };
+		BF682D8E1773217800174FA4 /* ItemDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDimensions.m; sourceTree = "<group>"; };
+		BF682D901773217800174FA4 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
+		BF682D911773217800174FA4 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
+		BF682D921773217800174FA4 /* Languages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Languages.h; sourceTree = "<group>"; };
+		BF682D931773217800174FA4 /* Languages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Languages.m; sourceTree = "<group>"; };
+		BF682D941773217800174FA4 /* PackageDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDimensions.h; sourceTree = "<group>"; };
+		BF682D951773217800174FA4 /* PackageDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDimensions.m; sourceTree = "<group>"; };
+		BF682D961773217800174FA4 /* UPCList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPCList.h; sourceTree = "<group>"; };
+		BF682D971773217800174FA4 /* UPCList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPCList.m; sourceTree = "<group>"; };
+		BF682D981773217800174FA4 /* ItemAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemAttributes.h; sourceTree = "<group>"; };
+		BF682D991773217800174FA4 /* ItemAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemAttributes.m; sourceTree = "<group>"; };
+		BF682D9A1773217800174FA4 /* ItemLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLink.h; sourceTree = "<group>"; };
+		BF682D9B1773217800174FA4 /* ItemLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemLink.m; sourceTree = "<group>"; };
+		BF682D9C1773217800174FA4 /* ItemLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLinks.h; sourceTree = "<group>"; };
+		BF682D9D1773217800174FA4 /* ItemLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemLinks.m; sourceTree = "<group>"; };
+		BF682D9E1773217800174FA4 /* ItemLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLookup.h; sourceTree = "<group>"; };
+		BF682D9F1773217800174FA4 /* ItemLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemLookup.m; sourceTree = "<group>"; };
+		BF682DA01773217800174FA4 /* ItemLookupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLookupRequest.h; sourceTree = "<group>"; };
+		BF682DA11773217800174FA4 /* ItemLookupRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemLookupRequest.m; sourceTree = "<group>"; };
+		BF682DA21773217800174FA4 /* ItemLookupResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLookupResponse.h; sourceTree = "<group>"; };
+		BF682DA31773217800174FA4 /* ItemLookupResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemLookupResponse.m; sourceTree = "<group>"; };
+		BF682DA41773217800174FA4 /* Items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = "<group>"; };
+		BF682DA51773217800174FA4 /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Items.m; sourceTree = "<group>"; };
+		BF682DA61773217800174FA4 /* ItemSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSearch.h; sourceTree = "<group>"; };
+		BF682DA71773217800174FA4 /* ItemSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemSearch.m; sourceTree = "<group>"; };
+		BF682DA81773217800174FA4 /* ItemSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSearchRequest.h; sourceTree = "<group>"; };
+		BF682DA91773217800174FA4 /* ItemSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemSearchRequest.m; sourceTree = "<group>"; };
+		BF682DAA1773217800174FA4 /* ItemSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSearchResponse.h; sourceTree = "<group>"; };
+		BF682DAB1773217800174FA4 /* ItemSearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemSearchResponse.m; sourceTree = "<group>"; };
+		BF682DAC1773217800174FA4 /* LoyaltyPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoyaltyPoints.h; sourceTree = "<group>"; };
+		BF682DAD1773217800174FA4 /* LoyaltyPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoyaltyPoints.m; sourceTree = "<group>"; };
+		BF682DAE1773217800174FA4 /* Merchant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Merchant.h; sourceTree = "<group>"; };
+		BF682DAF1773217800174FA4 /* Merchant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Merchant.m; sourceTree = "<group>"; };
+		BF682DB11773217800174FA4 /* NewRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRelease.h; sourceTree = "<group>"; };
+		BF682DB21773217800174FA4 /* NewRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRelease.m; sourceTree = "<group>"; };
+		BF682DB31773217800174FA4 /* NewReleases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewReleases.h; sourceTree = "<group>"; };
+		BF682DB41773217800174FA4 /* NewReleases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewReleases.m; sourceTree = "<group>"; };
+		BF682DB51773217800174FA4 /* NonNegativeIntegerWithUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonNegativeIntegerWithUnits.h; sourceTree = "<group>"; };
+		BF682DB61773217800174FA4 /* NonNegativeIntegerWithUnits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonNegativeIntegerWithUnits.m; sourceTree = "<group>"; };
+		BF682DB71773217800174FA4 /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
+		BF682DB81773217800174FA4 /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
+		BF682DB91773217800174FA4 /* OfferAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferAttributes.h; sourceTree = "<group>"; };
+		BF682DBA1773217800174FA4 /* OfferAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferAttributes.m; sourceTree = "<group>"; };
+		BF682DBC1773217800174FA4 /* AvailabilityAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityAttributes.h; sourceTree = "<group>"; };
+		BF682DBD1773217800174FA4 /* AvailabilityAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityAttributes.m; sourceTree = "<group>"; };
+		BF682DBE1773217800174FA4 /* OfferListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferListing.h; sourceTree = "<group>"; };
+		BF682DBF1773217800174FA4 /* OfferListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferListing.m; sourceTree = "<group>"; };
+		BF682DC01773217800174FA4 /* Offers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offers.h; sourceTree = "<group>"; };
+		BF682DC11773217800174FA4 /* Offers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offers.m; sourceTree = "<group>"; };
+		BF682DC21773217800174FA4 /* OfferSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferSummary.h; sourceTree = "<group>"; };
+		BF682DC31773217800174FA4 /* OfferSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferSummary.m; sourceTree = "<group>"; };
+		BF682DC41773217800174FA4 /* OperationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationRequest.h; sourceTree = "<group>"; };
+		BF682DC51773217800174FA4 /* OperationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationRequest.m; sourceTree = "<group>"; };
+		BF682DC71773217800174FA4 /* OtherCategoriesSimilarProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherCategoriesSimilarProduct.h; sourceTree = "<group>"; };
+		BF682DC81773217800174FA4 /* OtherCategoriesSimilarProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherCategoriesSimilarProduct.m; sourceTree = "<group>"; };
+		BF682DC91773217800174FA4 /* OtherCategoriesSimilarProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherCategoriesSimilarProducts.h; sourceTree = "<group>"; };
+		BF682DCA1773217800174FA4 /* OtherCategoriesSimilarProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherCategoriesSimilarProducts.m; sourceTree = "<group>"; };
+		BF682DCB1773217800174FA4 /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
+		BF682DCC1773217800174FA4 /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
+		BF682DCE1773217800174FA4 /* Summary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summary.h; sourceTree = "<group>"; };
+		BF682DCF1773217800174FA4 /* Summary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summary.m; sourceTree = "<group>"; };
+		BF682DD01773217800174FA4 /* Promotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promotion.h; sourceTree = "<group>"; };
+		BF682DD11773217800174FA4 /* Promotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promotion.m; sourceTree = "<group>"; };
+		BF682DD21773217800174FA4 /* Promotions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promotions.h; sourceTree = "<group>"; };
+		BF682DD31773217800174FA4 /* Promotions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promotions.m; sourceTree = "<group>"; };
+		BF682DD41773217800174FA4 /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
+		BF682DD51773217800174FA4 /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
+		BF682DD61773217800174FA4 /* RelatedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedItem.h; sourceTree = "<group>"; };
+		BF682DD71773217800174FA4 /* RelatedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedItem.m; sourceTree = "<group>"; };
+		BF682DD81773217800174FA4 /* RelatedItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedItems.h; sourceTree = "<group>"; };
+		BF682DD91773217800174FA4 /* RelatedItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedItems.m; sourceTree = "<group>"; };
+		BF682DDA1773217800174FA4 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		BF682DDB1773217800174FA4 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		BF682DDC1773217800174FA4 /* SavedForLaterItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedForLaterItems.h; sourceTree = "<group>"; };
+		BF682DDD1773217800174FA4 /* SavedForLaterItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedForLaterItems.m; sourceTree = "<group>"; };
+		BF682DDE1773217800174FA4 /* SearchBinSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBinSet.h; sourceTree = "<group>"; };
+		BF682DDF1773217800174FA4 /* SearchBinSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBinSet.m; sourceTree = "<group>"; };
+		BF682DE01773217800174FA4 /* SearchBinSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBinSets.h; sourceTree = "<group>"; };
+		BF682DE11773217800174FA4 /* SearchBinSets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBinSets.m; sourceTree = "<group>"; };
+		BF682DE31773217800174FA4 /* SearchIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchIndex.h; sourceTree = "<group>"; };
+		BF682DE41773217800174FA4 /* SearchIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchIndex.m; sourceTree = "<group>"; };
+		BF682DE51773217800174FA4 /* SearchResultsMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsMap.h; sourceTree = "<group>"; };
+		BF682DE61773217800174FA4 /* SearchResultsMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsMap.m; sourceTree = "<group>"; };
+		BF682DE71773217800174FA4 /* SimilarityLookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarityLookup.h; sourceTree = "<group>"; };
+		BF682DE81773217800174FA4 /* SimilarityLookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarityLookup.m; sourceTree = "<group>"; };
+		BF682DE91773217800174FA4 /* SimilarityLookupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarityLookupRequest.h; sourceTree = "<group>"; };
+		BF682DEA1773217800174FA4 /* SimilarityLookupRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarityLookupRequest.m; sourceTree = "<group>"; };
+		BF682DEB1773217800174FA4 /* SimilarityLookupResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarityLookupResponse.h; sourceTree = "<group>"; };
+		BF682DEC1773217800174FA4 /* SimilarityLookupResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarityLookupResponse.m; sourceTree = "<group>"; };
+		BF682DEE1773217800174FA4 /* SimilarProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarProduct.h; sourceTree = "<group>"; };
+		BF682DEF1773217800174FA4 /* SimilarProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarProduct.m; sourceTree = "<group>"; };
+		BF682DF01773217800174FA4 /* SimilarProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarProducts.h; sourceTree = "<group>"; };
+		BF682DF11773217800174FA4 /* SimilarProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarProducts.m; sourceTree = "<group>"; };
+		BF682DF31773217800174FA4 /* SimilarViewedProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarViewedProduct.h; sourceTree = "<group>"; };
+		BF682DF41773217800174FA4 /* SimilarViewedProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarViewedProduct.m; sourceTree = "<group>"; };
+		BF682DF51773217800174FA4 /* SimilarViewedProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimilarViewedProducts.h; sourceTree = "<group>"; };
+		BF682DF61773217800174FA4 /* SimilarViewedProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimilarViewedProducts.m; sourceTree = "<group>"; };
+		BF682DF71773217800174FA4 /* StringWithUnits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringWithUnits.h; sourceTree = "<group>"; };
+		BF682DF81773217800174FA4 /* StringWithUnits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringWithUnits.m; sourceTree = "<group>"; };
+		BF682DFA1773217900174FA4 /* TopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopItem.h; sourceTree = "<group>"; };
+		BF682DFB1773217900174FA4 /* TopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopItem.m; sourceTree = "<group>"; };
+		BF682DFC1773217900174FA4 /* TopItemSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopItemSet.h; sourceTree = "<group>"; };
+		BF682DFD1773217900174FA4 /* TopItemSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopItemSet.m; sourceTree = "<group>"; };
+		BF682DFF1773217900174FA4 /* TopSeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSeller.h; sourceTree = "<group>"; };
+		BF682E001773217900174FA4 /* TopSeller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSeller.m; sourceTree = "<group>"; };
+		BF682E011773217900174FA4 /* TopSellers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSellers.h; sourceTree = "<group>"; };
+		BF682E021773217900174FA4 /* TopSellers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSellers.m; sourceTree = "<group>"; };
+		BF682E051773217900174FA4 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		BF682E061773217900174FA4 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		BF682E071773217900174FA4 /* Disc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disc.h; sourceTree = "<group>"; };
+		BF682E081773217900174FA4 /* Disc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disc.m; sourceTree = "<group>"; };
+		BF682E091773217900174FA4 /* Tracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracks.h; sourceTree = "<group>"; };
+		BF682E0A1773217900174FA4 /* Tracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracks.m; sourceTree = "<group>"; };
+		BF682E0B1773217900174FA4 /* VariationAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationAttribute.h; sourceTree = "<group>"; };
+		BF682E0C1773217900174FA4 /* VariationAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationAttribute.m; sourceTree = "<group>"; };
+		BF682E0D1773217900174FA4 /* VariationDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationDimensions.h; sourceTree = "<group>"; };
+		BF682E0E1773217900174FA4 /* VariationDimensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationDimensions.m; sourceTree = "<group>"; };
+		BF682E0F1773217900174FA4 /* Variations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variations.h; sourceTree = "<group>"; };
+		BF682E101773217900174FA4 /* Variations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variations.m; sourceTree = "<group>"; };
+		BF682E111773217900174FA4 /* VariationSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationSummary.h; sourceTree = "<group>"; };
+		BF682E121773217900174FA4 /* VariationSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationSummary.m; sourceTree = "<group>"; };
+		BF682E94177321D500174FA4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BF682E96177323AA00174FA4 /* libPico.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPico.a; path = "../pico/build/Release-iphoneos/libPico.a"; sourceTree = "<group>"; };
+		BF682E98177339F800174FA4 /* PaidAmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidAmazonViewController.h; sourceTree = "<group>"; };
+		BF682E99177339F900174FA4 /* PaidAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidAmazonViewController.m; sourceTree = "<group>"; };
+		BF682E9B17733A0800174FA4 /* FreeAmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeAmazonViewController.h; sourceTree = "<group>"; };
+		BF682E9C17733A0900174FA4 /* FreeAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeAmazonViewController.m; sourceTree = "<group>"; };
+		BFBE0F4F17758675002D3CCC /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		BFBE0F5117758707002D3CCC /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		BFD3201D1775801C00A5129D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BFFC93B01776F00F00AB332E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BFFC93B21776F01D00AB332E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BFFC93B41776F02C00AB332E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BFFC93B61776F03400AB332E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BFFC93B81776F03E00AB332E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BFFC93BA1776F08200AB332E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		BFFC93BC1776F09500AB332E /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		BFFC93BD1776F09500AB332E /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +584,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE707A4A1781A68D0029877F /* libPico.a in Frameworks */,
 				BF682C401773199C00174FA4 /* UIKit.framework in Frameworks */,
+				BFFC93B91776F03E00AB332E /* Social.framework in Frameworks */,
+				BFFC93B71776F03400AB332E /* Security.framework in Frameworks */,
+				BFFC93B51776F02C00AB332E /* libsqlite3.dylib in Frameworks */,
+				BFFC93B31776F01D00AB332E /* AdSupport.framework in Frameworks */,
+				BFFC93B11776F00F00AB332E /* Accounts.framework in Frameworks */,
+				BFBE0F4E17758510002D3CCC /* CoreGraphics.framework in Frameworks */,
+				BF682E95177321D500174FA4 /* libxml2.dylib in Frameworks */,
 				BF682C421773199C00174FA4 /* Foundation.framework in Frameworks */,
-				BF682C441773199C00174FA4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +610,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF04BA4517734302000C94EC /* AmazonContrllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE8CFD221778207C007EC1CA /* AmazonWebViewController.h */,
+				AE8CFD211778207C007EC1CA /* AmazonWebViewController.m */,
+				BF14F9CB1775AC9D0097E266 /* Toast */,
+				BF14F9C81775AC210097E266 /* LookupViewController.h */,
+				BF14F9C91775AC210097E266 /* LookupViewController.m */,
+				BF682E98177339F800174FA4 /* PaidAmazonViewController.h */,
+				BF682E99177339F900174FA4 /* PaidAmazonViewController.m */,
+				BF682E9B17733A0800174FA4 /* FreeAmazonViewController.h */,
+				BF682E9C17733A0900174FA4 /* FreeAmazonViewController.m */,
+				BF682C9F17731B7900174FA4 /* LeftAmazonMenuViewController.h */,
+				BF682CA017731B7900174FA4 /* LeftAmazonMenuViewController.m */,
+				BF682C9417731B5700174FA4 /* ParentViewController.h */,
+				BF682C9517731B5700174FA4 /* ParentViewController.m */,
+				BF682CA217731C6B00174FA4 /* InitAmazonViewController.h */,
+				BF682CA317731C6B00174FA4 /* InitAmazonViewController.m */,
+				BF682C9617731B5700174FA4 /* RightAmazonMenuViewController.h */,
+				BF682C9717731B5700174FA4 /* RightAmazonMenuViewController.m */,
+				BF04BA4617734315000C94EC /* AmazonPagerViewController.h */,
+				BF04BA4717734315000C94EC /* AmazonPagerViewController.m */,
+				AE707A401781907A0029877F /* SettingsViewController.h */,
+				AE707A411781907A0029877F /* SettingsViewController.m */,
+				AE707A43178191390029877F /* SearchViewController.h */,
+				AE707A44178191390029877F /* SearchViewController.m */,
+				AE707A46178192230029877F /* AboutViewController.h */,
+				AE707A47178192230029877F /* AboutViewController.m */,
+			);
+			name = AmazonContrllers;
+			sourceTree = "<group>";
+		};
+		BF14F9C5177595500097E266 /* AfIncludes */ = {
+			isa = PBXGroup;
+			children = (
+				AE707A591781AC1D0029877F /* AFHTTPClient.h */,
+				AE707A5A1781AC1D0029877F /* AFURLConnectionOperation.h */,
+				AE707A4C1781ABCD0029877F /* AFHTTPRequestOperation.h */,
+				AE707A4D1781ABCD0029877F /* PicoBindable.h */,
+				AE707A4E1781ABCD0029877F /* PicoClassSchema.h */,
+				AE707A521781AC010029877F /* AFImageRequestOperation.h */,
+				AE707A531781AC010029877F /* PicoSOAPClient.h */,
+				AE707A541781AC010029877F /* PicoSOAPRequestOperation.h */,
+				AE707A551781AC010029877F /* PicoXMLClient.h */,
+				AE707A561781AC010029877F /* PicoXMLElement.h */,
+				AE707A571781AC010029877F /* PicoXMLRequestOperation.h */,
+				AE707A581781AC010029877F /* SOAP11Fault.h */,
+				AE707A4F1781ABCD0029877F /* PicoConfig.h */,
+				AE707A501781ABCD0029877F /* PicoConstants.h */,
+				AE707A511781ABCD0029877F /* PicoPropertySchema.h */,
+				BF14F9C7177595F30097E266 /* UIImageView+AFNetworking.h */,
+				BF14F9C6177595940097E266 /* AFJSONRequestOperation.h */,
+			);
+			name = AfIncludes;
+			sourceTree = "<group>";
+		};
+		BF14F9CB1775AC9D0097E266 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				BF14F9CC1775AC9D0097E266 /* Toast+UIView.h */,
+				BF14F9CD1775AC9D0097E266 /* Toast+UIView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		BF682C331773199C00174FA4 = {
 			isa = PBXGroup;
 			children = (
+				AE707A491781A68D0029877F /* libPico.a */,
+				AEA55EE5177C506500F9BD18 /* NSString+stripHtml.h */,
+				AEA55EE6177C506500F9BD18 /* NSString+stripHtml.m */,
+				AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */,
+				AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */,
+				AEA55ED4177C059300F9BD18 /* CustomCellClass.h */,
+				AEA55ED5177C059300F9BD18 /* CustomCellClass.m */,
 				BF682C451773199C00174FA4 /* eBookUniverse */,
 				BF682C771773199C00174FA4 /* eBookUniverseTests */,
 				BF682C3E1773199C00174FA4 /* Frameworks */,
@@ -119,6 +704,17 @@
 		BF682C3E1773199C00174FA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFFC93B81776F03E00AB332E /* Social.framework */,
+				BFFC93B61776F03400AB332E /* Security.framework */,
+				BFFC93B41776F02C00AB332E /* libsqlite3.dylib */,
+				BFFC93B21776F01D00AB332E /* AdSupport.framework */,
+				BFFC93B01776F00F00AB332E /* Accounts.framework */,
+				BFFC93BC1776F09500AB332E /* FacebookSDKResources.bundle */,
+				BFFC93BD1776F09500AB332E /* FBUserSettingsViewResources.bundle */,
+				BFFC93BA1776F08200AB332E /* FacebookSDK.framework */,
+				BFD3201D1775801C00A5129D /* QuartzCore.framework */,
+				BF682E96177323AA00174FA4 /* libPico.a */,
+				BF682E94177321D500174FA4 /* libxml2.dylib */,
 				BF682C3F1773199C00174FA4 /* UIKit.framework */,
 				BF682C411773199C00174FA4 /* Foundation.framework */,
 				BF682C431773199C00174FA4 /* CoreGraphics.framework */,
@@ -130,16 +726,21 @@
 		BF682C451773199C00174FA4 /* eBookUniverse */ = {
 			isa = PBXGroup;
 			children = (
+				BF14F9C5177595500097E266 /* AfIncludes */,
+				BF682C8817731A3900174FA4 /* ECSlidingViewController */,
+				BF04BA4517734302000C94EC /* AmazonContrllers */,
+				BFBE0F5317759113002D3CCC /* iBookStoreControllers */,
+				BFBE0F5117758707002D3CCC /* home.png */,
+				BFBE0F4F17758675002D3CCC /* menu.png */,
+				BF682CE51773214A00174FA4 /* AWSECommerceService */,
 				BF682C4E1773199C00174FA4 /* AppDelegate.h */,
 				BF682C4F1773199C00174FA4 /* AppDelegate.m */,
 				BF682C571773199C00174FA4 /* MainStoryboard_iPhone.storyboard */,
 				BF682C5A1773199C00174FA4 /* MainStoryboard_iPad.storyboard */,
-				BF682C5D1773199C00174FA4 /* FirstViewController.h */,
-				BF682C5E1773199C00174FA4 /* FirstViewController.m */,
+				BF682C5D1773199C00174FA4 /* AmazonTableViewController.h */,
+				BF682C5E1773199C00174FA4 /* AmazonTableViewController.m */,
 				BF682C601773199C00174FA4 /* first.png */,
 				BF682C621773199C00174FA4 /* first@2x.png */,
-				BF682C641773199C00174FA4 /* SecondViewController.h */,
-				BF682C651773199C00174FA4 /* SecondViewController.m */,
 				BF682C671773199C00174FA4 /* second.png */,
 				BF682C691773199C00174FA4 /* second@2x.png */,
 				BF682C461773199C00174FA4 /* Supporting Files */,
@@ -150,6 +751,9 @@
 		BF682C461773199C00174FA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE67797917829B9400FED5FA /* Buy.png */,
+				AEA55EE3177C44E000F9BD18 /* fb-button.png */,
+				AEA55EE1177C448200F9BD18 /* S.png */,
 				BF682C471773199C00174FA4 /* eBookUniverse-Info.plist */,
 				BF682C481773199C00174FA4 /* InfoPlist.strings */,
 				BF682C4B1773199C00174FA4 /* main.m */,
@@ -178,6 +782,590 @@
 				BF682C7A1773199C00174FA4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF682C8817731A3900174FA4 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF682C8917731A5800174FA4 /* ECSlidingViewController.h */,
+				BF682C8A17731A5800174FA4 /* ECSlidingViewController.m */,
+				BF682C8B17731A5800174FA4 /* UIImage+ImageWithUIView.h */,
+				BF682C8C17731A5800174FA4 /* UIImage+ImageWithUIView.m */,
+			);
+			name = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		BF682CE51773214A00174FA4 /* AWSECommerceService */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CEC1773217700174FA4 /* awsecommerceservice */,
+				BF682CE61773215C00174FA4 /* AWSECommerceServiceClient.h */,
+				BF682CE71773215C00174FA4 /* AWSECommerceServiceClient.m */,
+				BF682CE81773215C00174FA4 /* AmazonAuthUtils.h */,
+				BF682CE91773215C00174FA4 /* AmazonAuthUtils.m */,
+			);
+			name = AWSECommerceService;
+			sourceTree = "<group>";
+		};
+		BF682CEC1773217700174FA4 /* awsecommerceservice */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CED1773217700174FA4 /* _2011_08_01 */,
+			);
+			path = awsecommerceservice;
+			sourceTree = "<group>";
+		};
+		BF682CED1773217700174FA4 /* _2011_08_01 */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CEE1773217700174FA4 /* Accessories */,
+				BF682CF11773217700174FA4 /* Accessories.h */,
+				BF682CF21773217700174FA4 /* Accessories.m */,
+				BF682CF31773217700174FA4 /* Arguments */,
+				BF682CF61773217700174FA4 /* Arguments.h */,
+				BF682CF71773217700174FA4 /* Arguments.m */,
+				BF682CF81773217700174FA4 /* Bin */,
+				BF682CFB1773217700174FA4 /* Bin.h */,
+				BF682CFC1773217700174FA4 /* Bin.m */,
+				BF682CFD1773217700174FA4 /* BrowseNode */,
+				BF682D041773217700174FA4 /* BrowseNode.h */,
+				BF682D051773217700174FA4 /* BrowseNode.m */,
+				BF682D061773217700174FA4 /* BrowseNodeLookup.h */,
+				BF682D071773217700174FA4 /* BrowseNodeLookup.m */,
+				BF682D081773217700174FA4 /* BrowseNodeLookupRequest.h */,
+				BF682D091773217700174FA4 /* BrowseNodeLookupRequest.m */,
+				BF682D0A1773217700174FA4 /* BrowseNodeLookupResponse.h */,
+				BF682D0B1773217700174FA4 /* BrowseNodeLookupResponse.m */,
+				BF682D0C1773217700174FA4 /* BrowseNodes.h */,
+				BF682D0D1773217700174FA4 /* BrowseNodes.m */,
+				BF682D0E1773217700174FA4 /* Cart.h */,
+				BF682D0F1773217700174FA4 /* Cart.m */,
+				BF682D101773217700174FA4 /* CartAdd.h */,
+				BF682D111773217700174FA4 /* CartAdd.m */,
+				BF682D121773217700174FA4 /* CartAddRequest */,
+				BF682D181773217700174FA4 /* CartAddRequest.h */,
+				BF682D191773217700174FA4 /* CartAddRequest.m */,
+				BF682D1A1773217700174FA4 /* CartAddResponse.h */,
+				BF682D1B1773217700174FA4 /* CartAddResponse.m */,
+				BF682D1C1773217700174FA4 /* CartClear.h */,
+				BF682D1D1773217700174FA4 /* CartClear.m */,
+				BF682D1E1773217700174FA4 /* CartClearRequest.h */,
+				BF682D1F1773217700174FA4 /* CartClearRequest.m */,
+				BF682D201773217700174FA4 /* CartClearResponse.h */,
+				BF682D211773217700174FA4 /* CartClearResponse.m */,
+				BF682D221773217700174FA4 /* CartCreate.h */,
+				BF682D231773217700174FA4 /* CartCreate.m */,
+				BF682D241773217700174FA4 /* CartCreateRequest */,
+				BF682D2D1773217800174FA4 /* CartCreateRequest.h */,
+				BF682D2E1773217800174FA4 /* CartCreateRequest.m */,
+				BF682D2F1773217800174FA4 /* CartCreateResponse.h */,
+				BF682D301773217800174FA4 /* CartCreateResponse.m */,
+				BF682D311773217800174FA4 /* CartGet.h */,
+				BF682D321773217800174FA4 /* CartGet.m */,
+				BF682D331773217800174FA4 /* CartGetRequest.h */,
+				BF682D341773217800174FA4 /* CartGetRequest.m */,
+				BF682D351773217800174FA4 /* CartGetResponse.h */,
+				BF682D361773217800174FA4 /* CartGetResponse.m */,
+				BF682D371773217800174FA4 /* CartItem */,
+				BF682D3D1773217800174FA4 /* CartItem.h */,
+				BF682D3E1773217800174FA4 /* CartItem.m */,
+				BF682D3F1773217800174FA4 /* CartItems.h */,
+				BF682D401773217800174FA4 /* CartItems.m */,
+				BF682D411773217800174FA4 /* CartModify.h */,
+				BF682D421773217800174FA4 /* CartModify.m */,
+				BF682D431773217800174FA4 /* CartModifyRequest */,
+				BF682D491773217800174FA4 /* CartModifyRequest.h */,
+				BF682D4A1773217800174FA4 /* CartModifyRequest.m */,
+				BF682D4B1773217800174FA4 /* CartModifyResponse.h */,
+				BF682D4C1773217800174FA4 /* CartModifyResponse.m */,
+				BF682D4D1773217800174FA4 /* client */,
+				BF682D521773217800174FA4 /* Collections */,
+				BF682D5C1773217800174FA4 /* Collections.h */,
+				BF682D5D1773217800174FA4 /* Collections.m */,
+				BF682D5E1773217800174FA4 /* common */,
+				BF682D601773217800174FA4 /* CorrectedQuery.h */,
+				BF682D611773217800174FA4 /* CorrectedQuery.m */,
+				BF682D621773217800174FA4 /* CustomerReviews.h */,
+				BF682D631773217800174FA4 /* CustomerReviews.m */,
+				BF682D641773217800174FA4 /* DecimalWithUnits.h */,
+				BF682D651773217800174FA4 /* DecimalWithUnits.m */,
+				BF682D661773217800174FA4 /* EditorialReview.h */,
+				BF682D671773217800174FA4 /* EditorialReview.m */,
+				BF682D681773217800174FA4 /* EditorialReviews.h */,
+				BF682D691773217800174FA4 /* EditorialReviews.m */,
+				BF682D6A1773217800174FA4 /* Errors */,
+				BF682D6D1773217800174FA4 /* Errors.h */,
+				BF682D6E1773217800174FA4 /* Errors.m */,
+				BF682D6F1773217800174FA4 /* HTTPHeaders */,
+				BF682D721773217800174FA4 /* HTTPHeaders.h */,
+				BF682D731773217800174FA4 /* HTTPHeaders.m */,
+				BF682D741773217800174FA4 /* Image.h */,
+				BF682D751773217800174FA4 /* Image.m */,
+				BF682D761773217800174FA4 /* ImageSet.h */,
+				BF682D771773217800174FA4 /* ImageSet.m */,
+				BF682D781773217800174FA4 /* Item */,
+				BF682D841773217800174FA4 /* Item.h */,
+				BF682D851773217800174FA4 /* Item.m */,
+				BF682D861773217800174FA4 /* ItemAttributes */,
+				BF682D981773217800174FA4 /* ItemAttributes.h */,
+				BF682D991773217800174FA4 /* ItemAttributes.m */,
+				BF682D9A1773217800174FA4 /* ItemLink.h */,
+				BF682D9B1773217800174FA4 /* ItemLink.m */,
+				BF682D9C1773217800174FA4 /* ItemLinks.h */,
+				BF682D9D1773217800174FA4 /* ItemLinks.m */,
+				BF682D9E1773217800174FA4 /* ItemLookup.h */,
+				BF682D9F1773217800174FA4 /* ItemLookup.m */,
+				BF682DA01773217800174FA4 /* ItemLookupRequest.h */,
+				BF682DA11773217800174FA4 /* ItemLookupRequest.m */,
+				BF682DA21773217800174FA4 /* ItemLookupResponse.h */,
+				BF682DA31773217800174FA4 /* ItemLookupResponse.m */,
+				BF682DA41773217800174FA4 /* Items.h */,
+				BF682DA51773217800174FA4 /* Items.m */,
+				BF682DA61773217800174FA4 /* ItemSearch.h */,
+				BF682DA71773217800174FA4 /* ItemSearch.m */,
+				BF682DA81773217800174FA4 /* ItemSearchRequest.h */,
+				BF682DA91773217800174FA4 /* ItemSearchRequest.m */,
+				BF682DAA1773217800174FA4 /* ItemSearchResponse.h */,
+				BF682DAB1773217800174FA4 /* ItemSearchResponse.m */,
+				BF682DAC1773217800174FA4 /* LoyaltyPoints.h */,
+				BF682DAD1773217800174FA4 /* LoyaltyPoints.m */,
+				BF682DAE1773217800174FA4 /* Merchant.h */,
+				BF682DAF1773217800174FA4 /* Merchant.m */,
+				BF682DB01773217800174FA4 /* NewReleases */,
+				BF682DB31773217800174FA4 /* NewReleases.h */,
+				BF682DB41773217800174FA4 /* NewReleases.m */,
+				BF682DB51773217800174FA4 /* NonNegativeIntegerWithUnits.h */,
+				BF682DB61773217800174FA4 /* NonNegativeIntegerWithUnits.m */,
+				BF682DB71773217800174FA4 /* Offer.h */,
+				BF682DB81773217800174FA4 /* Offer.m */,
+				BF682DB91773217800174FA4 /* OfferAttributes.h */,
+				BF682DBA1773217800174FA4 /* OfferAttributes.m */,
+				BF682DBB1773217800174FA4 /* OfferListing */,
+				BF682DBE1773217800174FA4 /* OfferListing.h */,
+				BF682DBF1773217800174FA4 /* OfferListing.m */,
+				BF682DC01773217800174FA4 /* Offers.h */,
+				BF682DC11773217800174FA4 /* Offers.m */,
+				BF682DC21773217800174FA4 /* OfferSummary.h */,
+				BF682DC31773217800174FA4 /* OfferSummary.m */,
+				BF682DC41773217800174FA4 /* OperationRequest.h */,
+				BF682DC51773217800174FA4 /* OperationRequest.m */,
+				BF682DC61773217800174FA4 /* OtherCategoriesSimilarProducts */,
+				BF682DC91773217800174FA4 /* OtherCategoriesSimilarProducts.h */,
+				BF682DCA1773217800174FA4 /* OtherCategoriesSimilarProducts.m */,
+				BF682DCB1773217800174FA4 /* Price.h */,
+				BF682DCC1773217800174FA4 /* Price.m */,
+				BF682DCD1773217800174FA4 /* Promotion */,
+				BF682DD01773217800174FA4 /* Promotion.h */,
+				BF682DD11773217800174FA4 /* Promotion.m */,
+				BF682DD21773217800174FA4 /* Promotions.h */,
+				BF682DD31773217800174FA4 /* Promotions.m */,
+				BF682DD41773217800174FA4 /* Property.h */,
+				BF682DD51773217800174FA4 /* Property.m */,
+				BF682DD61773217800174FA4 /* RelatedItem.h */,
+				BF682DD71773217800174FA4 /* RelatedItem.m */,
+				BF682DD81773217800174FA4 /* RelatedItems.h */,
+				BF682DD91773217800174FA4 /* RelatedItems.m */,
+				BF682DDA1773217800174FA4 /* Request.h */,
+				BF682DDB1773217800174FA4 /* Request.m */,
+				BF682DDC1773217800174FA4 /* SavedForLaterItems.h */,
+				BF682DDD1773217800174FA4 /* SavedForLaterItems.m */,
+				BF682DDE1773217800174FA4 /* SearchBinSet.h */,
+				BF682DDF1773217800174FA4 /* SearchBinSet.m */,
+				BF682DE01773217800174FA4 /* SearchBinSets.h */,
+				BF682DE11773217800174FA4 /* SearchBinSets.m */,
+				BF682DE21773217800174FA4 /* SearchResultsMap */,
+				BF682DE51773217800174FA4 /* SearchResultsMap.h */,
+				BF682DE61773217800174FA4 /* SearchResultsMap.m */,
+				BF682DE71773217800174FA4 /* SimilarityLookup.h */,
+				BF682DE81773217800174FA4 /* SimilarityLookup.m */,
+				BF682DE91773217800174FA4 /* SimilarityLookupRequest.h */,
+				BF682DEA1773217800174FA4 /* SimilarityLookupRequest.m */,
+				BF682DEB1773217800174FA4 /* SimilarityLookupResponse.h */,
+				BF682DEC1773217800174FA4 /* SimilarityLookupResponse.m */,
+				BF682DED1773217800174FA4 /* SimilarProducts */,
+				BF682DF01773217800174FA4 /* SimilarProducts.h */,
+				BF682DF11773217800174FA4 /* SimilarProducts.m */,
+				BF682DF21773217800174FA4 /* SimilarViewedProducts */,
+				BF682DF51773217800174FA4 /* SimilarViewedProducts.h */,
+				BF682DF61773217800174FA4 /* SimilarViewedProducts.m */,
+				BF682DF71773217800174FA4 /* StringWithUnits.h */,
+				BF682DF81773217800174FA4 /* StringWithUnits.m */,
+				BF682DF91773217800174FA4 /* TopItemSet */,
+				BF682DFC1773217900174FA4 /* TopItemSet.h */,
+				BF682DFD1773217900174FA4 /* TopItemSet.m */,
+				BF682DFE1773217900174FA4 /* TopSellers */,
+				BF682E011773217900174FA4 /* TopSellers.h */,
+				BF682E021773217900174FA4 /* TopSellers.m */,
+				BF682E031773217900174FA4 /* Tracks */,
+				BF682E091773217900174FA4 /* Tracks.h */,
+				BF682E0A1773217900174FA4 /* Tracks.m */,
+				BF682E0B1773217900174FA4 /* VariationAttribute.h */,
+				BF682E0C1773217900174FA4 /* VariationAttribute.m */,
+				BF682E0D1773217900174FA4 /* VariationDimensions.h */,
+				BF682E0E1773217900174FA4 /* VariationDimensions.m */,
+				BF682E0F1773217900174FA4 /* Variations.h */,
+				BF682E101773217900174FA4 /* Variations.m */,
+				BF682E111773217900174FA4 /* VariationSummary.h */,
+				BF682E121773217900174FA4 /* VariationSummary.m */,
+			);
+			path = _2011_08_01;
+			sourceTree = "<group>";
+		};
+		BF682CEE1773217700174FA4 /* Accessories */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CEF1773217700174FA4 /* Accessory.h */,
+				BF682CF01773217700174FA4 /* Accessory.m */,
+			);
+			path = Accessories;
+			sourceTree = "<group>";
+		};
+		BF682CF31773217700174FA4 /* Arguments */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CF41773217700174FA4 /* Argument.h */,
+				BF682CF51773217700174FA4 /* Argument.m */,
+			);
+			path = Arguments;
+			sourceTree = "<group>";
+		};
+		BF682CF81773217700174FA4 /* Bin */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CF91773217700174FA4 /* BinParameter.h */,
+				BF682CFA1773217700174FA4 /* BinParameter.m */,
+			);
+			path = Bin;
+			sourceTree = "<group>";
+		};
+		BF682CFD1773217700174FA4 /* BrowseNode */ = {
+			isa = PBXGroup;
+			children = (
+				BF682CFE1773217700174FA4 /* Ancestors.h */,
+				BF682CFF1773217700174FA4 /* Ancestors.m */,
+				BF682D001773217700174FA4 /* Children.h */,
+				BF682D011773217700174FA4 /* Children.m */,
+				BF682D021773217700174FA4 /* Properties.h */,
+				BF682D031773217700174FA4 /* Properties.m */,
+			);
+			path = BrowseNode;
+			sourceTree = "<group>";
+		};
+		BF682D121773217700174FA4 /* CartAddRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D131773217700174FA4 /* CartAddItems */,
+				BF682D161773217700174FA4 /* CartAddItems.h */,
+				BF682D171773217700174FA4 /* CartAddItems.m */,
+			);
+			path = CartAddRequest;
+			sourceTree = "<group>";
+		};
+		BF682D131773217700174FA4 /* CartAddItems */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D141773217700174FA4 /* CartAddItem.h */,
+				BF682D151773217700174FA4 /* CartAddItem.m */,
+			);
+			path = CartAddItems;
+			sourceTree = "<group>";
+		};
+		BF682D241773217700174FA4 /* CartCreateRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D251773217700174FA4 /* CartCreateItems */,
+				BF682D2B1773217800174FA4 /* CartCreateItems.h */,
+				BF682D2C1773217800174FA4 /* CartCreateItems.m */,
+			);
+			path = CartCreateRequest;
+			sourceTree = "<group>";
+		};
+		BF682D251773217700174FA4 /* CartCreateItems */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D261773217700174FA4 /* CartCreateItem */,
+				BF682D291773217800174FA4 /* CartCreateItem.h */,
+				BF682D2A1773217800174FA4 /* CartCreateItem.m */,
+			);
+			path = CartCreateItems;
+			sourceTree = "<group>";
+		};
+		BF682D261773217700174FA4 /* CartCreateItem */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D271773217700174FA4 /* ItemMetaData.h */,
+				BF682D281773217700174FA4 /* ItemMetaData.m */,
+			);
+			path = CartCreateItem;
+			sourceTree = "<group>";
+		};
+		BF682D371773217800174FA4 /* CartItem */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D381773217800174FA4 /* MetaData */,
+				BF682D3B1773217800174FA4 /* MetaData.h */,
+				BF682D3C1773217800174FA4 /* MetaData.m */,
+			);
+			path = CartItem;
+			sourceTree = "<group>";
+		};
+		BF682D381773217800174FA4 /* MetaData */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D391773217800174FA4 /* KeyValuePair.h */,
+				BF682D3A1773217800174FA4 /* KeyValuePair.m */,
+			);
+			path = MetaData;
+			sourceTree = "<group>";
+		};
+		BF682D431773217800174FA4 /* CartModifyRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D441773217800174FA4 /* CartModifyItems */,
+				BF682D471773217800174FA4 /* CartModifyItems.h */,
+				BF682D481773217800174FA4 /* CartModifyItems.m */,
+			);
+			path = CartModifyRequest;
+			sourceTree = "<group>";
+		};
+		BF682D441773217800174FA4 /* CartModifyItems */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D451773217800174FA4 /* CartModifyItem.h */,
+				BF682D461773217800174FA4 /* CartModifyItem.m */,
+			);
+			path = CartModifyItems;
+			sourceTree = "<group>";
+		};
+		BF682D4D1773217800174FA4 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D4E1773217800174FA4 /* AWSECommerceServicePortType_SOAPClient.h */,
+				BF682D4F1773217800174FA4 /* AWSECommerceServicePortType_SOAPClient.m */,
+				BF682D501773217800174FA4 /* AWSECommerceServicePortType_XMLClient.h */,
+				BF682D511773217800174FA4 /* AWSECommerceServicePortType_XMLClient.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		BF682D521773217800174FA4 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D531773217800174FA4 /* Collection */,
+				BF682D5A1773217800174FA4 /* Collection.h */,
+				BF682D5B1773217800174FA4 /* Collection.m */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		BF682D531773217800174FA4 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D541773217800174FA4 /* CollectionItem.h */,
+				BF682D551773217800174FA4 /* CollectionItem.m */,
+				BF682D561773217800174FA4 /* CollectionParent.h */,
+				BF682D571773217800174FA4 /* CollectionParent.m */,
+				BF682D581773217800174FA4 /* CollectionSummary.h */,
+				BF682D591773217800174FA4 /* CollectionSummary.m */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		BF682D5E1773217800174FA4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D5F1773217800174FA4 /* CommonTypes.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		BF682D6A1773217800174FA4 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D6B1773217800174FA4 /* Error.h */,
+				BF682D6C1773217800174FA4 /* Error.m */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BF682D6F1773217800174FA4 /* HTTPHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D701773217800174FA4 /* Header.h */,
+				BF682D711773217800174FA4 /* Header.m */,
+			);
+			path = HTTPHeaders;
+			sourceTree = "<group>";
+		};
+		BF682D781773217800174FA4 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D791773217800174FA4 /* AlternateVersions */,
+				BF682D7C1773217800174FA4 /* AlternateVersions.h */,
+				BF682D7D1773217800174FA4 /* AlternateVersions.m */,
+				BF682D7E1773217800174FA4 /* ImageSets.h */,
+				BF682D7F1773217800174FA4 /* ImageSets.m */,
+				BF682D801773217800174FA4 /* Subjects.h */,
+				BF682D811773217800174FA4 /* Subjects.m */,
+				BF682D821773217800174FA4 /* VariationAttributes.h */,
+				BF682D831773217800174FA4 /* VariationAttributes.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		BF682D791773217800174FA4 /* AlternateVersions */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D7A1773217800174FA4 /* AlternateVersion.h */,
+				BF682D7B1773217800174FA4 /* AlternateVersion.m */,
+			);
+			path = AlternateVersions;
+			sourceTree = "<group>";
+		};
+		BF682D861773217800174FA4 /* ItemAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D871773217800174FA4 /* CatalogNumberList.h */,
+				BF682D881773217800174FA4 /* CatalogNumberList.m */,
+				BF682D891773217800174FA4 /* Creator.h */,
+				BF682D8A1773217800174FA4 /* Creator.m */,
+				BF682D8B1773217800174FA4 /* EANList.h */,
+				BF682D8C1773217800174FA4 /* EANList.m */,
+				BF682D8D1773217800174FA4 /* ItemDimensions.h */,
+				BF682D8E1773217800174FA4 /* ItemDimensions.m */,
+				BF682D8F1773217800174FA4 /* Languages */,
+				BF682D921773217800174FA4 /* Languages.h */,
+				BF682D931773217800174FA4 /* Languages.m */,
+				BF682D941773217800174FA4 /* PackageDimensions.h */,
+				BF682D951773217800174FA4 /* PackageDimensions.m */,
+				BF682D961773217800174FA4 /* UPCList.h */,
+				BF682D971773217800174FA4 /* UPCList.m */,
+			);
+			path = ItemAttributes;
+			sourceTree = "<group>";
+		};
+		BF682D8F1773217800174FA4 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				BF682D901773217800174FA4 /* Language.h */,
+				BF682D911773217800174FA4 /* Language.m */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		BF682DB01773217800174FA4 /* NewReleases */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DB11773217800174FA4 /* NewRelease.h */,
+				BF682DB21773217800174FA4 /* NewRelease.m */,
+			);
+			path = NewReleases;
+			sourceTree = "<group>";
+		};
+		BF682DBB1773217800174FA4 /* OfferListing */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DBC1773217800174FA4 /* AvailabilityAttributes.h */,
+				BF682DBD1773217800174FA4 /* AvailabilityAttributes.m */,
+			);
+			path = OfferListing;
+			sourceTree = "<group>";
+		};
+		BF682DC61773217800174FA4 /* OtherCategoriesSimilarProducts */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DC71773217800174FA4 /* OtherCategoriesSimilarProduct.h */,
+				BF682DC81773217800174FA4 /* OtherCategoriesSimilarProduct.m */,
+			);
+			path = OtherCategoriesSimilarProducts;
+			sourceTree = "<group>";
+		};
+		BF682DCD1773217800174FA4 /* Promotion */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DCE1773217800174FA4 /* Summary.h */,
+				BF682DCF1773217800174FA4 /* Summary.m */,
+			);
+			path = Promotion;
+			sourceTree = "<group>";
+		};
+		BF682DE21773217800174FA4 /* SearchResultsMap */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DE31773217800174FA4 /* SearchIndex.h */,
+				BF682DE41773217800174FA4 /* SearchIndex.m */,
+			);
+			path = SearchResultsMap;
+			sourceTree = "<group>";
+		};
+		BF682DED1773217800174FA4 /* SimilarProducts */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DEE1773217800174FA4 /* SimilarProduct.h */,
+				BF682DEF1773217800174FA4 /* SimilarProduct.m */,
+			);
+			path = SimilarProducts;
+			sourceTree = "<group>";
+		};
+		BF682DF21773217800174FA4 /* SimilarViewedProducts */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DF31773217800174FA4 /* SimilarViewedProduct.h */,
+				BF682DF41773217800174FA4 /* SimilarViewedProduct.m */,
+			);
+			path = SimilarViewedProducts;
+			sourceTree = "<group>";
+		};
+		BF682DF91773217800174FA4 /* TopItemSet */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DFA1773217900174FA4 /* TopItem.h */,
+				BF682DFB1773217900174FA4 /* TopItem.m */,
+			);
+			path = TopItemSet;
+			sourceTree = "<group>";
+		};
+		BF682DFE1773217900174FA4 /* TopSellers */ = {
+			isa = PBXGroup;
+			children = (
+				BF682DFF1773217900174FA4 /* TopSeller.h */,
+				BF682E001773217900174FA4 /* TopSeller.m */,
+			);
+			path = TopSellers;
+			sourceTree = "<group>";
+		};
+		BF682E031773217900174FA4 /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				BF682E041773217900174FA4 /* Disc */,
+				BF682E071773217900174FA4 /* Disc.h */,
+				BF682E081773217900174FA4 /* Disc.m */,
+			);
+			path = Tracks;
+			sourceTree = "<group>";
+		};
+		BF682E041773217900174FA4 /* Disc */ = {
+			isa = PBXGroup;
+			children = (
+				BF682E051773217900174FA4 /* Track.h */,
+				BF682E061773217900174FA4 /* Track.m */,
+			);
+			path = Disc;
+			sourceTree = "<group>";
+		};
+		BFBE0F5317759113002D3CCC /* iBookStoreControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF682C641773199C00174FA4 /* IBookStorePagerViewController.h */,
+				BF14F9C2177594CD0097E266 /* BookDetailsTableViewController.h */,
+				BF14F9C3177594CD0097E266 /* BookDetailsTableViewController.m */,
+				BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */,
+				BF14F9BC1775936D0097E266 /* FreeiBookTableViewController.h */,
+				BF14F9BD1775936D0097E266 /* FreeiBookTableViewController.m */,
+				BF14F9BF177593850097E266 /* PaidiBookTableViewController.h */,
+				BF14F9C0177593850097E266 /* PaidiBookTableViewController.m */,
+			);
+			name = iBookStoreControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +1449,15 @@
 				BF682C631773199C00174FA4 /* first@2x.png in Resources */,
 				BF682C681773199C00174FA4 /* second.png in Resources */,
 				BF682C6A1773199C00174FA4 /* second@2x.png in Resources */,
+				BFBE0F5017758675002D3CCC /* menu.png in Resources */,
+				BFBE0F5217758707002D3CCC /* home.png in Resources */,
+				BFFC93BE1776F09500AB332E /* FacebookSDKResources.bundle in Resources */,
+				BFFC93BF1776F09500AB332E /* FBUserSettingsViewResources.bundle in Resources */,
+				AEA55ED8177C3F2900F9BD18 /* Default-568h@2x.png in Resources */,
+				AEA55EDA177C3F4F00F9BD18 /* Default@2x.png in Resources */,
+				AEA55EE2177C448200F9BD18 /* S.png in Resources */,
+				AEA55EE4177C44E000F9BD18 /* fb-button.png in Resources */,
+				AE67797A17829B9400FED5FA /* Buy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +1494,159 @@
 			files = (
 				BF682C4C1773199C00174FA4 /* main.m in Sources */,
 				BF682C501773199C00174FA4 /* AppDelegate.m in Sources */,
-				BF682C5F1773199C00174FA4 /* FirstViewController.m in Sources */,
-				BF682C661773199C00174FA4 /* SecondViewController.m in Sources */,
+				BF682C5F1773199C00174FA4 /* AmazonTableViewController.m in Sources */,
+				BF682C661773199C00174FA4 /* IBookStorePagerViewController.m in Sources */,
+				BF682C8D17731A5800174FA4 /* ECSlidingViewController.m in Sources */,
+				BF682C8E17731A5800174FA4 /* UIImage+ImageWithUIView.m in Sources */,
+				BF682C9C17731B5700174FA4 /* ParentViewController.m in Sources */,
+				BF682C9D17731B5700174FA4 /* RightAmazonMenuViewController.m in Sources */,
+				BF682CA117731B7900174FA4 /* LeftAmazonMenuViewController.m in Sources */,
+				BF682CA417731C6B00174FA4 /* InitAmazonViewController.m in Sources */,
+				BF682CEA1773215C00174FA4 /* AWSECommerceServiceClient.m in Sources */,
+				BF682CEB1773215C00174FA4 /* AmazonAuthUtils.m in Sources */,
+				BF682E131773217900174FA4 /* Accessory.m in Sources */,
+				BF682E141773217900174FA4 /* Accessories.m in Sources */,
+				BF682E151773217900174FA4 /* Argument.m in Sources */,
+				BF682E161773217900174FA4 /* Arguments.m in Sources */,
+				BF682E171773217900174FA4 /* BinParameter.m in Sources */,
+				BF682E181773217900174FA4 /* Bin.m in Sources */,
+				BF682E191773217900174FA4 /* Ancestors.m in Sources */,
+				BF682E1A1773217900174FA4 /* Children.m in Sources */,
+				BF682E1B1773217900174FA4 /* Properties.m in Sources */,
+				BF682E1C1773217900174FA4 /* BrowseNode.m in Sources */,
+				BF682E1D1773217900174FA4 /* BrowseNodeLookup.m in Sources */,
+				BF682E1E1773217900174FA4 /* BrowseNodeLookupRequest.m in Sources */,
+				BF682E1F1773217900174FA4 /* BrowseNodeLookupResponse.m in Sources */,
+				BF682E201773217900174FA4 /* BrowseNodes.m in Sources */,
+				BF682E211773217900174FA4 /* Cart.m in Sources */,
+				BF682E221773217900174FA4 /* CartAdd.m in Sources */,
+				BF682E231773217900174FA4 /* CartAddItem.m in Sources */,
+				BF682E241773217900174FA4 /* CartAddItems.m in Sources */,
+				BF682E251773217900174FA4 /* CartAddRequest.m in Sources */,
+				BF682E261773217900174FA4 /* CartAddResponse.m in Sources */,
+				BF682E271773217900174FA4 /* CartClear.m in Sources */,
+				BF682E281773217900174FA4 /* CartClearRequest.m in Sources */,
+				BF682E291773217900174FA4 /* CartClearResponse.m in Sources */,
+				BF682E2A1773217900174FA4 /* CartCreate.m in Sources */,
+				BF682E2B1773217900174FA4 /* ItemMetaData.m in Sources */,
+				BF682E2C1773217900174FA4 /* CartCreateItem.m in Sources */,
+				BF682E2D1773217900174FA4 /* CartCreateItems.m in Sources */,
+				BF682E2E1773217900174FA4 /* CartCreateRequest.m in Sources */,
+				BF682E2F1773217900174FA4 /* CartCreateResponse.m in Sources */,
+				BF682E301773217900174FA4 /* CartGet.m in Sources */,
+				BF682E311773217900174FA4 /* CartGetRequest.m in Sources */,
+				BF682E321773217900174FA4 /* CartGetResponse.m in Sources */,
+				BF682E331773217900174FA4 /* KeyValuePair.m in Sources */,
+				BF682E341773217900174FA4 /* MetaData.m in Sources */,
+				BF682E351773217900174FA4 /* CartItem.m in Sources */,
+				BF682E361773217900174FA4 /* CartItems.m in Sources */,
+				BF682E371773217900174FA4 /* CartModify.m in Sources */,
+				BF682E381773217900174FA4 /* CartModifyItem.m in Sources */,
+				BF682E391773217900174FA4 /* CartModifyItems.m in Sources */,
+				BF682E3A1773217900174FA4 /* CartModifyRequest.m in Sources */,
+				BF682E3B1773217900174FA4 /* CartModifyResponse.m in Sources */,
+				BF682E3C1773217900174FA4 /* AWSECommerceServicePortType_SOAPClient.m in Sources */,
+				BF682E3D1773217900174FA4 /* AWSECommerceServicePortType_XMLClient.m in Sources */,
+				BF682E3E1773217900174FA4 /* CollectionItem.m in Sources */,
+				BF682E3F1773217900174FA4 /* CollectionParent.m in Sources */,
+				BF682E401773217900174FA4 /* CollectionSummary.m in Sources */,
+				BF682E411773217900174FA4 /* Collection.m in Sources */,
+				BF682E421773217900174FA4 /* Collections.m in Sources */,
+				BF682E431773217900174FA4 /* CorrectedQuery.m in Sources */,
+				BF682E441773217900174FA4 /* CustomerReviews.m in Sources */,
+				BF682E451773217900174FA4 /* DecimalWithUnits.m in Sources */,
+				BF682E461773217900174FA4 /* EditorialReview.m in Sources */,
+				BF682E471773217900174FA4 /* EditorialReviews.m in Sources */,
+				BF682E481773217900174FA4 /* Error.m in Sources */,
+				BF682E491773217900174FA4 /* Errors.m in Sources */,
+				BF682E4A1773217900174FA4 /* Header.m in Sources */,
+				BF682E4B1773217900174FA4 /* HTTPHeaders.m in Sources */,
+				BF682E4C1773217900174FA4 /* Image.m in Sources */,
+				BF682E4D1773217900174FA4 /* ImageSet.m in Sources */,
+				BF682E4E1773217900174FA4 /* AlternateVersion.m in Sources */,
+				BF682E4F1773217900174FA4 /* AlternateVersions.m in Sources */,
+				BF682E501773217900174FA4 /* ImageSets.m in Sources */,
+				BF682E511773217900174FA4 /* Subjects.m in Sources */,
+				BF682E521773217900174FA4 /* VariationAttributes.m in Sources */,
+				BF682E531773217900174FA4 /* Item.m in Sources */,
+				BF682E541773217900174FA4 /* CatalogNumberList.m in Sources */,
+				BF682E551773217900174FA4 /* Creator.m in Sources */,
+				BF682E561773217900174FA4 /* EANList.m in Sources */,
+				BF682E571773217900174FA4 /* ItemDimensions.m in Sources */,
+				BF682E581773217900174FA4 /* Language.m in Sources */,
+				BF682E591773217900174FA4 /* Languages.m in Sources */,
+				BF682E5A1773217900174FA4 /* PackageDimensions.m in Sources */,
+				BF682E5B1773217900174FA4 /* UPCList.m in Sources */,
+				BF682E5C1773217900174FA4 /* ItemAttributes.m in Sources */,
+				BF682E5D1773217900174FA4 /* ItemLink.m in Sources */,
+				BF682E5E1773217900174FA4 /* ItemLinks.m in Sources */,
+				BF682E5F1773217900174FA4 /* ItemLookup.m in Sources */,
+				BF682E601773217900174FA4 /* ItemLookupRequest.m in Sources */,
+				BF682E611773217900174FA4 /* ItemLookupResponse.m in Sources */,
+				BF682E621773217900174FA4 /* Items.m in Sources */,
+				BF682E631773217900174FA4 /* ItemSearch.m in Sources */,
+				BF682E641773217900174FA4 /* ItemSearchRequest.m in Sources */,
+				BF682E651773217900174FA4 /* ItemSearchResponse.m in Sources */,
+				BF682E661773217900174FA4 /* LoyaltyPoints.m in Sources */,
+				BF682E671773217900174FA4 /* Merchant.m in Sources */,
+				BF682E681773217900174FA4 /* NewRelease.m in Sources */,
+				BF682E691773217900174FA4 /* NewReleases.m in Sources */,
+				BF682E6A1773217900174FA4 /* NonNegativeIntegerWithUnits.m in Sources */,
+				BF682E6B1773217900174FA4 /* Offer.m in Sources */,
+				BF682E6C1773217900174FA4 /* OfferAttributes.m in Sources */,
+				BF682E6D1773217900174FA4 /* AvailabilityAttributes.m in Sources */,
+				BF682E6E1773217900174FA4 /* OfferListing.m in Sources */,
+				BF682E6F1773217900174FA4 /* Offers.m in Sources */,
+				BF682E701773217900174FA4 /* OfferSummary.m in Sources */,
+				BF682E711773217900174FA4 /* OperationRequest.m in Sources */,
+				BF682E721773217900174FA4 /* OtherCategoriesSimilarProduct.m in Sources */,
+				BF682E731773217900174FA4 /* OtherCategoriesSimilarProducts.m in Sources */,
+				BF682E741773217900174FA4 /* Price.m in Sources */,
+				BF682E751773217900174FA4 /* Summary.m in Sources */,
+				BF682E761773217900174FA4 /* Promotion.m in Sources */,
+				BF682E771773217900174FA4 /* Promotions.m in Sources */,
+				BF682E781773217900174FA4 /* Property.m in Sources */,
+				BF682E791773217900174FA4 /* RelatedItem.m in Sources */,
+				BF682E7A1773217900174FA4 /* RelatedItems.m in Sources */,
+				BF682E7B1773217900174FA4 /* Request.m in Sources */,
+				BF682E7C1773217900174FA4 /* SavedForLaterItems.m in Sources */,
+				BF682E7D1773217900174FA4 /* SearchBinSet.m in Sources */,
+				BF682E7E1773217900174FA4 /* SearchBinSets.m in Sources */,
+				BF682E7F1773217900174FA4 /* SearchIndex.m in Sources */,
+				BF682E801773217900174FA4 /* SearchResultsMap.m in Sources */,
+				BF682E811773217900174FA4 /* SimilarityLookup.m in Sources */,
+				BF682E821773217900174FA4 /* SimilarityLookupRequest.m in Sources */,
+				BF682E831773217900174FA4 /* SimilarityLookupResponse.m in Sources */,
+				BF682E841773217900174FA4 /* SimilarProduct.m in Sources */,
+				BF682E851773217900174FA4 /* SimilarProducts.m in Sources */,
+				BF682E861773217900174FA4 /* SimilarViewedProduct.m in Sources */,
+				BF682E871773217900174FA4 /* SimilarViewedProducts.m in Sources */,
+				BF682E881773217900174FA4 /* StringWithUnits.m in Sources */,
+				BF682E891773217900174FA4 /* TopItem.m in Sources */,
+				BF682E8A1773217900174FA4 /* TopItemSet.m in Sources */,
+				BF682E8B1773217900174FA4 /* TopSeller.m in Sources */,
+				BF682E8C1773217900174FA4 /* TopSellers.m in Sources */,
+				BF682E8D1773217900174FA4 /* Track.m in Sources */,
+				BF682E8E1773217900174FA4 /* Disc.m in Sources */,
+				BF682E8F1773217900174FA4 /* Tracks.m in Sources */,
+				BF682E901773217900174FA4 /* VariationAttribute.m in Sources */,
+				BF682E911773217900174FA4 /* VariationDimensions.m in Sources */,
+				BF682E921773217900174FA4 /* Variations.m in Sources */,
+				BF682E931773217900174FA4 /* VariationSummary.m in Sources */,
+				BF682E9A177339FA00174FA4 /* PaidAmazonViewController.m in Sources */,
+				BF682E9D17733A0900174FA4 /* FreeAmazonViewController.m in Sources */,
+				BF04BA4817734315000C94EC /* AmazonPagerViewController.m in Sources */,
+				BF14F9BE1775936D0097E266 /* FreeiBookTableViewController.m in Sources */,
+				BF14F9C1177593850097E266 /* PaidiBookTableViewController.m in Sources */,
+				BF14F9C4177594CD0097E266 /* BookDetailsTableViewController.m in Sources */,
+				BF14F9CA1775AC210097E266 /* LookupViewController.m in Sources */,
+				BF14F9CE1775AC9D0097E266 /* Toast+UIView.m in Sources */,
+				AE8CFD231778207C007EC1CA /* AmazonWebViewController.m in Sources */,
+				AEA55ED6177C059300F9BD18 /* CustomCellClass.m in Sources */,
+				AEA55EE7177C506600F9BD18 /* NSString+stripHtml.m in Sources */,
+				AE707A421781907A0029877F /* SettingsViewController.m in Sources */,
+				AE707A45178191390029877F /* SearchViewController.m in Sources */,
+				AE707A48178192230029877F /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,10 +1765,16 @@
 		BF682C831773199C00174FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBookUniverse/eBookUniverse-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/usr/local/include";
 				INFOPLIST_FILE = "eBookUniverse/eBookUniverse-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,10 +1782,20 @@
 		BF682C841773199C00174FA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LEADS Corporation Limited";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LEADS Corporation Limited";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "eBookUniverse/eBookUniverse-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/usr/local/include";
 				INFOPLIST_FILE = "eBookUniverse/eBookUniverse-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1F64F28E-09C2-4C24-BBB7-103020EF8F3A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1F64F28E-09C2-4C24-BBB7-103020EF8F3A";
+				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -489,6 +1853,7 @@
 				BF682C841773199C00174FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF682C851773199C00174FA4 /* Build configuration list for PBXNativeTarget "eBookUniverseTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +1862,7 @@
 				BF682C871773199C00174FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
