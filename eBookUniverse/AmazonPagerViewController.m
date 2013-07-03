@@ -21,8 +21,17 @@
 #import "UIImageView+AFNetworking.h"
 #import "PaidAmazonViewController.h"
 #import "AppDelegate.h"
+#import "ItemAttributes.h"
+#import "FreeAmazonViewController.h"
 
 @interface AmazonPagerViewController ()
+
+
+{
+
+ NSMutableArray *itemX;
+
+}
 @property (assign) BOOL pageControlUsed;
 @property (assign) NSUInteger page;
 @property (assign) BOOL rotating;
@@ -481,14 +490,22 @@
             Items *items = [responseObject.items objectAtIndex:0];
          
              if (items.item.count > 0) {
-                
-                
+
+                 itemX=items.item;
+                 
+               NSMutableArray *freeEbookArray= [self freeEBook];
+                 
+                   NSLog(@"freeEbookArray%@",freeEbookArray);
+                 
             PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
+                 
+              
 
                 // Show found items in the table
                 [viewController.tableData removeAllObjects];
-                [viewController.tableData addObjectsFromArray:items.item];
-                [viewController.topTableView reloadData];
+                [viewController.tableData addObjectsFromArray:freeEbookArray];
+
+               [viewController.topTableView reloadData];
                  [self.view hideToastActivity];
                 
             } else {
@@ -517,4 +534,52 @@
 }
 
 
+-(NSMutableArray*)freeEBook{
+    
+    
+    NSMutableArray *freeEbookArray=[[NSMutableArray alloc] init];
+    
+   
+    
+    for (Item *expectedItem in itemX) {
+        
+        if (expectedItem.itemAttributes.listPrice.formattedPrice==NULL) {
+            
+            [freeEbookArray addObject:expectedItem];
+            
+//            FreeAmazonViewController *freeViewController =(FreeAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
+//            
+//            
+//            
+//            // Show found items in the table
+//            [freeViewController.tableData removeAllObjects];
+//            
+//            [freeViewController.tableData addObjectsFromArray:freeEbookArray];
+//
+//            [freeViewController.topTableViewFree reloadData];
+            
+//           
+//        }
+//        
+//        else{ [paidEbookArray addObject:expectedItem];
+//        
+//        PaidAmazonViewController *paidViewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
+//        
+//        
+//        
+//        // Show found items in the table
+//        [paidViewController.tableData removeAllObjects];
+//        [paidViewController.tableData addObjectsFromArray:paidEbookArray];
+//      
+//        
+//            [paidViewController.topTableView reloadData];}
+//    }
+    
+}
+
+
+    }
+return freeEbookArray;
+
+}
 @end

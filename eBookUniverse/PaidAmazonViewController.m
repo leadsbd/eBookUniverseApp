@@ -27,8 +27,7 @@
     AmazonWebViewController *webViewController;
     int rowPlusOne;
     int row;
-    
-    
+
 }
 
 -(void)setCell:(CustomCellClass *)cell fromSearchItem:(Item *)item;
@@ -59,9 +58,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
+    
+    
     NSLog(@"[_tableData count]: %i",[tableData count]);
     
     return [tableData count];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -118,7 +120,7 @@ return @"                  TOP 10 eBooks";
         
     }];
     
-    
+   
 
     NSString *authorName;
     for (authorName in item.itemAttributes.author) {
@@ -130,8 +132,11 @@ return @"                  TOP 10 eBooks";
     cell.title.text=[NSString stringWithFormat:@"%i. %@", rowPlusOne,item.itemAttributes.title];
  
     cell.price.text=item.itemAttributes.listPrice.formattedPrice;
-
     
+    NSLog(@"item.itemAttributes.listPrice.formattedPrice %@",item.itemAttributes.listPrice.formattedPrice);
+    
+
+ 
     
 }
 

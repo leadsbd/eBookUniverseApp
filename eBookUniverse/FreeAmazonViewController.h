@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Item.h"
 
-@interface FreeAmazonViewController : UIViewController
+@interface FreeAmazonViewController : UIViewController<UITableViewDelegate>
 
+
+@property (strong, nonatomic) IBOutlet UITableView *topTableViewFree;
+@property (strong, nonatomic) NSMutableArray *tableData;
+@property (nonatomic, retain) Item *item;
 @end
