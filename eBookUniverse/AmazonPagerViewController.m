@@ -13,7 +13,6 @@
 #import "CommonTypes.h"
 #import "SOAP11Fault.h"
 #import "Toast+UIView.h"
-//#import "ItemTableViewCell.h"
 #import "ItemAttributes.h"
 #import "BrowseNodeLookup.h"
 #import "BrowseNodeLookupRequest.h"
@@ -336,8 +335,8 @@
 -(void)getAsinByCategoryId:(NSNumber*)categoryID andCategoryTitle:(NSString*) categorytitle {
      self.navivationBar.topItem.title=categorytitle;
     
-    // start progress activity
-    [self.view makeToastActivity];
+//    // start progress activity
+//    [self.view makeToastActivity];
     
     // get shared client
     AWSECommerceServiceClient *client = [AWSECommerceServiceClient sharedClient];
@@ -347,7 +346,7 @@
     
     BrowseNodeLookup *request=[[BrowseNodeLookup alloc] init];
     
-    request.associateTag=@"wwwleadsbdcom-20";
+    request.associateTag=@"funebooks-20";
     
     request.shared=[[BrowseNodeLookupRequest alloc] init];
     request.shared.browseNodeId= [NSMutableArray arrayWithObjects:[categoryID stringValue],nil];
@@ -364,65 +363,40 @@
         [self.view hideToastActivity];
         
         
-        NSLog(@"responseObject.items.count: %i",responseObject.browseNodes.count);
-        NSLog(@"responseObject.items.count: %@",responseObject.browseNodes);
+       // NSLog(@"responseObject.items.count: %i",responseObject.browseNodes.count);
+        //NSLog(@"responseObject.items.count: %@",responseObject.browseNodes);
         
         // success handling logic
         if (responseObject.browseNodes.count > 0) {
             
             
             BrowseNodes *browseNodes = [responseObject.browseNodes objectAtIndex:0];
-            
-            // BrowseNode *browseNode=[]
-            NSLog(@" browseNodes.browseNode.count  :%i",browseNodes.browseNode.count);
+
+           // NSLog(@" browseNodes.browseNode.count  :%i",browseNodes.browseNode.count);
             
             NSMutableArray *browseNodesArray=browseNodes.browseNode;
             
             for (BrowseNode * node in browseNodesArray) {
-                
-                
-                
-                
+
                 if (node.topSellers.topSeller.count > 0) {
                     
-                    NSLog(@"Category:%@ \n node.topSellers.topSeller.count  :%i",node.name,node.topSellers.topSeller.count );
+                    //NSLog(@"Category:%@ \n node.topSellers.topSeller.count  :%i",node.name,node.topSellers.topSeller.count );
                     
                     for (TopSeller *topSeller  in node.topSellers.topSeller )
                     {
-                        NSLog(@"Top Seller: %@", topSeller.title);
+                       // NSLog(@"Top Seller: %@", topSeller.title);
                     }
                     
                     NSArray * array= [ self getTopSellersAsinArray:node.topSellers.topSeller byCategoryName:node.name];
                     
                     
                     [self searchAmazonByKeyword:array];
-                    
-                    
-                    
+
                 } else {
                     // no result
                     [self.view makeToast:@"No result" duration:3.0 position:@"center"];
                 }
-                
-                
-                
-                //                NSLog(@"node.topItemSet.count  :%i",node.topItemSet.count );
-                //
-                //                for ( topItemSet  in node.topItemSet )
-                //                {
-                //                    NSLog(@"topItemSet.topItem :%i",topItemSet.topItem.count );
-                //
-                //                    for (TopItem *topItem in topItemSet.topItem )
-                //                    {
-                //                        NSLog(@"Top Item: %@", topItem.title);
-                //
-                //                    }
-                //
-                //
-                //                }
-                //
-                
-                
+
                 
                 
             }
@@ -454,7 +428,7 @@
     
     
     
-    NSLog(@"category name %@",categoryName);
+   // NSLog(@"category name %@",categoryName);
     
     NSMutableArray * asinArray=[NSMutableArray new];
     
@@ -464,27 +438,9 @@
         
         [asinArray addObject:topSeller.asin];
     }
-    
-    //    for (topItem in topSellers) {
-    //
-    //        [asinNoArry addObject:topItem.asin];
-    //
-    //        NSLog(@"%@",asinNoArry);
-    //
-    //        NSLog(@"%@",topItem.productGroup);
-    //    }
-    
+
     return asinArray;
-    
-    //    NSLog(@"%@",asinNoArry);
-    //
-    //    // lookUpVC.delegateLookUp=self.delegate;
-    //
-    //    lookUpVC.asinNoArrryTopSeller=asinNoArry;
-    //
-    //    NSLog(@"lookUpVC.asinNoArrryTopSeller %@",lookUpVC.asinNoArrryTopSeller);
-    //
-    
+
 }
 
 #pragma mark -
@@ -493,68 +449,48 @@
 
 -(void)searchAmazonByKeyword:(NSArray *)asinArray {
     
-    // start progress activity
-    [self.view makeToastActivity];
+//    // start progress activity
+//    [self.view makeToastActivity];
     
     // get shared client
+    
     AWSECommerceServiceClient *client = [AWSECommerceServiceClient sharedClient];
     client.debug = YES;
     
     // build request
     
     ItemLookup *request = [[ItemLookup alloc] init];
-    request.associateTag = @"wwwleadsbdcom-20"; // seems any tag is ok
+    request.associateTag = @"funebooks-20"; // seems any tag is ok
     request.shared = [[ItemLookupRequest alloc] init];
     
     request.shared.idType = @"ASIN";
     
     request.shared.itemId=[NSMutableArray arrayWithArray:asinArray];
-    
-    
-    
-    
-    
-    request.shared.responseGroup = [NSMutableArray arrayWithObjects:@"ItemAttributes",@"Reviews",@"Accessories",@"BrowseNodes",@"EditorialReview",@"Images",@"ItemIds",@"Large",@"Medium",@"OfferFull",@" Offers",@"PromotionSummary",@"OfferSummary",@" RelatedItems",@"SalesRank",@"Similarities",@"Small",@"Tracks",@"VariationImages",@"Variations",@"VariationSummary",nil];
+
+    request.shared.responseGroup = [NSMutableArray arrayWithObjects:@"ItemAttributes",@"BrowseNodes",@"Images",nil];//@"ItemIds",@"Large",@"Medium",//@"Reviews",@"Accessories",@"EditorialReview",@"OfferFull",@" Offers",@"PromotionSummary",@"OfferSummary",@" RelatedItems",@"SalesRank",@"Similarities",@"Small",@"Tracks",@"VariationImages",@"Variations",@"VariationSummary",nil];
     
     // authenticate the request
     // see : http://docs.aws.amazon.com/AWSECommerceService/latest/DG/NotUsingWSSecurity.html
     [client authenticateRequest:@"ItemLookup"];
     
     [client itemLookup:request  success:^(ItemLookupResponse *responseObject) {
-        
-        
-        // stop progress activity
-        [self.view hideToastActivity];
-        
-        
-        NSLog(@"responseObject.items.count: %i",responseObject.items.count);
-        NSLog(@"responseObject.items.count: %@",responseObject.items);
-        
-        
+
         // success handling logic
         if (responseObject.items.count > 0) {
             
-            
             Items *items = [responseObject.items objectAtIndex:0];
-            
-            
-            
-            // BrowseNode *browseNode=[]
-            //NSLog(@"items.item.count  :%i",browseNodes.browseNode.count);
-            // BrowseNode *browseNode=[browseNodes.browseNode objectAtIndex:0];
-            
-            //TopItemSet *topItemSet=[browseNode.topItemSet objectAtIndex:0];
-            
-            if (items.item.count > 0) {
+         
+             if (items.item.count > 0) {
                 
                 
-                PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
+            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
 
-                
                 // Show found items in the table
                 [viewController.tableData removeAllObjects];
                 [viewController.tableData addObjectsFromArray:items.item];
                 [viewController.topTableView reloadData];
+                 [self.view hideToastActivity];
+                
             } else {
                 // no result
                 [self.view makeToast:@"No result" duration:3.0 position:@"center"];

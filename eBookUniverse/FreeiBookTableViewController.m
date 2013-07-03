@@ -13,21 +13,15 @@
 #import "UIImageView+AFNetworking.h"
 #import "BookDetailsTableViewController.h"
 #import "CustomCellClass.h"
-
-
-
-
-
-
+#import "Toast+UIView.h"
 
 
 @interface FreeiBookTableViewController ()
 
-
 {
 
     int row;
-    int mrow;
+    int rowPlusOne;
 
 }
 @property(strong) NSDictionary *jsonDict;
@@ -96,6 +90,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     
+    // start progress activity
+    [self.view makeToastActivity];
     [self jsonTapped:NULL];
 }
 
@@ -133,8 +129,8 @@
     }
         row=indexPath.row ;
        NSLog(@"row %i",row);
-        mrow=row+1;
-        NSLog(@"mrow %i",mrow);
+        rowPlusOne=row+1;
+        NSLog(@"mrow %i",rowPlusOne);
   
     //
     //    [self setCell:cell fromSearchItem:tableData[[indexPath row]]];
@@ -146,7 +142,7 @@
     
     NSString *trackName=[object objectForKey:@"trackName"];
     
-    cell.title.text=[NSString stringWithFormat:@"%i. %@",mrow,trackName];
+    cell.title.text=[NSString stringWithFormat:@"%i. %@",rowPlusOne,trackName];
     
 cell.author.text=[NSString stringWithFormat:@"By %@",[object objectForKey:@"artistName"]];
     
@@ -156,10 +152,9 @@ cell.author.text=[NSString stringWithFormat:@"By %@",[object objectForKey:@"arti
 
     
     NSString *artworkUrl100=[object objectForKey:@"artworkUrl100"];
-   // __weak UITableViewCell *weakCell = cell;
     
-    //imageView=cell.imageView;//(UIImageView *)[weakCell viewWithTag:100];
-    
+    //__weak typeof(cell) weakCell = cell;
+
     [cell.eBookImage setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:artworkUrl100]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
         
         if(image)
@@ -167,9 +162,7 @@ cell.author.text=[NSString stringWithFormat:@"By %@",[object objectForKey:@"arti
         {
             
             cell.eBookImage.image=image;
-            //imageView.image=image;
-            //[weakCell setNeedsDisplay];
-            
+
             [cell setNeedsLayout];
         }
         
@@ -178,7 +171,8 @@ cell.author.text=[NSString stringWithFormat:@"By %@",[object objectForKey:@"arti
         
     }];
     
-    
+    // stop progress activity
+    [self.view hideToastActivity];
     return cell;
 }
 
@@ -190,12 +184,6 @@ cell.author.text=[NSString stringWithFormat:@"By %@",[object objectForKey:@"arti
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-
-
-//-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    [self performSegueWithIdentifier: @"iBookDetail" sender: self];
-//}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

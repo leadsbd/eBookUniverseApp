@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LookupViewController.h"
+#import "Item.h"
 
 
-@interface PaidAmazonViewController : UIViewController<UITableViewDelegate,LookupViewControllerDelegate>
+
+@interface PaidAmazonViewController : UIViewController<UITableViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UITableView *topTableView;

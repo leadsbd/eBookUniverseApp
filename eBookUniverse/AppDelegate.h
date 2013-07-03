@@ -9,19 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-//@class LoginViewController;
-
-
-
-
-
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) BOOL firstTime;
-
-//@property (strong, nonatomic) LoginViewController *loginViewController;
-
 
 // FBSample logic
 // In this sample the app delegate maintains a property for the current

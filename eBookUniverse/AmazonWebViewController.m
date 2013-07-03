@@ -88,14 +88,16 @@
     
      UIImageView *imageV=[[UIImageView alloc]init];
     
+    
+    __weak typeof(imageV) weakImageV = imageV;
 
     [imageV setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
         
         if(image)
             
         {
-            imageV.image=image;
-            [imageV setNeedsLayout];
+            weakImageV.image=image;
+            [weakImageV setNeedsLayout];
         }
         
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
@@ -110,7 +112,7 @@
     
     
     
-    UIImage *secondImage=[UIImage imageNamed:@"home"];
+   // UIImage *secondImage=[UIImage imageNamed:@"home"];
     
     NSString *secondMsg=@"It's just an great App";
     

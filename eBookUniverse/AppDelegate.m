@@ -8,13 +8,17 @@
 
 #import "AppDelegate.h"
 
+
 @implementation AppDelegate
 @synthesize  firstTime;
-//@synthesize session;
-//@synthesize loginViewController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+
+    
+ //[AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     // Override point for customization after application launch.
     return YES;
 }

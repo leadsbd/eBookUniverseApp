@@ -59,10 +59,7 @@
         self.titleLable.text  = [self.detailItem objectForKey:@"trackName"];
         
         NSLog(@" [self.detailItem objectForKey: %@", [self.detailItem objectForKey:@"trackName"]);
-       
-          //self.detailDescriptionLabel.text  =[NSString stringWithFormat:@"%@ %@",@"User Avg. Rating",[[self.detailItem objectForKey:@"averageUserRating"]stringValue]];
-        
-        
+
         
         NSString *atrStr=[self.detailItem objectForKey:@"description"];
         NSString* stripped = [atrStr stripHtml];
@@ -74,8 +71,8 @@
        
      NSString *artworkUrl60=[self.detailItem objectForKey:@"artworkUrl60"];
         
+        //__weak typeof(self) weakSelf = self;
 
-//
       [ self.coverImageView setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:artworkUrl60]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
        
            
@@ -109,11 +106,6 @@
    
        [self configureView];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -123,19 +115,6 @@
 }
 
 
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([[segue identifier] isEqualToString:@"webView"]) {
-//        
-//       // NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//  NSString *trackUrl=[self.detailItem objectForKey:@"trackViewUrl"];
-//        
-//        [[segue destinationViewController]setTruckurl:trackUrl];
-//        
-//        //[[segue destinationViewController] setDetailItem:trackUrl];
-//    }
-//}
 - (IBAction)openEbookInSafari:(id)sender {
     
     
@@ -168,43 +147,7 @@
 
     // Present Activity View Controller
     [self presentViewController:vc animated:YES completion:nil];
-    
-    
-//    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:nil message:@"Shared Successfully" delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
-//    [alert show];
-//    
-//    UIImageView *imageV=[[UIImageView alloc]init];
-//    
-//    
-//    [imageV setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-//        
-//        if(image)
-//            
-//        {
-//            imageV.image=image;
-//            [imageV setNeedsLayout];
-//        }
-//        
-//    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-//        NSLog(@"Fail");
-//        
-//    }];
-//    
-    
 
-    
-    //UIImage *secondImage=[UIImage imageNamed:@"home"];
-    
-
-    
-    
-    
-    //
-    //    NSString *caption =item.itemAttributes.title;
-    //
-    //
-    //    NSArray *activityItems = @[caption,imageV.image,secondMsg];
-    
 
 }
 @end

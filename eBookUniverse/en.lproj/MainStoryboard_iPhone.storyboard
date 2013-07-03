@@ -484,7 +484,7 @@ obviously great advantage!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ZaH-2r-pk3" detailTextLabel="R3j-om-yXL" style="IBUITableViewCellStyleSubtitle" id="ZpK-92-Eue">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="ZaH-2r-pk3" style="IBUITableViewCellStyleDefault" id="ZpK-92-Eue">
                                 <rect key="frame" x="0.0" y="46" width="320" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -492,17 +492,10 @@ obviously great advantage!</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZaH-2r-pk3">
-                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R3j-om-yXL">
-                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -642,7 +635,7 @@ obviously great advantage!</string>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="delegate" destination="FiK-Cj-K3h" id="S5B-mz-7SK"/>
+                                    <outlet property="delegate" destination="WTk-6d-mDs" id="AbV-CI-zb9"/>
                                 </connections>
                             </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0pX-4d-qTM">
@@ -691,7 +684,7 @@ obviously great advantage!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ju1-l3-WYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3599" y="-73"/>
+            <point key="canvasLocation" x="3472" y="-73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nX9-cq-q7B">
@@ -737,103 +730,6 @@ obviously great advantage!</string>
         <image name="menu.png" width="19" height="19"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="AboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
-        </class>
-        <class className="AmazonPagerViewController" superclassName="ParentViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmazonPagerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="outlet" name="navivationBar" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="pageControll" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="AmazonWebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmazonWebViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doneButton:"/>
-                <relationship kind="action" name="shareButton:"/>
-                <relationship kind="outlet" name="amazonWebView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="goBack" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="goForward" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="BookDetailsTableViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BookDetailsTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="openEbookInSafari:"/>
-                <relationship kind="action" name="shareButton:"/>
-                <relationship kind="outlet" name="bookDescriptionLable" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="buyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="coverImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="eBookDescriptionTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="price" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLable" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CustomCellClass" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCellClass.h"/>
-            <relationships>
-                <relationship kind="outlet" name="author" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="eBookImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="price" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ECSlidingViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
-        </class>
-        <class className="FreeAmazonViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FreeAmazonViewController.h"/>
-        </class>
-        <class className="FreeiBookTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FreeiBookTableViewController.h"/>
-        </class>
-        <class className="IBookStorePagerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBookStorePagerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="outlet" name="pageControll" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="InitAmazonViewController" superclassName="ECSlidingViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitAmazonViewController.h"/>
-        </class>
-        <class className="LeftAmazonMenuViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeftAmazonMenuViewController.h"/>
-        </class>
-        <class className="PaidAmazonViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PaidAmazonViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="topTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="PaidiBookTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PaidiBookTableViewController.h"/>
-        </class>
-        <class className="ParentViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParentViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="revealMenuLeft:"/>
-                <relationship kind="action" name="revealMenuRight:"/>
-            </relationships>
-        </class>
-        <class className="RightAmazonMenuViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RightAmazonMenuViewController.h"/>
-        </class>
-        <class className="SearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBarDemo" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="SettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

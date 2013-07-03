@@ -12,6 +12,8 @@
 #import "BookDetailsTableViewController.h"
 #import "CustomCellClass.h"
 
+#import "Toast+UIView.h"
+
 
 @interface PaidiBookTableViewController ()
 
@@ -85,6 +87,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // start progress activity
+    [self.view makeToastActivity];
     
     [self jsonTapped:NULL];
 }
@@ -141,10 +145,9 @@
 
     
     NSString *artworkUrl100=[object objectForKey:@"artworkUrl100"];
-    //__weak UITableViewCell *weakCell = cell;
     
-    //imageView=cell.imageView;//(UIImageView *)[weakCell viewWithTag:100];
-    
+      //__weak typeof(cell) weakCell = cell;
+
     [cell.eBookImage setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:artworkUrl100]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
         
         if(image)
@@ -152,8 +155,7 @@
         {
             
             cell.eBookImage.image=image;
-            
-            
+
             imageView.image=image;
             //[weakCell setNeedsDisplay];
             
@@ -167,6 +169,9 @@
     
     
     
+    // stop progress activity
+    [self.view hideToastActivity];
+    
     return cell;
 }
 
@@ -179,30 +184,14 @@
     return YES;
 }
 
-
-//-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    [self performSegueWithIdentifier: @"iBookDetail" sender: self];
-//}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 
-//    
-//   NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-//    
-//    CustomCellClass *cell =(CustomCellClass*) [self.tableView cellForRowAtIndexPath:selectedIndexPath];
-    
-    
     if ([[segue identifier] isEqualToString:@"iBookPaidDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDictionary *object = paidEbooks[indexPath.row];
         
-        [[segue destinationViewController] setDetailItem:object];// withImage:[cell.eBookImage.image copy]];
-       // [[segue destinationViewController]setCVImage: [imageView.image copy] ];
-     
-        
-
+        [[segue destinationViewController] setDetailItem:object]; 
     }
 }
 

@@ -12,6 +12,7 @@
 
 
 @property (strong, nonatomic) NSDictionary *detailItem;
+
 @property (strong, nonatomic) IBOutlet UIImageView *coverImageView;
 @property (strong, nonatomic) IBOutlet UILabel *titleLable;
 @property (strong, nonatomic) IBOutlet UILabel *bookDescriptionLable;

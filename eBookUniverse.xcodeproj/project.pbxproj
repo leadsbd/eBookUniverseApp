@@ -23,24 +23,16 @@
 		BF14F9BE1775936D0097E266 /* FreeiBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9BD1775936D0097E266 /* FreeiBookTableViewController.m */; };
 		BF14F9C1177593850097E266 /* PaidiBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C0177593850097E266 /* PaidiBookTableViewController.m */; };
 		BF14F9C4177594CD0097E266 /* BookDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C3177594CD0097E266 /* BookDetailsTableViewController.m */; };
-		BF14F9CA1775AC210097E266 /* LookupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C91775AC210097E266 /* LookupViewController.m */; };
 		BF14F9CE1775AC9D0097E266 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9CD1775AC9D0097E266 /* Toast+UIView.m */; };
 		BF682C401773199C00174FA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C3F1773199C00174FA4 /* UIKit.framework */; };
 		BF682C421773199C00174FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C411773199C00174FA4 /* Foundation.framework */; };
 		BF682C4A1773199C00174FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF682C481773199C00174FA4 /* InfoPlist.strings */; };
 		BF682C4C1773199C00174FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C4B1773199C00174FA4 /* main.m */; };
 		BF682C501773199C00174FA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C4F1773199C00174FA4 /* AppDelegate.m */; };
-		BF682C521773199C00174FA4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C511773199C00174FA4 /* Default.png */; };
-		BF682C541773199C00174FA4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C531773199C00174FA4 /* Default@2x.png */; };
-		BF682C561773199C00174FA4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C551773199C00174FA4 /* Default-568h@2x.png */; };
 		BF682C591773199C00174FA4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF682C571773199C00174FA4 /* MainStoryboard_iPhone.storyboard */; };
 		BF682C5C1773199C00174FA4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF682C5A1773199C00174FA4 /* MainStoryboard_iPad.storyboard */; };
 		BF682C5F1773199C00174FA4 /* AmazonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C5E1773199C00174FA4 /* AmazonTableViewController.m */; };
-		BF682C611773199C00174FA4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C601773199C00174FA4 /* first.png */; };
-		BF682C631773199C00174FA4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C621773199C00174FA4 /* first@2x.png */; };
 		BF682C661773199C00174FA4 /* IBookStorePagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */; };
-		BF682C681773199C00174FA4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C671773199C00174FA4 /* second.png */; };
-		BF682C6A1773199C00174FA4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF682C691773199C00174FA4 /* second@2x.png */; };
 		BF682C721773199C00174FA4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C711773199C00174FA4 /* SenTestingKit.framework */; };
 		BF682C731773199C00174FA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C3F1773199C00174FA4 /* UIKit.framework */; };
 		BF682C741773199C00174FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C411773199C00174FA4 /* Foundation.framework */; };
@@ -236,8 +228,8 @@
 		AE8CFD221778207C007EC1CA /* AmazonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonWebViewController.h; sourceTree = "<group>"; };
 		AEA55ED4177C059300F9BD18 /* CustomCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellClass.h; sourceTree = "<group>"; };
 		AEA55ED5177C059300F9BD18 /* CustomCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellClass.m; sourceTree = "<group>"; };
-		AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		AEA55EE1177C448200F9BD18 /* S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S.png; sourceTree = "<group>"; };
 		AEA55EE3177C44E000F9BD18 /* fb-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-button.png"; sourceTree = "<group>"; };
 		AEA55EE5177C506500F9BD18 /* NSString+stripHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stripHtml.h"; sourceTree = "<group>"; };
@@ -252,8 +244,6 @@
 		BF14F9C3177594CD0097E266 /* BookDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailsTableViewController.m; sourceTree = "<group>"; };
 		BF14F9C6177595940097E266 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
 		BF14F9C7177595F30097E266 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		BF14F9C81775AC210097E266 /* LookupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookupViewController.h; sourceTree = "<group>"; };
-		BF14F9C91775AC210097E266 /* LookupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookupViewController.m; sourceTree = "<group>"; };
 		BF14F9CC1775AC9D0097E266 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
 		BF14F9CD1775AC9D0097E266 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
 		BF682C3C1773199C00174FA4 /* eBookUniverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBookUniverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,19 +256,12 @@
 		BF682C4D1773199C00174FA4 /* eBookUniverse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eBookUniverse-Prefix.pch"; sourceTree = "<group>"; };
 		BF682C4E1773199C00174FA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF682C4F1773199C00174FA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF682C511773199C00174FA4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BF682C531773199C00174FA4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BF682C551773199C00174FA4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF682C581773199C00174FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		BF682C5B1773199C00174FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		BF682C5D1773199C00174FA4 /* AmazonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonTableViewController.h; sourceTree = "<group>"; };
 		BF682C5E1773199C00174FA4 /* AmazonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonTableViewController.m; sourceTree = "<group>"; };
-		BF682C601773199C00174FA4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		BF682C621773199C00174FA4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		BF682C641773199C00174FA4 /* IBookStorePagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBookStorePagerViewController.h; sourceTree = "<group>"; };
 		BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBookStorePagerViewController.m; sourceTree = "<group>"; };
-		BF682C671773199C00174FA4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		BF682C691773199C00174FA4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		BF682C701773199C00174FA4 /* eBookUniverseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBookUniverseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF682C711773199C00174FA4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF682C791773199C00174FA4 /* eBookUniverseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eBookUniverseTests-Info.plist"; sourceTree = "<group>"; };
@@ -615,9 +598,6 @@
 			children = (
 				AE8CFD221778207C007EC1CA /* AmazonWebViewController.h */,
 				AE8CFD211778207C007EC1CA /* AmazonWebViewController.m */,
-				BF14F9CB1775AC9D0097E266 /* Toast */,
-				BF14F9C81775AC210097E266 /* LookupViewController.h */,
-				BF14F9C91775AC210097E266 /* LookupViewController.m */,
 				BF682E98177339F800174FA4 /* PaidAmazonViewController.h */,
 				BF682E99177339F900174FA4 /* PaidAmazonViewController.m */,
 				BF682E9B17733A0800174FA4 /* FreeAmazonViewController.h */,
@@ -638,6 +618,7 @@
 				AE707A44178191390029877F /* SearchViewController.m */,
 				AE707A46178192230029877F /* AboutViewController.h */,
 				AE707A47178192230029877F /* AboutViewController.m */,
+				BF14F9CB1775AC9D0097E266 /* Toast */,
 			);
 			name = AmazonContrllers;
 			sourceTree = "<group>";
@@ -678,11 +659,8 @@
 		BF682C331773199C00174FA4 = {
 			isa = PBXGroup;
 			children = (
-				AE707A491781A68D0029877F /* libPico.a */,
 				AEA55EE5177C506500F9BD18 /* NSString+stripHtml.h */,
 				AEA55EE6177C506500F9BD18 /* NSString+stripHtml.m */,
-				AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */,
-				AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */,
 				AEA55ED4177C059300F9BD18 /* CustomCellClass.h */,
 				AEA55ED5177C059300F9BD18 /* CustomCellClass.m */,
 				BF682C451773199C00174FA4 /* eBookUniverse */,
@@ -704,6 +682,7 @@
 		BF682C3E1773199C00174FA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE707A491781A68D0029877F /* libPico.a */,
 				BFFC93B81776F03E00AB332E /* Social.framework */,
 				BFFC93B61776F03400AB332E /* Security.framework */,
 				BFFC93B41776F02C00AB332E /* libsqlite3.dylib */,
@@ -730,8 +709,6 @@
 				BF682C8817731A3900174FA4 /* ECSlidingViewController */,
 				BF04BA4517734302000C94EC /* AmazonContrllers */,
 				BFBE0F5317759113002D3CCC /* iBookStoreControllers */,
-				BFBE0F5117758707002D3CCC /* home.png */,
-				BFBE0F4F17758675002D3CCC /* menu.png */,
 				BF682CE51773214A00174FA4 /* AWSECommerceService */,
 				BF682C4E1773199C00174FA4 /* AppDelegate.h */,
 				BF682C4F1773199C00174FA4 /* AppDelegate.m */,
@@ -739,10 +716,6 @@
 				BF682C5A1773199C00174FA4 /* MainStoryboard_iPad.storyboard */,
 				BF682C5D1773199C00174FA4 /* AmazonTableViewController.h */,
 				BF682C5E1773199C00174FA4 /* AmazonTableViewController.m */,
-				BF682C601773199C00174FA4 /* first.png */,
-				BF682C621773199C00174FA4 /* first@2x.png */,
-				BF682C671773199C00174FA4 /* second.png */,
-				BF682C691773199C00174FA4 /* second@2x.png */,
 				BF682C461773199C00174FA4 /* Supporting Files */,
 			);
 			path = eBookUniverse;
@@ -751,6 +724,10 @@
 		BF682C461773199C00174FA4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE0F5117758707002D3CCC /* home.png */,
+				AEA55ED9177C3F4F00F9BD18 /* Default@2x.png */,
+				AEA55ED7177C3F2800F9BD18 /* Default-568h@2x.png */,
+				BFBE0F4F17758675002D3CCC /* menu.png */,
 				AE67797917829B9400FED5FA /* Buy.png */,
 				AEA55EE3177C44E000F9BD18 /* fb-button.png */,
 				AEA55EE1177C448200F9BD18 /* S.png */,
@@ -758,9 +735,6 @@
 				BF682C481773199C00174FA4 /* InfoPlist.strings */,
 				BF682C4B1773199C00174FA4 /* main.m */,
 				BF682C4D1773199C00174FA4 /* eBookUniverse-Prefix.pch */,
-				BF682C511773199C00174FA4 /* Default.png */,
-				BF682C531773199C00174FA4 /* Default@2x.png */,
-				BF682C551773199C00174FA4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1440,15 +1414,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF682C4A1773199C00174FA4 /* InfoPlist.strings in Resources */,
-				BF682C521773199C00174FA4 /* Default.png in Resources */,
-				BF682C541773199C00174FA4 /* Default@2x.png in Resources */,
-				BF682C561773199C00174FA4 /* Default-568h@2x.png in Resources */,
 				BF682C591773199C00174FA4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BF682C5C1773199C00174FA4 /* MainStoryboard_iPad.storyboard in Resources */,
-				BF682C611773199C00174FA4 /* first.png in Resources */,
-				BF682C631773199C00174FA4 /* first@2x.png in Resources */,
-				BF682C681773199C00174FA4 /* second.png in Resources */,
-				BF682C6A1773199C00174FA4 /* second@2x.png in Resources */,
 				BFBE0F5017758675002D3CCC /* menu.png in Resources */,
 				BFBE0F5217758707002D3CCC /* home.png in Resources */,
 				BFFC93BE1776F09500AB332E /* FacebookSDKResources.bundle in Resources */,
@@ -1639,7 +1606,6 @@
 				BF14F9BE1775936D0097E266 /* FreeiBookTableViewController.m in Sources */,
 				BF14F9C1177593850097E266 /* PaidiBookTableViewController.m in Sources */,
 				BF14F9C4177594CD0097E266 /* BookDetailsTableViewController.m in Sources */,
-				BF14F9CA1775AC210097E266 /* LookupViewController.m in Sources */,
 				BF14F9CE1775AC9D0097E266 /* Toast+UIView.m in Sources */,
 				AE8CFD231778207C007EC1CA /* AmazonWebViewController.m in Sources */,
 				AEA55ED6177C059300F9BD18 /* CustomCellClass.m in Sources */,
