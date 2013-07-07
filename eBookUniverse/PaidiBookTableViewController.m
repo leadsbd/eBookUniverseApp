@@ -64,7 +64,7 @@
                                                         NSLog(@"jsondict %@",jsonDict);
                                                                                                              
                                                         paidEbooks= [self getFreePaidEbooks];
-                                                         self.title =  [NSString stringWithFormat:@"iBookStore Paid: %i", self.paidEbooks.count];
+                                                         self.title =  [NSString stringWithFormat:@"iBooks: %i", self.paidEbooks.count];
                                                           NSLog(@"%i free ebooks",freeEbooks.count );
                                                             [self.tableView reloadData];
                                                     }
@@ -131,6 +131,10 @@
    NSLog(@"row %i",row);
     mrow=row+1;
     NSLog(@"mrow %i",mrow);
+    
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    
+    [tableView setSeparatorColor:[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:0.3]];
 
     NSDictionary *object = paidEbooks[indexPath.row];
     

@@ -27,64 +27,16 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="167" sectionHeaderHeight="22" sectionFooterHeight="22" id="ueY-Mf-o5z">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="j69-C1-kBd" customClass="CustomCellClass">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="167"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XsW-4B-rBe">
-                                                    <rect key="frame" x="134" y="20" width="186" height="60"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r0O-Zi-jPk">
-                                                    <rect key="frame" x="129" y="88" width="171" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KWw-oR-tGG">
-                                                    <rect key="frame" x="129" y="125" width="117" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="sWg-AA-ktc">
-                                                    <rect key="frame" x="12" y="20" width="88" height="126"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <outlet property="author" destination="r0O-Zi-jPk" id="dgf-Ba-gvS"/>
-                                            <outlet property="price" destination="KWw-oR-tGG" id="JBP-wt-yMq"/>
-                                            <outlet property="title" destination="XsW-4B-rBe" id="Xc5-ut-6QO"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="4lm-eq-C8P" id="aFt-Sc-POp"/>
-                                    <outlet property="delegate" destination="4lm-eq-C8P" id="Nlc-PE-G46"/>
-                                </connections>
-                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Free eBooks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NVT-JQ-nUd">
+                                <rect key="frame" x="131" y="168" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="topTableViewFree" destination="ueY-Mf-o5z" id="D2d-QH-9D6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18u-wU-gUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +189,7 @@ obviously great advantage!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="iBookStore" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="iBooks" image="second" id="6"/>
                     <connections>
                         <outlet property="scrollView" destination="wLE-aw-jYs" id="uaq-gk-SkV"/>
                     </connections>
@@ -448,7 +400,7 @@ obviously great advantage!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Whd-Ud-jYx">
-                        <barButtonItem key="rightBarButtonItem" title="Share!" id="cwZ-rc-ZYy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="cwZ-rc-ZYy">
                             <connections>
                                 <action selector="shareButton:" destination="KRn-1Y-2tx" id="MEN-D9-cc4"/>
                             </connections>
@@ -465,6 +417,35 @@ obviously great advantage!</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ht6-XS-c9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2913" y="762"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="7Q6-zp-Fgx">
+            <objects>
+                <tableViewController id="L2O-1U-IkG" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="aWh-JG-Xpk">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="8Si-pH-be5">
+                                <rect key="frame" x="0.0" y="22" width="320" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L2O-1U-IkG" id="FVf-fl-02H"/>
+                            <outlet property="delegate" destination="L2O-1U-IkG" id="K9C-2T-b2n"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7M-jP-KhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3289" y="782"/>
         </scene>
         <!--Login View Controller - Settings-->
         <scene sceneID="EvF-4y-fkZ">
@@ -528,23 +509,23 @@ obviously great advantage!</string>
         <scene sceneID="YP5-c6-Fde">
             <objects>
                 <tableViewController storyboardIdentifier="leftMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bTD-55-mEQ" customClass="LeftAmazonMenuViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="QgZ-eU-YYu">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="33" sectionHeaderHeight="10" sectionFooterHeight="10" id="QgZ-eU-YYu">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="ZaH-2r-pk3" style="IBUITableViewCellStyleDefault" id="ZpK-92-Eue">
-                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="ZaH-2r-pk3" rowHeight="33" style="IBUITableViewCellStyleDefault" id="ZpK-92-Eue">
+                                <rect key="frame" x="0.0" y="46" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <rect key="frame" x="10" y="1" width="300" height="32"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZaH-2r-pk3">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="32"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                            <color key="textColor" red="0.08341159863" green="0.34325759430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -616,6 +597,7 @@ obviously great advantage!</string>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.23154590620000001" green="0.50825131089999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -691,19 +673,19 @@ obviously great advantage!</string>
                                 <rect key="frame" x="0.0" y="460" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" id="g4j-K2-vFW">
+                                    <barButtonItem title="Previous" id="g4j-K2-vFW">
                                         <connections>
                                             <action selector="goBack" destination="NHd-xv-ccX" id="nKs-dS-VFf"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="HPz-hP-LAf"/>
-                                    <barButtonItem title="Item" id="tLV-yY-VMT">
+                                    <barButtonItem systemItem="refresh" id="tLV-yY-VMT">
                                         <connections>
                                             <action selector="reload" destination="NHd-xv-ccX" id="zhm-um-Lce"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="r9X-Fj-MgF"/>
-                                    <barButtonItem title="Item" id="m8O-ti-Wft">
+                                    <barButtonItem title="Next" id="m8O-ti-Wft">
                                         <connections>
                                             <action selector="goForward" destination="NHd-xv-ccX" id="guB-Vg-yjp"/>
                                         </connections>
@@ -719,7 +701,7 @@ obviously great advantage!</string>
                                 <action selector="doneButton:" destination="WTk-6d-mDs" id="zdn-If-QTA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Share!" id="coc-A9-8Xp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="coc-A9-8Xp">
                             <connections>
                                 <action selector="shareButton:" destination="WTk-6d-mDs" id="J1U-th-ajh"/>
                             </connections>
@@ -779,12 +761,109 @@ obviously great advantage!</string>
         <image name="menu.png" width="19" height="19"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="AboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
+        </class>
+        <class className="AmazonPagerViewController" superclassName="ParentViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmazonPagerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="outlet" name="navivationBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="pageControll" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="AmazonWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AmazonWebViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneButton:"/>
+                <relationship kind="action" name="shareButton:"/>
+                <relationship kind="outlet" name="amazonWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="goBack" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="goForward" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="BookDetailsTableViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BookDetailsTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="openEbookInSafari:"/>
+                <relationship kind="action" name="shareButton:"/>
+                <relationship kind="outlet" name="bookDescriptionLable" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="buyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="coverImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="eBookDescriptionTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="price" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLable" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CustomCellClass" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCellClass.h"/>
+            <relationships>
+                <relationship kind="outlet" name="author" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="eBookImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="price" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ECSlidingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ECSlidingViewController.h"/>
+        </class>
+        <class className="FreeAmazonViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FreeAmazonViewController.h"/>
+        </class>
+        <class className="FreeiBookTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FreeiBookTableViewController.h"/>
+        </class>
+        <class className="IBookStorePagerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBookStorePagerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="outlet" name="pageControll" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="InitAmazonViewController" superclassName="ECSlidingViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InitAmazonViewController.h"/>
+        </class>
+        <class className="LeftAmazonMenuViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeftAmazonMenuViewController.h"/>
+        </class>
+        <class className="PaidAmazonViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PaidAmazonViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="topTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="PaidiBookTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PaidiBookTableViewController.h"/>
+        </class>
+        <class className="ParentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParentViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="revealMenuLeft:"/>
+                <relationship kind="action" name="revealMenuRight:"/>
+            </relationships>
+        </class>
+        <class className="RightAmazonMenuViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RightAmazonMenuViewController.h"/>
+        </class>
+        <class className="SearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchBarDemo" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="MbU-bU-fCc"/>
+        <segue reference="Jrc-71-mfq"/>
     </inferredMetricsTieBreakers>
 </document>

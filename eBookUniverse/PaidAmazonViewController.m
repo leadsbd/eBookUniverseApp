@@ -83,6 +83,11 @@
     NSLog(@"mrow %i",rowPlusOne);
     
     
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    
+    [tableView setSeparatorColor:[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:0.3]];
+    
+    
     [self setCell:cell fromSearchItem:tableData[[indexPath row]]];
     
     // stop progress activity

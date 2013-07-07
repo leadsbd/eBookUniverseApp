@@ -491,11 +491,11 @@
          
              if (items.item.count > 0) {
 
-                 itemX=items.item;
+                // itemX=items.item;
                  
-               NSMutableArray *freeEbookArray= [self freeEBook];
-                 
-                   NSLog(@"freeEbookArray%@",freeEbookArray);
+//               NSMutableArray *freeEbookArray= [self freeEBook];
+//                 
+//                   NSLog(@"freeEbookArray%@",freeEbookArray);
                  
             PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
                  
@@ -503,7 +503,7 @@
 
                 // Show found items in the table
                 [viewController.tableData removeAllObjects];
-                [viewController.tableData addObjectsFromArray:freeEbookArray];
+                [viewController.tableData addObjectsFromArray:items.item];
 
                [viewController.topTableView reloadData];
                  [self.view hideToastActivity];
@@ -533,53 +533,53 @@
     }];
 }
 
-
--(NSMutableArray*)freeEBook{
-    
-    
-    NSMutableArray *freeEbookArray=[[NSMutableArray alloc] init];
-    
-   
-    
-    for (Item *expectedItem in itemX) {
-        
-        if (expectedItem.itemAttributes.listPrice.formattedPrice==NULL) {
-            
-            [freeEbookArray addObject:expectedItem];
-            
-//            FreeAmazonViewController *freeViewController =(FreeAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
-//            
-//            
-//            
-//            // Show found items in the table
-//            [freeViewController.tableData removeAllObjects];
-//            
-//            [freeViewController.tableData addObjectsFromArray:freeEbookArray];
 //
-//            [freeViewController.topTableViewFree reloadData];
-            
-//           
-//        }
+//-(NSMutableArray*)freeEBook{
+//    
+//    
+//    NSMutableArray *freeEbookArray=[[NSMutableArray alloc] init];
+//    
+//   
+//    
+//    for (Item *expectedItem in itemX) {
 //        
-//        else{ [paidEbookArray addObject:expectedItem];
-//        
-//        PaidAmazonViewController *paidViewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
-//        
-//        
-//        
-//        // Show found items in the table
-//        [paidViewController.tableData removeAllObjects];
-//        [paidViewController.tableData addObjectsFromArray:paidEbookArray];
-//      
-//        
-//            [paidViewController.topTableView reloadData];}
+//        if (expectedItem.itemAttributes.listPrice.formattedPrice==NULL) {
+//            
+//            [freeEbookArray addObject:expectedItem];
+//            
+////            FreeAmazonViewController *freeViewController =(FreeAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
+////            
+////            
+////            
+////            // Show found items in the table
+////            [freeViewController.tableData removeAllObjects];
+////            
+////            [freeViewController.tableData addObjectsFromArray:freeEbookArray];
+////
+////            [freeViewController.topTableViewFree reloadData];
+//            
+////           
+////        }
+////        
+////        else{ [paidEbookArray addObject:expectedItem];
+////        
+////        PaidAmazonViewController *paidViewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
+////        
+////        
+////        
+////        // Show found items in the table
+////        [paidViewController.tableData removeAllObjects];
+////        [paidViewController.tableData addObjectsFromArray:paidEbookArray];
+////      
+////        
+////            [paidViewController.topTableView reloadData];}
+////    }
+//    
+//}
+//
+//
 //    }
-    
-}
-
-
-    }
-return freeEbookArray;
-
-}
+//return freeEbookArray;
+//
+//}
 @end

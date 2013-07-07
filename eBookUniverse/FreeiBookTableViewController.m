@@ -66,7 +66,7 @@
                                                         
                                                         
                                                         freeEbooks= [self getFreePaidEbooks];
-                                                        self.title =  [NSString stringWithFormat:@"iBookStore Free: %i", self.freeEbooks.count];
+                                                        self.title =  [NSString stringWithFormat:@"iBooks: %i", self.freeEbooks.count];
                                                         NSLog(@"%i free ebooks",freeEbooks.count );
                                                         [self.tableView reloadData];
                                                     }
@@ -135,7 +135,9 @@
     //
     //    [self setCell:cell fromSearchItem:tableData[[indexPath row]]];
     
+    [tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
     
+    [tableView setSeparatorColor:[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:0.3]];
     
     
     NSDictionary *object = freeEbooks[indexPath.row];
