@@ -72,7 +72,7 @@
                                                     }
      // 4
                                                     failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-                                                        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error Retrieving Weather"
+                                                        UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error "
                                                                                                      message:[NSString stringWithFormat:@"%@",error]
                                                                                                     delegate:nil
                                                                                            cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -189,7 +189,7 @@ cell.author.text=[NSString stringWithFormat:@"By %@",[object objectForKey:@"arti
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"iBookDetail"]) {
+    if ([[segue identifier] isEqualToString:@"iBookFreeDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDictionary *object = freeEbooks[indexPath.row];
         

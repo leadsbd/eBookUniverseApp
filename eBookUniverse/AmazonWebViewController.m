@@ -16,7 +16,7 @@
 
 @interface AmazonWebViewController ()
 
-
+@property(nonatomic,copy) NSArray *excludedActivityTypes;
 @end
 
 @implementation AmazonWebViewController
@@ -25,6 +25,7 @@
 @synthesize goBack;
 @synthesize goForward;
 @synthesize item;
+@synthesize excludedActivityTypes;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -128,19 +129,36 @@
     
     
     // Initialize Activity View Controller
-    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-    
-    [vc setCompletionHandler:^(NSString *activityType, BOOL completed) {
-        
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:nil message:@"Shared Successfully" delegate:self cancelButtonTitle:@"Done" otherButtonTitles: nil];
-        [alert show];
-        NSLog(@"completed dialog - activity: %@ - finished flag: %d", activityType, completed);
-    }];
+   UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
 
-    
-    // Present Activity View Controller
+//    if (vc) {
+//        
+//  
+//    
+//    [vc setCompletionHandler:^(NSString *activityType, BOOL completed) {
+//        
+//        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:nil message:@"Shared Successfully" delegate:self cancelButtonTitle:@"Done" otherButtonTitles: nil];
+//        [alert show];
+//     NSLog(@"completed dialog - activity: %@ - finished flag: %d", activityType, completed);
+//    }];
+//
+//      }
+//    
+//
+//       NSLog(@"Failed to share");
+//   
+//    // Present Activity View Controller
     [self presentViewController:vc animated:YES completion:nil];
+    
+   // [self initWithActivityItems:activityItems applicationActivities:activityItems];
     
     
 }
+//
+//- (id)initWithActivityItems:(NSArray *)activityItems applicationActivities:(NSArray *)applicationActivities{
+//
+//    NSLog(@"activity arry %@",activityItems);
+//    return nil;
+//}
+
 @end

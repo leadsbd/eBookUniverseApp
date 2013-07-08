@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookDetailsTableViewController : UIViewController
+@interface BookDetailsTableViewController : UITableViewController
 
 
 @property (strong, nonatomic) NSDictionary *detailItem;
@@ -20,12 +20,16 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *buyButton;
 
+
+
 - (IBAction)shareButton:(id)sender;
 
 
+- (IBAction)openEBookInSafari:(id)sender;
+
 
 @property(nonatomic,strong)UIImage *CVImage;
-- (IBAction)openEbookInSafari:(id)sender;
+
 
 @property (strong, nonatomic) IBOutlet UILabel *price;
 

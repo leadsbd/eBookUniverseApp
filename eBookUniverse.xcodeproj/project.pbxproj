@@ -1737,6 +1737,7 @@
 				GCC_PREFIX_HEADER = "eBookUniverse/eBookUniverse-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/usr/local/include";
 				INFOPLIST_FILE = "eBookUniverse/eBookUniverse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1756,11 +1757,12 @@
 				GCC_PREFIX_HEADER = "eBookUniverse/eBookUniverse-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/usr/local/include";
 				INFOPLIST_FILE = "eBookUniverse/eBookUniverse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1F64F28E-09C2-4C24-BBB7-103020EF8F3A";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1F64F28E-09C2-4C24-BBB7-103020EF8F3A";
+				PROVISIONING_PROFILE = "322E955F-70A8-4924-8622-FD7EF95D6BF4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "322E955F-70A8-4924-8622-FD7EF95D6BF4";
 				USER_HEADER_SEARCH_PATHS = "../../Pico/PicoSource/**";
 				WRAPPER_EXTENSION = app;
 			};
