@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BookDetailsTableViewController : UITableViewController
+@interface BookDetailsTableViewController : UITableViewController<UITextViewDelegate>
 
 
 @property (strong, nonatomic) NSDictionary *detailItem;

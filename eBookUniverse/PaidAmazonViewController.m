@@ -138,7 +138,7 @@ return @"                  TOP 10 eBooks";
  
     cell.price.text=item.itemAttributes.listPrice.formattedPrice;
     
-    NSLog(@"item.itemAttributes.listPrice.formattedPrice %@",item.itemAttributes.listPrice.formattedPrice);
+    //NSLog(@"item.itemAttributes.listPrice.formattedPrice %@",item.itemAttributes.listPrice.amount);
     
 
  

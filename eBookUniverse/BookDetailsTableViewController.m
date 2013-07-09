@@ -14,6 +14,10 @@
 
 
 @interface BookDetailsTableViewController ()
+{
+    NSString* strippedString;
+
+}
 
 
 @end
@@ -25,7 +29,6 @@
 @synthesize CVImage;
 @synthesize buyButton;
 @synthesize titleLable;
-
 
 
 
@@ -65,9 +68,21 @@
 
         
         NSString *atrStr=[self.detailItem objectForKey:@"description"];
-        NSString* stripped = [atrStr stripHtml];
+        strippedString = [atrStr stripHtml];
         
-        self.eBookDescriptionTextView.text=stripped;
+        self.eBookDescriptionTextView.text=strippedString;
+        
+//         float height = [self heightForTextView:self.eBookDescriptionTextView containingString:strippedString];
+//        
+//        CGRect textViewRect = CGRectMake(74, 4, kTextViewWidth, height);
+//        
+//      self.textView.frame = textViewRect;
+//        
+//        // now that we've resized the frame properly, let's run this through again to get proper dimensions for the contentSize.
+//        
+//    self.textView.contentSize = CGSizeMake(kTextViewWidth, [self heightForTextView:self.textView containingString:self.model]);
+//        
+//   self.textView.text = self.model;
     
         
         self.price.text=[self.detailItem objectForKey:@"formattedPrice"];
@@ -102,9 +117,6 @@
 {
     [super viewDidLoad];
     
-
-
-    
     self.tableView.separatorStyle=UITableViewCellEditingStyleNone;
     
     if ([[self.detailItem objectForKey:@"formattedPrice"] isEqualToString:@"Free"]) {
@@ -113,7 +125,41 @@
     }
    
        [self configureView];
+    
+    
+    ////self.model = @"The arc of the moral universe is long, but it bends towards justice.";
+    
+    // create a rect for the text view so it's the right size coming out of IB. Size it to something that is form fitting to the string in the model.
+   // float height = [self heightForTextView:self.textView containingString:self.model];
+    //CGRect textViewRect = CGRectMake(74, 4, kTextViewWidth, height);
+    
+    //self.textView.frame = textViewRect;
+    
+    // now that we've resized the frame properly, let's run this through again to get proper dimensions for the contentSize.
+    
+   // self.textView.contentSize = CGSizeMake(kTextViewWidth, [self heightForTextView:self.textView containingString:self.model]);
+    
+    //self.textView.text = self.model;
+    
+    
 
+}
+- (CGFloat)heightForTextView:(UITextView*)textView containingString:(NSString*)string
+{
+    float kFontSize=15;
+    float horizontalPadding = 24;
+    float verticalPadding = 16;
+    float widthOfTextView = textView.contentSize.width - horizontalPadding;
+    float height = [string sizeWithFont:[UIFont systemFontOfSize:kFontSize] constrainedToSize:CGSizeMake(widthOfTextView, 999999.0f) lineBreakMode:NSLineBreakByWordWrapping].height + verticalPadding;
+    
+    return height;
+}
+- (void) textViewDidChange:(UITextView *)textView
+{
+    strippedString= eBookDescriptionTextView.text;
+    [self.tableView beginUpdates];
+    [self.tableView endUpdates];
+    
 }
 
 -(void)viewDidLayoutSubviews{
@@ -166,9 +212,14 @@ titleLable.numberOfLines = 6;
 //    return section2;
     
     UILabel *customLabel = [[UILabel alloc] init];
-    customLabel.text=@"Description";
+    customLabel.text=@"     Description";
     customLabel.textColor=[UIColor colorWithRed:(CGFloat)0.0 green:(CGFloat)0.3 blue:(CGFloat)0.9 alpha:(CGFloat)0.8];
     customLabel.textAlignment=UITextAlignmentLeft;
+    
+    
+    UIFont *font = [UIFont fontWithName:@"Helvetica" size:15];
+    [customLabel setFont:font];
+
     return customLabel;
 }
 - (void)viewDidUnload {

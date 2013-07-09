@@ -29,13 +29,13 @@
     
 }
 
-//-(void)setCell:(CustomCellClass *)cell fromSearchItem:(Item *)item;
+-(void)setCell:(CustomCellClass *)cell fromSearchItem:(Item *)item;
 
 @end
 
 @implementation FreeAmazonViewController
-//@synthesize  topTableViewFree;
-//@synthesize tableData;
+@synthesize  topTableViewFree;
+@synthesize tableData;
 
 
 #pragma mark -
@@ -46,12 +46,12 @@
 	[super viewDidLoad];
     
     // start progress activity
-  //  [self.view makeToastActivity];
-//    if (tableData) {
-//        [tableData removeAllObjects];
-//    } else {
-//        tableData = [[NSMutableArray alloc] init];
-//    }
+
+    if (tableData) {
+        [tableData removeAllObjects];
+    } else {
+        tableData = [[NSMutableArray alloc] init];
+    }
 }
 
 
@@ -59,12 +59,11 @@
     
     
     
-//    NSLog(@"[_tableData count]: %i",[tableData count]);
-//    
-//    return [tableData count];
+   NSLog(@"[_tableData count]: %i",[tableData count]);
     
-    return 0;
+   return [tableData count];
     
+       
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -84,77 +83,77 @@
     NSLog(@"mrow %i",rowPlusOne);
     
     
-//[self setCell:cell fromSearchItem:tableData[[indexPath row]]];
+[self setCell:cell fromSearchItem:tableData[[indexPath row]]];
     
     // stop progress activity
-   // [self.view hideToastActivity];
+ [self.view hideToastActivity];
     
     return cell;
     
 }
 
 
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-//    
-//    return @"                  TOP 10 eBooks";
-//    
-//}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    return @"                  TOP 10 eBooks";
+    
+}
 
-//-(void)setCell:(CustomCellClass *)cell fromSearchItem:(Item *)item {
-//    
-//    
-//    NSString *imageURL=item.largeImage.url;
-//    
-//    __weak typeof(cell) weakCell = cell;
-//    
-//    [cell.eBookImage setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-//        
-//        if(image)
-//            
-//        {
-//            weakCell.eBookImage.image=image;
-//            [weakCell setNeedsLayout];
-//        }
-//        
-//    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-//        NSLog(@"Fail");
-//        
-//    }];
-//    
-//    
-//    
-//    NSString *authorName;
-//    for (authorName in item.itemAttributes.author) {
-//        
-//        cell.author.text=[NSString stringWithFormat:@"By %@",authorName];
-//        
-//    }
-//    
-//    cell.title.text=[NSString stringWithFormat:@"%i. %@", rowPlusOne,item.itemAttributes.title];
-//    
-//    cell.price.text=item.itemAttributes.listPrice.formattedPrice;
-//    
-//    NSLog(@"item.itemAttributes.listPrice.formattedPrice %@",item.itemAttributes.listPrice.formattedPrice);
-//    
-//
-//    
-//    
-//}
+-(void)setCell:(CustomCellClass *)cell fromSearchItem:(Item *)item {
+    
+    
+    NSString *imageURL=item.largeImage.url;
+    
+    __weak typeof(cell) weakCell = cell;
+    
+    [cell.eBookImage setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+
+        if(image)
+            
+        {
+            weakCell.eBookImage.image=image;
+            [weakCell setNeedsLayout];
+        }
+        
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        NSLog(@"Fail");
+        
+    }];
+
+    
+    
+    NSString *authorName;
+    for (authorName in item.itemAttributes.author) {
+        
+        cell.author.text=[NSString stringWithFormat:@"By %@",authorName];
+        
+    }
+
+    cell.title.text=[NSString stringWithFormat:@"%i. %@", rowPlusOne,item.itemAttributes.title];
+    
+    cell.price.text=item.itemAttributes.listPrice.formattedPrice;
+    
+    NSLog(@"item.itemAttributes.listPrice.formattedPrice %@",item.itemAttributes.listPrice.formattedPrice);
+    
+
+    
+    
+}
 
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    
-//    NSIndexPath *indexPath = [self.topTableViewFree indexPathForSelectedRow];
-//    
-//    Item *item= tableData[indexPath.row];
-//    
-//    UINavigationController *nc=segue.destinationViewController;
-//    
-//    webViewController=[nc.viewControllers objectAtIndex:0];
-//    
-//    webViewController.item=item;
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    NSIndexPath *indexPath = [self.topTableViewFree indexPathForSelectedRow];
+    
+    Item *item= tableData[indexPath.row];
+    
+    UINavigationController *nc=segue.destinationViewController;
+    
+    webViewController=[nc.viewControllers objectAtIndex:0];
+    
+    webViewController.item=item;
+}
 
 
 

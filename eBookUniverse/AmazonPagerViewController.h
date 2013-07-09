@@ -21,5 +21,4 @@
 - (IBAction)changePage:(id)sender;
 @property (strong, nonatomic) IBOutlet UINavigationBar *navivationBar;
 
--(NSMutableArray*)freeEBook;
 @end

@@ -29,14 +29,17 @@
 
 {
 
- NSMutableArray *itemX;
+
+    
+    NSMutableArray *freeEbookArray;
+    NSMutableArray *paidEbookArray;
 
 }
 @property (assign) BOOL pageControlUsed;
 @property (assign) NSUInteger page;
 @property (assign) BOOL rotating;
 - (void)loadScrollViewWithPage:(int)page;
-
+-(NSMutableArray*)freeEBook:( NSMutableArray *) itemX;
 -(void)getAsinByCategoryId:(NSNumber*)categoryID andCategoryTitle:(NSString*) categoryTitle;
 @end
 
@@ -306,16 +309,24 @@
     if (page >= [self.childViewControllers count])
         return;
     
+    
+   
+    
+    
 	if (self.pageControll.currentPage != page) {
 		UIViewController *oldViewController = [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
 		UIViewController *newViewController = [self.childViewControllers objectAtIndex:page];
 		[oldViewController viewWillDisappear:YES];
-		[newViewController viewWillAppear:YES];
+        		[newViewController viewWillAppear:YES];
 		self.pageControll.currentPage = page;
 		[oldViewController viewDidDisappear:YES];
 		[newViewController viewDidAppear:YES];
 		_page = page;
 	}
+    
+    
+
+    
 }
 
 // At the begin of scroll dragging, reset the boolean used when scrolls originate from the UIPageControl
@@ -491,21 +502,35 @@
          
              if (items.item.count > 0) {
 
-                // itemX=items.item;
+         //itemX=items.item;
                  
-//               NSMutableArray *freeEbookArray= [self freeEBook];
+               freeEbookArray= [self freeEBook:items.item];
 //                 
 //                   NSLog(@"freeEbookArray%@",freeEbookArray);
                  
-            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
-                 
-              
+            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:0];
 
                 // Show found items in the table
                 [viewController.tableData removeAllObjects];
-                [viewController.tableData addObjectsFromArray:items.item];
+                [viewController.tableData addObjectsFromArray:paidEbookArray];
 
                [viewController.topTableView reloadData];
+                 
+                 FreeAmazonViewController *fvc =(FreeAmazonViewController*) [self.childViewControllers objectAtIndex:1];
+
+                 
+                 if([fvc isKindOfClass:[FreeAmazonViewController class]])
+                {
+                     [fvc.tableData removeAllObjects];
+                     [fvc.tableData addObjectsFromArray:freeEbookArray];
+                     
+                     [fvc.topTableViewFree reloadData];
+                     
+                 }
+
+                 
+                 
+                 
                  [self.view hideToastActivity];
                 
             } else {
@@ -534,52 +559,33 @@
 }
 
 //
-//-(NSMutableArray*)freeEBook{
-//    
-//    
-//    NSMutableArray *freeEbookArray=[[NSMutableArray alloc] init];
-//    
-//   
-//    
-//    for (Item *expectedItem in itemX) {
-//        
-//        if (expectedItem.itemAttributes.listPrice.formattedPrice==NULL) {
-//            
-//            [freeEbookArray addObject:expectedItem];
-//            
-////            FreeAmazonViewController *freeViewController =(FreeAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
-////            
-////            
-////            
-////            // Show found items in the table
-////            [freeViewController.tableData removeAllObjects];
-////            
-////            [freeViewController.tableData addObjectsFromArray:freeEbookArray];
-////
-////            [freeViewController.topTableViewFree reloadData];
-//            
-////           
-////        }
-////        
-////        else{ [paidEbookArray addObject:expectedItem];
-////        
-////        PaidAmazonViewController *paidViewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
-////        
-////        
-////        
-////        // Show found items in the table
-////        [paidViewController.tableData removeAllObjects];
-////        [paidViewController.tableData addObjectsFromArray:paidEbookArray];
-////      
-////        
-////            [paidViewController.topTableView reloadData];}
-////    }
-//    
-//}
-//
-//
-//    }
-//return freeEbookArray;
-//
-//}
+-(NSMutableArray*)freeEBook:( NSMutableArray *) itemX{
+    
+    
+    freeEbookArray=[[NSMutableArray alloc] init];
+      paidEbookArray=[[NSMutableArray alloc] init];
+    
+   
+    
+    for (Item *expectedItem in itemX) {
+        
+        if (expectedItem.itemAttributes.listPrice.formattedPrice==NULL) {
+            
+            [freeEbookArray addObject:expectedItem];
+            
+    
+
+        }
+        
+        else{ [paidEbookArray addObject:expectedItem];
+        
+               }
+    }
+return freeEbookArray;
+}
+
+
+
+
+
 @end
