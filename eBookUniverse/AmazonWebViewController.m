@@ -192,6 +192,10 @@
     
     // Initialize Activity View Controller
    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    
+    //after share successful massage to user
+    
 
 //    if (vc) {
 //        

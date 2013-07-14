@@ -78,6 +78,7 @@
     {
         cell =[[UITableViewCell alloc] init];
     }
+    
     row=indexPath.row ;
     NSLog(@"row %i",row);
     rowPlusOne=row+1;

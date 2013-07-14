@@ -162,13 +162,18 @@
     
 }
 
+
+
 -(void)viewDidLayoutSubviews{
 
 titleLable.numberOfLines = 6;
-    [titleLable sizeToFit];
+[titleLable sizeToFit];
  [self.view addSubview:titleLable];
 
 }
+
+
+//make nessary line in text filed not aditional line
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     
