@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AmazonPagerViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) AmazonPagerViewController *amazonPagerViewController;
+
+
 @property (nonatomic) BOOL firstTime;
 
 // FBSample logic

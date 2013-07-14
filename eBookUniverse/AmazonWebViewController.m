@@ -13,7 +13,7 @@
 #import "ItemAttributes.h"
 #import "Image.h"
 #import "UIImageView+AFNetworking.h"
-
+#import "AppDelegate.h"
 @interface AmazonWebViewController ()
 
 @property(nonatomic,copy) NSArray *excludedActivityTypes;
@@ -26,7 +26,7 @@
 @synthesize goForward;
 @synthesize item;
 @synthesize excludedActivityTypes;
-
+@synthesize webViewNavigationBar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,14 +40,76 @@
 - (void)viewDidLoad
 {
     
+    [super viewDidLoad];
+    
+
+    
+    
     amazonWebView.scalesPageToFit=YES;
     self.amazonWebView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 
 
     [amazonWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:item.detailPageURL]]];
-    [super viewDidLoad];
+
+    
+    AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
+    
+    if(appDelegate.amazonPagerViewController)
+    {
+        [appDelegate.amazonPagerViewController.navivationBar removeFromSuperview ];
+    }
+    
+  [[self navigationController] setNavigationBarHidden:NO animated:YES];
+    
+//    NSLog(@"x       = %f", self.webViewNavigationBar.titleView.frame.origin.x);
+//    NSLog(@"y      = %f", self.webViewNavigationBar.titleView.frame.size.height);
+//    
+//    
+//    
+//    //  NSLog(@"height     = %f", self.view.frame.size.height);
+//    
+//    CGRect cgRect;
+//    
+//    //self.view.frame.size.height= 320;
+//    cgRect.origin.y=0;
+//    cgRect.size.height=460;
+//    cgRect.size.width=320;
+//    self.view.frame= cgRect;
+//    //self.view.frame.origin.y=0;
+//    [self loadView];
+    
+    
+    self.view.frame = CGRectMake(0, 0, 320, 460);
+
+    
+
+    
+    NSLog(@"height     = %f", self.view.frame.size.height);
+    NSLog(@"x       = %f", self.view.frame.origin.x);
+    NSLog(@"y      = %f", self.view.frame.origin.y);
+
+
 	// Do any additional setup after loading the view.
 }
+-(void)viewWillAppear:(BOOL)animated{
+    
+    self.view.frame = CGRectMake(0, 0, 480, 960);
+
+//    CGRect cgRect;
+//    cgRect.origin.x=0;
+//    cgRect.origin.y=0;
+//    cgRect.size.height=960;
+//    cgRect.size.width=320;
+//    self.view.frame= cgRect;
+    //[self loadView];
+
+    NSLog(@"height     = %f", self.view.frame.size.height);
+    NSLog(@"x       = %f", self.view.frame.origin.x);
+    NSLog(@"y      = %f", self.view.frame.origin.y);
+
+
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -161,4 +223,8 @@
 //    return nil;
 //}
 
+- (void)viewDidUnload {
+    [self setWebViewNavigationBar:nil];
+    [super viewDidUnload];
+}
 @end

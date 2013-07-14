@@ -11,7 +11,7 @@
 
 @implementation AppDelegate
 @synthesize  firstTime;
-
+@synthesize amazonPagerViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

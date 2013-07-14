@@ -46,7 +46,8 @@
 	[super viewDidLoad];
     
     // start progress activity
-
+[self.view makeToastActivity];
+    
     if (tableData) {
         [tableData removeAllObjects];
     } else {
@@ -95,7 +96,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
-    return @"                  TOP 10 eBooks";
+    return @"BestSellers Kindle Edition eBooks";
     
 }
 
@@ -143,17 +144,42 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+   
+    if ([[segue identifier] isEqualToString:@"free"]) {
+        NSIndexPath *indexPath = [self.topTableViewFree indexPathForSelectedRow];
+       Item *item= tableData[indexPath.row];
+        
+        [[segue destinationViewController] setItem:item];
+    }
     
-    NSIndexPath *indexPath = [self.topTableViewFree indexPathForSelectedRow];
-    
-    Item *item= tableData[indexPath.row];
-    
-    UINavigationController *nc=segue.destinationViewController;
-    
-    webViewController=[nc.viewControllers objectAtIndex:0];
-    
-    webViewController.item=item;
+//    if ([segue.identifier isEqualToString:@"free"]) {
+//        
+//        NSIndexPath *indexPath = [self.topTableViewFree indexPathForSelectedRow];
+//        
+//        Item *item= tableData[indexPath.row];
+//        
+////        
+////        UINavigationController *nc=segue.destinationViewController;
+////        
+////        webViewController=[nc.viewControllers objectAtIndex:0];
+////        
+////        webViewController.item=item;
+//        
+//        
+//       [webViewController setItem:item];
+//        
+//    }
+//   
+
+
+
+
 }
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//[self performSegueWithIdentifier:@"free" sender:self];
+//
+//}
 
 
 

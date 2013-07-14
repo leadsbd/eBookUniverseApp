@@ -15,6 +15,7 @@
 @property(strong,nonatomic) NSURL *detailurl;
 
 @property(strong,nonatomic) Item *item;
+@property (strong, nonatomic) IBOutlet UINavigationItem *webViewNavigationBar;
 
 - (IBAction)doneButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *goBack;

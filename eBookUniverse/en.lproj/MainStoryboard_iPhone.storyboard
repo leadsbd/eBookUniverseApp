@@ -17,18 +17,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="175"/>
+            <point key="canvasLocation" x="2968" y="507"/>
         </scene>
         <!--Free Amazon View Controller-->
         <scene sceneID="9gi-qR-Ajc">
             <objects>
-                <viewController storyboardIdentifier="free" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4lm-eq-C8P" customClass="FreeAmazonViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4lm-eq-C8P" customClass="FreeAmazonViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Juw-mG-oxd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="132" sectionHeaderHeight="22" sectionFooterHeight="22" id="mw3-tZ-xQV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -72,7 +72,7 @@
                                             <outlet property="eBookImage" destination="pCH-m6-5cd" id="dc4-8f-PIT"/>
                                             <outlet property="price" destination="6dH-Zg-79E" id="chw-vY-yPD"/>
                                             <outlet property="title" destination="4xj-IT-ehf" id="CN5-7G-Dbp"/>
-                                            <segue destination="mn8-ZJ-62Z" kind="modal" identifier="free" id="W1f-xs-ufM"/>
+                                            <segue destination="WTk-6d-mDs" kind="push" identifier="free" id="g4Z-Xu-6Zr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -84,24 +84,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gpl-jn-k5Q"/>
                     <connections>
                         <outlet property="topTableViewFree" destination="mw3-tZ-xQV" id="Egi-i3-yQ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18u-wU-gUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2106" y="-73"/>
+            <point key="canvasLocation" x="4133" y="-454"/>
         </scene>
         <!--Paid Amazon View Controller-->
         <scene sceneID="cEr-kZ-bQp">
             <objects>
-                <viewController storyboardIdentifier="paid" id="bns-54-tq3" customClass="PaidAmazonViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" id="bns-54-tq3" customClass="PaidAmazonViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcP-Wf-mq6">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="132" sectionHeaderHeight="22" sectionFooterHeight="22" id="7pH-qu-7Yv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -145,7 +146,7 @@
                                             <outlet property="eBookImage" destination="eTD-Ou-3pa" id="htw-wr-CSj"/>
                                             <outlet property="price" destination="Weg-Im-FOE" id="vJ2-Vj-HIS"/>
                                             <outlet property="title" destination="SYh-L7-sMN" id="LUh-Xw-DVU"/>
-                                            <segue destination="mn8-ZJ-62Z" kind="modal" identifier="paid" id="Wz4-rF-olV"/>
+                                            <segue destination="WTk-6d-mDs" kind="push" identifier="paid" id="QsY-4N-Qyi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -164,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwH-7t-49K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2495" y="268"/>
+            <point key="canvasLocation" x="4133" y="216"/>
         </scene>
         <!--About View Controller - About-->
         <scene sceneID="jQX-hb-7cY">
@@ -191,7 +192,7 @@ obviously great advantage!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTH-4t-QpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-566" y="831"/>
+            <point key="canvasLocation" x="2123" y="2551"/>
         </scene>
         <!--Search View Controller - Search-->
         <scene sceneID="sjk-Lw-s17">
@@ -222,7 +223,7 @@ obviously great advantage!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lxf-W1-kZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="898"/>
+            <point key="canvasLocation" x="2772" y="2226"/>
         </scene>
         <!--Book Store Pager View Controller - Second-->
         <scene sceneID="13">
@@ -246,7 +247,7 @@ obviously great advantage!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="865"/>
+            <point key="canvasLocation" x="2716" y="1497"/>
         </scene>
         <!--Paidi Book Table View Controller-->
         <scene sceneID="5r5-nA-uoo">
@@ -310,7 +311,7 @@ obviously great advantage!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7s-4j-oUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2411" y="1249"/>
+            <point key="canvasLocation" x="4148" y="1600"/>
         </scene>
         <!--Freei Book Table View Controller-->
         <scene sceneID="jUp-Nc-NK1">
@@ -374,7 +375,7 @@ obviously great advantage!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSt-YO-KO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="594"/>
+            <point key="canvasLocation" x="4143" y="922"/>
         </scene>
         <!--Book Details Table View Controller-->
         <scene sceneID="7Q6-zp-Fgx">
@@ -528,7 +529,7 @@ obviously great advantage!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7M-jP-KhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="831"/>
+            <point key="canvasLocation" x="4702" y="1165"/>
         </scene>
         <!--Login View Controller - Settings-->
         <scene sceneID="EvF-4y-fkZ">
@@ -586,7 +587,7 @@ obviously great advantage!</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-664" y="144"/>
+            <point key="canvasLocation" x="1368" y="1488"/>
         </scene>
         <!--Left Amazon Menu View Controller-->
         <scene sceneID="YP5-c6-Fde">
@@ -624,7 +625,7 @@ obviously great advantage!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQJ-1R-keW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="-73"/>
+            <point key="canvasLocation" x="1705" y="-281"/>
         </scene>
         <!--Amazon Pager View Controller-->
         <scene sceneID="1EV-YC-pZB">
@@ -661,7 +662,7 @@ obviously great advantage!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deE-f4-WwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="-73"/>
+            <point key="canvasLocation" x="2537" y="-289"/>
         </scene>
         <!--Right Amazon Menu View Controller-->
         <scene sceneID="NVk-tK-msd">
@@ -691,7 +692,7 @@ obviously great advantage!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjJ-qY-mZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="955" y="-73"/>
+            <point key="canvasLocation" x="2123" y="-281"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ns-vH-DG9">
@@ -709,7 +710,7 @@ obviously great advantage!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUn-uc-Sie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1807" y="594"/>
+            <point key="canvasLocation" x="3627" y="922"/>
         </scene>
         <!--Settings View Controller - Settings-->
         <scene sceneID="Dle-YY-8lT">
@@ -734,7 +735,7 @@ obviously great advantage!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V34-OB-lQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-101" y="-334"/>
+            <point key="canvasLocation" x="2203" y="458"/>
         </scene>
         <!--Amazon Web View Controller-->
         <scene sceneID="tzv-vw-D7I">
@@ -779,11 +780,7 @@ obviously great advantage!</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MLe-sl-R4m">
-                        <barButtonItem key="leftBarButtonItem" title="Done" id="hhR-CN-84L">
-                            <connections>
-                                <action selector="doneButton:" destination="WTk-6d-mDs" id="zdn-If-QTA"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="hhR-CN-84L"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="coc-A9-8Xp">
                             <connections>
                                 <action selector="shareButton:" destination="WTk-6d-mDs" id="J1U-th-ajh"/>
@@ -794,11 +791,12 @@ obviously great advantage!</string>
                         <outlet property="amazonWebView" destination="NHd-xv-ccX" id="KWr-la-t8R"/>
                         <outlet property="goBack" destination="g4j-K2-vFW" id="JJk-NH-pDh"/>
                         <outlet property="goForward" destination="m8O-ti-Wft" id="00x-yt-ZJF"/>
+                        <outlet property="webViewNavigationBar" destination="MLe-sl-R4m" id="pel-RH-2Zf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ju1-l3-WYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3472" y="-73"/>
+            <point key="canvasLocation" x="4804" y="-130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nX9-cq-q7B">
@@ -816,26 +814,43 @@ obviously great advantage!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRB-CT-LsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1807" y="1249"/>
+            <point key="canvasLocation" x="3635" y="1637"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="adY-Uj-WR8">
+        <scene sceneID="QR3-U5-C5q">
             <objects>
-                <navigationController id="mn8-ZJ-62Z" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="freeAmazon" id="wck-xv-aOJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="efe-ie-urB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ykX-xK-K3u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jj2-dn-DnN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WTk-6d-mDs" kind="relationship" relationship="rootViewController" id="Ohh-v6-aDR"/>
+                        <segue destination="4lm-eq-C8P" kind="relationship" relationship="rootViewController" id="rDB-1D-Vhg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Toc-hc-E7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KW-hy-FGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3073" y="-73"/>
+            <point key="canvasLocation" x="3607" y="-454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zlY-72-4Ps">
+            <objects>
+                <navigationController storyboardIdentifier="paidAmazon" id="A2f-ww-IQI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7tV-wQ-H5U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bns-54-tq3" kind="relationship" relationship="rootViewController" id="7k5-az-gCN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaI-PY-bE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3607" y="216"/>
         </scene>
     </scenes>
     <resources>
@@ -866,6 +881,7 @@ obviously great advantage!</string>
                 <relationship kind="outlet" name="amazonWebView" candidateClass="UIWebView"/>
                 <relationship kind="outlet" name="goBack" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="goForward" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="webViewNavigationBar" candidateClass="UINavigationItem"/>
             </relationships>
         </class>
         <class className="BookDetailsTableViewController" superclassName="UITableViewController">
@@ -954,7 +970,7 @@ obviously great advantage!</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="W1f-xs-ufM"/>
-        <segue reference="4pl-Cm-r18"/>
+        <segue reference="77t-3F-q4t"/>
+        <segue reference="g4Z-Xu-6Zr"/>
     </inferredMetricsTieBreakers>
 </document>

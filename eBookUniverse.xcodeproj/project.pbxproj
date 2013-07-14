@@ -19,6 +19,7 @@
 		AEA55EE2177C448200F9BD18 /* S.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA55EE1177C448200F9BD18 /* S.png */; };
 		AEA55EE4177C44E000F9BD18 /* fb-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA55EE3177C44E000F9BD18 /* fb-button.png */; };
 		AEA55EE7177C506600F9BD18 /* NSString+stripHtml.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA55EE6177C506500F9BD18 /* NSString+stripHtml.m */; };
+		AEE822A4178D2073008D217D /* FreeAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE822A3178D2073008D217D /* FreeAmazonViewController.m */; };
 		BF04BA4817734315000C94EC /* AmazonPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF04BA4717734315000C94EC /* AmazonPagerViewController.m */; };
 		BF14F9BE1775936D0097E266 /* FreeiBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9BD1775936D0097E266 /* FreeiBookTableViewController.m */; };
 		BF14F9C1177593850097E266 /* PaidiBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14F9C0177593850097E266 /* PaidiBookTableViewController.m */; };
@@ -177,7 +178,6 @@
 		BF682E931773217900174FA4 /* VariationSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E121773217900174FA4 /* VariationSummary.m */; };
 		BF682E95177321D500174FA4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682E94177321D500174FA4 /* libxml2.dylib */; };
 		BF682E9A177339FA00174FA4 /* PaidAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E99177339F900174FA4 /* PaidAmazonViewController.m */; };
-		BF682E9D17733A0900174FA4 /* FreeAmazonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF682E9C17733A0900174FA4 /* FreeAmazonViewController.m */; };
 		BFBE0F4E17758510002D3CCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF682C431773199C00174FA4 /* CoreGraphics.framework */; };
 		BFBE0F5017758675002D3CCC /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = BFBE0F4F17758675002D3CCC /* menu.png */; };
 		BFBE0F5217758707002D3CCC /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = BFBE0F5117758707002D3CCC /* home.png */; };
@@ -234,6 +234,7 @@
 		AEA55EE3177C44E000F9BD18 /* fb-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-button.png"; sourceTree = "<group>"; };
 		AEA55EE5177C506500F9BD18 /* NSString+stripHtml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stripHtml.h"; sourceTree = "<group>"; };
 		AEA55EE6177C506500F9BD18 /* NSString+stripHtml.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+stripHtml.m"; sourceTree = "<group>"; };
+		AEE822A3178D2073008D217D /* FreeAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeAmazonViewController.m; sourceTree = "<group>"; };
 		BF04BA4617734315000C94EC /* AmazonPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPagerViewController.h; sourceTree = "<group>"; };
 		BF04BA4717734315000C94EC /* AmazonPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPagerViewController.m; sourceTree = "<group>"; };
 		BF14F9BC1775936D0097E266 /* FreeiBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeiBookTableViewController.h; sourceTree = "<group>"; };
@@ -548,7 +549,6 @@
 		BF682E98177339F800174FA4 /* PaidAmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaidAmazonViewController.h; sourceTree = "<group>"; };
 		BF682E99177339F900174FA4 /* PaidAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaidAmazonViewController.m; sourceTree = "<group>"; };
 		BF682E9B17733A0800174FA4 /* FreeAmazonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeAmazonViewController.h; sourceTree = "<group>"; };
-		BF682E9C17733A0900174FA4 /* FreeAmazonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeAmazonViewController.m; sourceTree = "<group>"; };
 		BFBE0F4F17758675002D3CCC /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		BFBE0F5117758707002D3CCC /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		BFD3201D1775801C00A5129D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -596,12 +596,12 @@
 		BF04BA4517734302000C94EC /* AmazonContrllers */ = {
 			isa = PBXGroup;
 			children = (
+				BF682E9B17733A0800174FA4 /* FreeAmazonViewController.h */,
+				AEE822A3178D2073008D217D /* FreeAmazonViewController.m */,
 				AE8CFD221778207C007EC1CA /* AmazonWebViewController.h */,
 				AE8CFD211778207C007EC1CA /* AmazonWebViewController.m */,
 				BF682E98177339F800174FA4 /* PaidAmazonViewController.h */,
 				BF682E99177339F900174FA4 /* PaidAmazonViewController.m */,
-				BF682E9B17733A0800174FA4 /* FreeAmazonViewController.h */,
-				BF682E9C17733A0900174FA4 /* FreeAmazonViewController.m */,
 				BF682C9F17731B7900174FA4 /* LeftAmazonMenuViewController.h */,
 				BF682CA017731B7900174FA4 /* LeftAmazonMenuViewController.m */,
 				BF682C9417731B5700174FA4 /* ParentViewController.h */,
@@ -1331,9 +1331,9 @@
 			isa = PBXGroup;
 			children = (
 				BF682C641773199C00174FA4 /* IBookStorePagerViewController.h */,
+				BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */,
 				BF14F9C2177594CD0097E266 /* BookDetailsTableViewController.h */,
 				BF14F9C3177594CD0097E266 /* BookDetailsTableViewController.m */,
-				BF682C651773199C00174FA4 /* IBookStorePagerViewController.m */,
 				BF14F9BC1775936D0097E266 /* FreeiBookTableViewController.h */,
 				BF14F9BD1775936D0097E266 /* FreeiBookTableViewController.m */,
 				BF14F9BF177593850097E266 /* PaidiBookTableViewController.h */,
@@ -1601,7 +1601,6 @@
 				BF682E921773217900174FA4 /* Variations.m in Sources */,
 				BF682E931773217900174FA4 /* VariationSummary.m in Sources */,
 				BF682E9A177339FA00174FA4 /* PaidAmazonViewController.m in Sources */,
-				BF682E9D17733A0900174FA4 /* FreeAmazonViewController.m in Sources */,
 				BF04BA4817734315000C94EC /* AmazonPagerViewController.m in Sources */,
 				BF14F9BE1775936D0097E266 /* FreeiBookTableViewController.m in Sources */,
 				BF14F9C1177593850097E266 /* PaidiBookTableViewController.m in Sources */,
@@ -1613,6 +1612,7 @@
 				AE707A421781907A0029877F /* SettingsViewController.m in Sources */,
 				AE707A45178191390029877F /* SearchViewController.m in Sources */,
 				AE707A48178192230029877F /* AboutViewController.m in Sources */,
+				AEE822A4178D2073008D217D /* FreeAmazonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

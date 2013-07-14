@@ -79,8 +79,8 @@
 
 - (void)addChildControllers
 {
-    [self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"paid"]];
-	[self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"free"]];
+    [self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"paidAmazon"]];
+	[self addChildViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"freeAmazon"]];
 	
     
     
@@ -103,6 +103,7 @@
     
     
     AppDelegate *appDelegate=[[UIApplication sharedApplication ] delegate];
+    appDelegate.amazonPagerViewController=self;
 
     if(appDelegate.firstTime==NO){
         [self getAsinByCategoryId:[NSNumber numberWithInt:1] andCategoryTitle:@"Arts & Photography Books"];
@@ -508,7 +509,16 @@
 //                 
 //                   NSLog(@"freeEbookArray%@",freeEbookArray);
                  
-            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [self.childViewControllers objectAtIndex:0];
+                 
+                 UINavigationController *naVC =(UINavigationController*) [self.childViewControllers objectAtIndex:0];
+                 
+
+                 
+            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [[naVC viewControllers] objectAtIndex:0];
+//                 
+//                 UINavigationController *nc;//=segue.destinationViewController;
+//                
+//                    viewController=[nc.viewControllers objectAtIndex:0];
 
                 // Show found items in the table
                 [viewController.tableData removeAllObjects];

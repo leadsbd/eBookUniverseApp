@@ -48,11 +48,14 @@
     
     // start progress activity
     [self.view makeToastActivity];
+    
     if (tableData) {
         [tableData removeAllObjects];
     } else {
         tableData = [[NSMutableArray alloc] init];
     }
+    
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
 }
 
 
@@ -100,7 +103,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 
-return @"                  TOP 10 eBooks";
+return @"       Best Sellers Paid eBooks";
 
 }
 
@@ -149,17 +152,40 @@ return @"                  TOP 10 eBooks";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     
-    NSIndexPath *indexPath = [self.topTableView indexPathForSelectedRow];
     
-    Item *item= tableData[indexPath.row];
     
-    UINavigationController *nc=segue.destinationViewController;
+    if ([[segue identifier] isEqualToString:@"paid"]) {
+        NSIndexPath *indexPath = [self.topTableView indexPathForSelectedRow];
+        Item *item= tableData[indexPath.row];
+        
+        [[segue destinationViewController] setItem:item];
+    }
+    
+//    if ([segue.identifier isEqualToString:@"paid"]) {
+//        
+//        NSIndexPath *indexPath = [self.topTableView indexPathForSelectedRow];
+//        
+//        Item *item= tableData[indexPath.row];
+//        
+////        UINavigationController *nc=segue.destinationViewController;
+////        
+////        webViewController=[nc.viewControllers objectAtIndex:0];
+//        
+//       // webViewController.item=item;
+//        
+//        
+//       [webViewController setItem:item];
+//        
+//    }
+//    
+//
+//    
 
-    webViewController=[nc.viewControllers objectAtIndex:0];
-    
-    webViewController.item=item;
 }
-
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    [self performSegueWithIdentifier:@"paid" sender:self];
+//    
+//}
 
 #pragma mark -
 #pragma mark Memory management
