@@ -106,7 +106,7 @@
     appDelegate.amazonPagerViewController=self;
 
     if(appDelegate.firstTime==NO){
-        [self getAsinByCategoryId:[NSNumber numberWithInt:1] andCategoryTitle:@"Arts & Photography Books"];
+        [self getAsinByCategoryId:[NSNumber numberWithInt:266239] andCategoryTitle:@"Books"];
         
         appDelegate.firstTime=YES;
     }
@@ -368,6 +368,7 @@
     BrowseNodeLookup *request=[[BrowseNodeLookup alloc] init];
     
     request.associateTag=@"funebooks-20";
+    //request.associateTag=@"wwwleadscom-20";
     
     request.shared=[[BrowseNodeLookupRequest alloc] init];
     request.shared.browseNodeId= [NSMutableArray arrayWithObjects:[categoryID stringValue],nil];

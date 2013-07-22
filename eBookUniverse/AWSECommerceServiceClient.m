@@ -18,10 +18,16 @@
  http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl
  */
 //static NSString *const AWSECServiceURLString = @"https://webservices.amazon.cn/onca/soap?Service=AWSECommerceService";
-static NSString *const AWSECServiceURLString = @"https://webservices.amazon.com/onca/soap?Service=AWSECommerceService";
+static NSString *const AWSECServiceURLString = @"https://webservices.amazon.co.uk/onca/soap?Service=AWSECommerceService";
 
 NSString *const AWSAccessKeyId = @"AKIAIEP4VUEOHRD3TMLA";
 NSString *const AWSSecureKeyId = @"+g7o33xKkGIgiBKulSHoP2jDdokWNDzHGnl49nsA";
+
+//NSString *const AWSAccessKeyId = @"AKIAIEBJIJYHNSOADOOA";
+//NSString *const AWSSecureKeyId = @"/buL39DQNooGsu4vHg+ifkStGOuFOiWYihrFmNum";
+
+//NSString *const AWSAccessKeyId = @"AKIAJT2XSFO7AH3AVXDQ";
+//NSString *const AWSSecureKeyId = @"3gnSWwt/faaTSr24tmwHJOEQt07QlPWtiB72zhpn";
 
 static NSString *const AuthHeaderNS = @"http://security.amazonaws.com/doc/2007-01-01/";
 

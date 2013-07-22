@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Amazon" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="" image="amazon-48.png" id="7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +167,7 @@
             </objects>
             <point key="canvasLocation" x="4133" y="216"/>
         </scene>
-        <!--About View Controller - About-->
+        <!--About View Controller-->
         <scene sceneID="jQX-hb-7cY">
             <objects>
                 <viewController id="kBu-vn-4WM" customClass="AboutViewController" sceneMemberID="viewController">
@@ -179,22 +179,22 @@
                                 <rect key="frame" x="0.0" y="-5" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">We all learn to read at school, after a fashion. But for most of us, this is not anoptimal use of our brain power. In this course you will learn to better use the
+                                <mutableString key="text">We all learn to read at school, after a fashion. But for most of us, this is not anoptimal use of our brain power. In this course you will learn to better use the
 left brain's focused attention combined with the right brain's peripheralattention, in close harmony. Good communication between the brainhemispheres is a pre-requisite for creative thinking and also a sense of well-being, where thoughts and feelings are integrated.As you probably expect, this course will also teach you to read much faster andat the same time, to remember more of what you have read. These are
-obviously great advantage!</string>
+obviously great advantage!</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="bgZ-kV-VJt"/>
+                    <tabBarItem key="tabBarItem" title="" image="about-48.png" id="bgZ-kV-VJt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTH-4t-QpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2123" y="2551"/>
         </scene>
-        <!--Search View Controller - Search-->
+        <!--Search View Controller-->
         <scene sceneID="sjk-Lw-s17">
             <objects>
                 <viewController id="h3G-OU-hJV" customClass="SearchViewController" sceneMemberID="viewController">
@@ -215,7 +215,7 @@ obviously great advantage!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="K5D-2Y-xEt"/>
+                    <tabBarItem key="tabBarItem" title="" image="search-48.png" id="K5D-2Y-xEt"/>
                     <navigationItem key="navigationItem" id="3Ha-Rj-08f"/>
                     <connections>
                         <outlet property="searchBarDemo" destination="u9X-l6-9ec" id="78o-Q0-az3"/>
@@ -240,7 +240,7 @@ obviously great advantage!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="iBooks" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="" image="ibook-48.png" id="6"/>
                     <connections>
                         <outlet property="scrollView" destination="wLE-aw-jYs" id="uaq-gk-SkV"/>
                     </connections>
@@ -587,7 +587,7 @@ obviously great advantage!</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368" y="1488"/>
+            <point key="canvasLocation" x="1368" y="1448"/>
         </scene>
         <!--Left Amazon Menu View Controller-->
         <scene sceneID="YP5-c6-Fde">
@@ -712,7 +712,7 @@ obviously great advantage!</string>
             </objects>
             <point key="canvasLocation" x="3627" y="922"/>
         </scene>
-        <!--Settings View Controller - Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="Dle-YY-8lT">
             <objects>
                 <viewController id="CRB-49-ycs" customClass="SettingsViewController" sceneMemberID="viewController">
@@ -730,7 +730,7 @@ obviously great advantage!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="5LB-46-IkP"/>
+                    <tabBarItem key="tabBarItem" title="" image="setting-48.png" id="5LB-46-IkP"/>
                     <navigationItem key="navigationItem" id="hE1-zc-qLj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V34-OB-lQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -855,10 +855,13 @@ obviously great advantage!</string>
     </scenes>
     <resources>
         <image name="Buy.png" width="63" height="20"/>
+        <image name="about-48.png" width="48" height="32"/>
+        <image name="amazon-48.png" width="48" height="32"/>
         <image name="fb-button.png" width="422" height="62"/>
-        <image name="first" width="16" height="16"/>
+        <image name="ibook-48.png" width="48" height="32"/>
         <image name="menu.png" width="19" height="19"/>
-        <image name="second" width="16" height="16"/>
+        <image name="search-48.png" width="48" height="32"/>
+        <image name="setting-48.png" width="48" height="32"/>
     </resources>
     <classes>
         <class className="AboutViewController" superclassName="UIViewController">
