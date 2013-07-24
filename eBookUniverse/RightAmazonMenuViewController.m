@@ -179,7 +179,26 @@ countriesDict =[[NSMutableDictionary alloc] init];
     [categoryItaly setObject:@" Libri universitari e professionali" forKey:[NSNumber numberWithInt:2007176031]];
     
     [countriesDict setObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"https://webservices.amazon.it/onca/soap?Service=AWSECommerceService",@"url",categoryItaly, @"category", nil] forKey:@"Italy"];
-        
+    
+    
+    NSMutableDictionary *categoryUK =[[NSMutableDictionary alloc] init];
+    
+    [categoryUK setObject:@"Art, Architecture & Photography" forKey:[NSNumber numberWithInt:91]];
+    [categoryUK setObject:@"Health, Family & Lifestyle" forKey:[NSNumber numberWithInt:74]];
+    
+    [categoryUK setObject:@"Business, Finance & Law" forKey:[NSNumber numberWithInt:68]];
+    
+    [categoryUK setObject:@"Children's Books" forKey:[NSNumber numberWithInt:69]];
+    [categoryUK setObject:@"Comics & Graphic Novels" forKey:[NSNumber numberWithInt:274081]];
+    [categoryUK setObject:@"Computing & Internet" forKey:[NSNumber numberWithInt:71]];
+    [categoryUK setObject:@"Food & Drink" forKey:[NSNumber numberWithInt:66]];
+    
+    [categoryUK setObject:@"Crime, Thrillers & Mystery" forKey:[NSNumber numberWithInt:72]];
+    [categoryUK setObject:@"Science Fiction & Fantasy" forKey:[NSNumber numberWithInt:56]];
+    [categoryUK setObject:@"Scientific, Technical & Medical" forKey:[NSNumber numberWithInt:564334]];
+    
+    [countriesDict setObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"https://webservices.amazon.co.uk/onca/soap?Service=AWSECommerceService",@"url",categoryUK, @"category", nil] forKey:@"UK"];
+    
     self.menu =  [countriesDict allKeys];
     
     

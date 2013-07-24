@@ -108,9 +108,9 @@
 
     if(appDelegate.firstTime==NO){
        
-        [self getAsinByCategoryId:[NSNumber numberWithInt:916520] andCategoryTitle:@"Books" AndUrl:@"https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService"];
+        //[self getAsinByCategoryId:[NSNumber numberWithInt:916520] andCategoryTitle:@"Books" AndUrl:@"https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService"];
         
-        //[self getAsinByCategoryId:[NSNumber numberWithInt:1] andCategoryTitle:@"Books" AndUrl:@"https://webservices.amazon.com/onca/soap?Service=AWSECommerceService"];
+        [self getAsinByCategoryId:[NSNumber numberWithInt:1] andCategoryTitle:@"Books" AndUrl:@"https://webservices.amazon.com/onca/soap?Service=AWSECommerceService"];
         
         appDelegate.firstTime=YES;
     }
