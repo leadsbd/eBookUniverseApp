@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AmazonPagerViewController.h"
-
+#import "ParentViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 

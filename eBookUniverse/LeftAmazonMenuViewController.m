@@ -10,29 +10,18 @@
 #import "ECSlidingViewController.h"
 #import "AmazonPagerViewController.h"
 
-
-
-
-
 @interface LeftAmazonMenuViewController ()
-
-
-
-@property (strong, nonatomic) NSArray *menu;
 
 @end
 
 @implementation LeftAmazonMenuViewController
-
 {
-    NSMutableDictionary * catagoryDict;
+    
 }
-
-
-
 
 @synthesize menu;
 @synthesize delegate;
+@synthesize catagoryDict;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -66,7 +55,10 @@
     [catagoryDict setObject:@"Professional & Technical Books" forKey:[NSNumber numberWithInt:173507]];
 
     
-    self.menu=[catagoryDict allKeys];
+    //self.menu=[catagoryDict allKeys];
+    
+       
+    self.menu=[NSMutableArray arrayWithArray:[catagoryDict allKeys]];
     
     
 //        Entertainment Books (86)
@@ -104,6 +96,14 @@
        
 }
 
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+   // [self loadView];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -133,13 +133,11 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
-    
-       
-    
-  
+
               cell.textLabel.text =  [catagoryDict objectForKey:[self.menu objectAtIndex:indexPath.row]];
  
-    
+    NSLog(@"catagoryDict: %@",catagoryDict);
+      NSLog(@"menu: %@",menu);
     
     return cell;
 }
@@ -157,13 +155,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
       
-   AmazonPagerViewController *newTopViewController = (AmazonPagerViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"amazonPager"];
+   AmazonPagerViewController *amazonPagerViewController = (AmazonPagerViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"amazonPager"];
     
-    self.delegate=newTopViewController;
+    self.delegate=amazonPagerViewController;
     
     [self.slidingViewController anchorTopViewOffScreenTo:ECRight animations:nil onComplete:^{
         CGRect frame = self.slidingViewController.topViewController.view.frame;
-        self.slidingViewController.topViewController = newTopViewController;
+        self.slidingViewController.topViewController = amazonPagerViewController;
         self.slidingViewController.topViewController.view.frame = frame;
         [self.slidingViewController resetTopView];
         
@@ -171,7 +169,7 @@
        
             NSNumber *key=  [self.menu objectAtIndex:indexPath.row];
             NSString *value=[catagoryDict objectForKey:key];
-            [self.delegate didSelectedMenuItemWithTitle:value andCategoryId:key];
+            [self.delegate didSelectedMenuItemWithTitle:value andCategoryId:key andUrl:self.url];
      
         
        

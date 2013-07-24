@@ -10,7 +10,7 @@
 
 @protocol MenuViewControllerDelegate<NSObject>
 @required
--(void) didSelectedMenuItemWithTitle:(NSString*) title andCategoryId:(NSNumber*) index;
+-(void) didSelectedMenuItemWithTitle:(NSString*) title andCategoryId:(NSNumber*) index andUrl: (NSString*) url;
 
 @end
 
@@ -20,6 +20,13 @@
 @interface LeftAmazonMenuViewController : UITableViewController
 
 @property (strong) id <MenuViewControllerDelegate> delegate;
+@property (nonatomic,strong) NSMutableDictionary * catagoryDict;
+
+@property (strong, nonatomic) NSMutableArray *menu;
+
+@property (strong, nonatomic) NSString *url;
+
+
 
 
 @end

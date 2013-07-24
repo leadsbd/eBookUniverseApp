@@ -45,14 +45,23 @@
 {
 	[super viewDidLoad];
     
+    
+    
     // start progress activity
-[self.view makeToastActivity];
+    if(tableData)
+    {
+        [self.view makeToastActivity];
+    }
     
     if (tableData) {
         [tableData removeAllObjects];
     } else {
         tableData = [[NSMutableArray alloc] init];
     }
+    
+
+[[self navigationController] setNavigationBarHidden:YES animated:YES];
+
 }
 
 
@@ -181,7 +190,6 @@
 //[self performSegueWithIdentifier:@"free" sender:self];
 //
 //}
-
 
 
 - (void)didReceiveMemoryWarning

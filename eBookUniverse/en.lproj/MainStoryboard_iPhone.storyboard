@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18u-wU-gUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4133" y="-454"/>
+            <point key="canvasLocation" x="4659" y="-454"/>
         </scene>
         <!--Paid Amazon View Controller-->
         <scene sceneID="cEr-kZ-bQp">
@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwH-7t-49K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4133" y="216"/>
+            <point key="canvasLocation" x="4659" y="216"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="jQX-hb-7cY">
@@ -179,9 +179,9 @@
                                 <rect key="frame" x="0.0" y="-5" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">We all learn to read at school, after a fashion. But for most of us, this is not anoptimal use of our brain power. In this course you will learn to better use the
+                                <string key="text">We all learn to read at school, after a fashion. But for most of us, this is not anoptimal use of our brain power. In this course you will learn to better use the
 left brain's focused attention combined with the right brain's peripheralattention, in close harmony. Good communication between the brainhemispheres is a pre-requisite for creative thinking and also a sense of well-being, where thoughts and feelings are integrated.As you probably expect, this course will also teach you to read much faster andat the same time, to remember more of what you have read. These are
-obviously great advantage!</mutableString>
+obviously great advantage!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -622,10 +622,11 @@ obviously great advantage!</mutableString>
                             <outlet property="delegate" destination="bTD-55-mEQ" id="mTE-K9-SWO"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="fEq-U2-iC3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQJ-1R-keW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="-281"/>
+            <point key="canvasLocation" x="1416" y="-581"/>
         </scene>
         <!--Amazon Pager View Controller-->
         <scene sceneID="1EV-YC-pZB">
@@ -645,6 +646,11 @@ obviously great advantage!</mutableString>
                                                 <action selector="revealMenuLeft:" destination="Xrv-Oj-eD2" id="fyS-8d-7mn"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="menu.png" id="JtM-oS-z8J">
+                                            <connections>
+                                                <action selector="revealMenuRight:" destination="Xrv-Oj-eD2" id="Icj-Rs-RuC"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -662,26 +668,34 @@ obviously great advantage!</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="deE-f4-WwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537" y="-289"/>
+            <point key="canvasLocation" x="2951" y="-465"/>
         </scene>
         <!--Right Amazon Menu View Controller-->
         <scene sceneID="NVk-tK-msd">
             <objects>
                 <tableViewController storyboardIdentifier="rightMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T5K-07-iGt" customClass="RightAmazonMenuViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ORT-OJ-9FC">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="33" sectionHeaderHeight="10" sectionFooterHeight="10" id="ORT-OJ-9FC">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Fkr-7g-c3e">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="b4H-eO-aGf" rowHeight="33" style="IBUITableViewCellStyleDefault" id="Fkr-7g-c3e">
+                                <rect key="frame" x="0.0" y="46" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="10" y="1" width="300" height="32"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4H-eO-aGf">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="32"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                            <color key="textColor" red="0.23154590620000001" green="0.50825131089999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.23154590620000001" green="0.50825131089999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -692,7 +706,7 @@ obviously great advantage!</mutableString>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjJ-qY-mZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2123" y="-281"/>
+            <point key="canvasLocation" x="2288" y="-446"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ns-vH-DG9">
@@ -796,7 +810,7 @@ obviously great advantage!</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ju1-l3-WYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4804" y="-130"/>
+            <point key="canvasLocation" x="5330" y="-130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nX9-cq-q7B">
@@ -832,7 +846,7 @@ obviously great advantage!</mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KW-hy-FGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3607" y="-454"/>
+            <point key="canvasLocation" x="4133" y="-454"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zlY-72-4Ps">
@@ -850,7 +864,7 @@ obviously great advantage!</mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaI-PY-bE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3607" y="216"/>
+            <point key="canvasLocation" x="4133" y="216"/>
         </scene>
     </scenes>
     <resources>

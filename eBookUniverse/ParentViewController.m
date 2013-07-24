@@ -10,6 +10,7 @@
 #import "LeftAmazonMenuViewController.h"
 #import "RightAmazonMenuViewController.h"
 #import "ECSlidingViewController.h"
+
 @interface ParentViewController ()
 
 @end
@@ -42,7 +43,7 @@
         self.slidingViewController.underRightViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"rightMenu"];
     }
     
-    
+       
     
    // [self.view addGestureRecognizer:self.slidingViewController.panGesture];
 }

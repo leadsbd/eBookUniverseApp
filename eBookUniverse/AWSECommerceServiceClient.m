@@ -18,7 +18,10 @@
  http://webservices.amazon.com/AWSECommerceService/AWSECommerceService.wsdl
  */
 //static NSString *const AWSECServiceURLString = @"https://webservices.amazon.cn/onca/soap?Service=AWSECommerceService";
-static NSString *const AWSECServiceURLString = @"https://webservices.amazon.co.uk/onca/soap?Service=AWSECommerceService";
+
+//static NSString *const AWSECServiceURLString = @"https://webservices.amazon.com/onca/soap?Service=AWSECommerceService";
+
+static NSString *const AWSECServiceURLString = @"https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService";
 
 NSString *const AWSAccessKeyId = @"AKIAIEP4VUEOHRD3TMLA";
 NSString *const AWSSecureKeyId = @"+g7o33xKkGIgiBKulSHoP2jDdokWNDzHGnl49nsA";
@@ -38,6 +41,18 @@ static NSString *const AuthHeaderNS = @"http://security.amazonaws.com/doc/2007-0
     dispatch_once(&onceToken, ^{
         _sharedClient = [[AWSECommerceServiceClient alloc] initWithEndpointURL:[NSURL URLWithString:AWSECServiceURLString]];
     });
+    
+    return _sharedClient;
+}
+
+
+
++ (AWSECommerceServiceClient *)sharedClientWithUrl:(NSString*) url {
+    static AWSECommerceServiceClient *_sharedClient = nil;
+   // static dispatch_once_t onceToken;
+  //  dispatch_once(&onceToken, ^{
+        _sharedClient = [[AWSECommerceServiceClient alloc] initWithEndpointURL:[NSURL URLWithString:url]];
+   // });
     
     return _sharedClient;
 }

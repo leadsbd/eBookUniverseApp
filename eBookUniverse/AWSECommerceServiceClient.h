@@ -14,6 +14,7 @@ extern NSString *const AWSAccessKeyId;
 @interface AWSECommerceServiceClient : AWSECommerceServicePortType_SOAPClient
 
 + (AWSECommerceServiceClient *)sharedClient;
++ (AWSECommerceServiceClient *)sharedClientWithUrl:(NSString*) url ;
 
 - (void)authenticateRequest:(NSString *)action;
 

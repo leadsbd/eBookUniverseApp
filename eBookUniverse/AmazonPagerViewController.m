@@ -40,7 +40,8 @@
 @property (assign) BOOL rotating;
 - (void)loadScrollViewWithPage:(int)page;
 -(NSMutableArray*)freeEBook:( NSMutableArray *) itemX;
--(void)getAsinByCategoryId:(NSNumber*)categoryID andCategoryTitle:(NSString*) categoryTitle;
+-(void)getAsinByCategoryId:(NSNumber*)categoryID andCategoryTitle:(NSString*) categoryTitle AndUrl:(NSString*) url;
+-(void)searchAmazonByKeyword:(NSArray *)asinArray withUrl:(NSString*) url ;
 @end
 
 @implementation AmazonPagerViewController
@@ -106,12 +107,20 @@
     appDelegate.amazonPagerViewController=self;
 
     if(appDelegate.firstTime==NO){
-        [self getAsinByCategoryId:[NSNumber numberWithInt:266239] andCategoryTitle:@"Books"];
+       
+        [self getAsinByCategoryId:[NSNumber numberWithInt:916520] andCategoryTitle:@"Books" AndUrl:@"https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService"];
+        
+        //[self getAsinByCategoryId:[NSNumber numberWithInt:1] andCategoryTitle:@"Books" AndUrl:@"https://webservices.amazon.com/onca/soap?Service=AWSECommerceService"];
         
         appDelegate.firstTime=YES;
     }
     
-     
+    AppDelegate *appDeletage=[[UIApplication sharedApplication] delegate];
+    
+    if(appDeletage.amazonPagerViewController==nil){
+        appDeletage.amazonPagerViewController=self;
+    }
+ 
 }
 
 
@@ -274,17 +283,14 @@
 }
 
 
--(void) didSelectedMenuItemWithTitle:(NSString*) title andCategoryId:(NSNumber*) index
+-(void) didSelectedMenuItemWithTitle:(NSString*) title andCategoryId:(NSNumber*) index andUrl: (NSString*) url
 {
-   
-    
+ 
     UIViewController *viewController = [self.childViewControllers objectAtIndex:self.pageControll.currentPage];
     
     NSLog(@"title: %@ index%@, viewController %@",title,index,viewController);
    
-     [self getAsinByCategoryId:index andCategoryTitle:title];
-    
-    
+     [self getAsinByCategoryId:index andCategoryTitle:title AndUrl:url];
     
 }
 
@@ -353,14 +359,17 @@
 
 //LookUp request to Amazon
 
--(void)getAsinByCategoryId:(NSNumber*)categoryID andCategoryTitle:(NSString*) categorytitle {
+-(void)getAsinByCategoryId:(NSNumber*)categoryID andCategoryTitle:(NSString*) categorytitle AndUrl:(NSString*) url {
      self.navivationBar.topItem.title=categorytitle;
     
 //    // start progress activity
 //    [self.view makeToastActivity];
     
     // get shared client
-    AWSECommerceServiceClient *client = [AWSECommerceServiceClient sharedClient];
+    
+    
+    //AWSECommerceServiceClient *client = nil;
+    AWSECommerceServiceClient *client =[AWSECommerceServiceClient sharedClientWithUrl:url];
     client.debug = YES;
     
     // build request
@@ -385,8 +394,8 @@
         [self.view hideToastActivity];
         
         
-       // NSLog(@"responseObject.items.count: %i",responseObject.browseNodes.count);
-        //NSLog(@"responseObject.items.count: %@",responseObject.browseNodes);
+        NSLog(@"responseObject.items.count: %i",responseObject.browseNodes.count);
+        NSLog(@"responseObject.items.count: %@",responseObject.browseNodes);
         
         // success handling logic
         if (responseObject.browseNodes.count > 0) {
@@ -411,8 +420,8 @@
                     
                     NSArray * array= [ self getTopSellersAsinArray:node.topSellers.topSeller byCategoryName:node.name];
                     
-                    
-                    [self searchAmazonByKeyword:array];
+                     
+                    [self searchAmazonByKeyword:array withUrl:url];
 
                 } else {
                     // no result
@@ -469,14 +478,14 @@
 #pragma mark Search on Amazon Server
 
 
--(void)searchAmazonByKeyword:(NSArray *)asinArray {
+-(void)searchAmazonByKeyword:(NSArray *)asinArray withUrl:(NSString*) url {
     
 //    // start progress activity
 //    [self.view makeToastActivity];
     
     // get shared client
     
-    AWSECommerceServiceClient *client = [AWSECommerceServiceClient sharedClient];
+    AWSECommerceServiceClient *client = [AWSECommerceServiceClient sharedClientWithUrl:url];
     client.debug = YES;
     
     // build request
@@ -486,6 +495,7 @@
     request.shared = [[ItemLookupRequest alloc] init];
     
     request.shared.idType = @"ASIN";
+    
     
     request.shared.itemId=[NSMutableArray arrayWithArray:asinArray];
 
@@ -511,11 +521,13 @@
 //                   NSLog(@"freeEbookArray%@",freeEbookArray);
                  
                  
-                 UINavigationController *naVC =(UINavigationController*) [self.childViewControllers objectAtIndex:0];
+                 UINavigationController *paidnavVC =(UINavigationController*) [self.childViewControllers objectAtIndex:0];
+                 
+                 
                  
 
                  
-            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [[naVC viewControllers] objectAtIndex:0];
+            PaidAmazonViewController *viewController =(PaidAmazonViewController*) [[paidnavVC viewControllers] objectAtIndex:0];
 //                 
 //                 UINavigationController *nc;//=segue.destinationViewController;
 //                
@@ -527,15 +539,19 @@
 
                [viewController.topTableView reloadData];
                  
-                 FreeAmazonViewController *fvc =(FreeAmazonViewController*) [self.childViewControllers objectAtIndex:1];
-
                  
-                 if([fvc isKindOfClass:[FreeAmazonViewController class]])
+                 UINavigationController *freenavVC =(UINavigationController*) [self.childViewControllers objectAtIndex:1];
+                 
+                 FreeAmazonViewController *freeVc =(FreeAmazonViewController*) [[freenavVC viewControllers] objectAtIndex:0];
+
+                                NSLog(@"FreeAmazonViewController: %@", freeVc);
+                 
+                 if([freeVc isKindOfClass:[FreeAmazonViewController class]])
                 {
-                     [fvc.tableData removeAllObjects];
-                     [fvc.tableData addObjectsFromArray:freeEbookArray];
+                     [freeVc.tableData removeAllObjects];
+                     [freeVc.tableData addObjectsFromArray:freeEbookArray];
                      
-                     [fvc.topTableViewFree reloadData];
+                     [freeVc.topTableViewFree reloadData];
                      
                  }
 
@@ -584,6 +600,7 @@
             
             [freeEbookArray addObject:expectedItem];
             
+            NSLog(@"%@",freeEbookArray);
     
 
         }

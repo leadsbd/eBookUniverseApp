@@ -20,6 +20,9 @@
 @end
 
 @implementation AmazonWebViewController
+{
+    
+}
 @synthesize detailurl;
 @synthesize amazonWebView;
 @synthesize goBack;
@@ -36,13 +39,92 @@
     }
     return self;
 }
+- (void)doneButton {
+   // [self dismissViewControllerAnimated:YES completion:nil];
+    AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
 
+    [appDelegate.amazonPagerViewController.navivationBar popNavigationItemAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+
+- (void)shareButton {
+    
+    
+    
+    
+    NSString *imageURL=item.largeImage.url;
+    
+    UIImageView *imageV=[[UIImageView alloc]init];
+    
+    
+    __weak typeof(imageV) weakImageV = imageV;
+    
+    [imageV setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+        
+        if(image)
+            
+        {
+            weakImageV.image=image;
+            [weakImageV setNeedsLayout];
+        }
+        
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        NSLog(@"Fail");
+        
+    }];
+    
+    
+    
+    NSString *urlString = item.detailPageURL;
+    NSURL *url1 = [NSURL URLWithString:urlString];
+    
+    
+    
+    // UIImage *secondImage=[UIImage imageNamed:@"home"];
+    
+    NSString *secondMsg=@"It's just an great App";
+    
+    NSArray *activityItems = @[url1,secondMsg];
+
+    
+    
+    // Initialize Activity View Controller
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    
+    //after share successful massage to user
+    
+    
+    //    if (vc) {
+    //
+    //
+    //
+    //    [vc setCompletionHandler:^(NSString *activityType, BOOL completed) {
+    //
+    //        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:nil message:@"Shared Successfully" delegate:self cancelButtonTitle:@"Done" otherButtonTitles: nil];
+    //        [alert show];
+    //     NSLog(@"completed dialog - activity: %@ - finished flag: %d", activityType, completed);
+    //    }];
+    //
+    //      }
+    //
+    //
+    //       NSLog(@"Failed to share");
+    //
+    //    // Present Activity View Controller
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    // [self initWithActivityItems:activityItems applicationActivities:activityItems];
+    
+    
+}
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
     
-
     
     
     amazonWebView.scalesPageToFit=YES;
@@ -54,61 +136,44 @@
     
     AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
     
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc]
+                                    initWithTitle:@"Done"
+                                                                    style:UIBarButtonItemStyleDone
+                                                                   target:self
+                                                                   action:@selector(doneButton) ];
+    
+    UINavigationItem *newNavItem = [[UINavigationItem alloc] initWithTitle:@"Title"];
+    
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]
+                                    initWithTitle:@"Share"
+                                    style:UIBarButtonItemStyleDone
+                                    target:self
+                                    action:@selector(shareButton) ];
+    //UINavigationItem *navItemTwo = [[UINavigationItem alloc] initWithTitle:@"Title2"];
+    
+
     if(appDelegate.amazonPagerViewController)
     {
-        [appDelegate.amazonPagerViewController.navivationBar removeFromSuperview ];
+       // [appDelegate.amazonPagerViewController.navivationBar removeFromSuperview ];
+        
+        newNavItem.leftBarButtonItem = leftButton;
+        
+        newNavItem.rightBarButtonItem=rightButton;
+        newNavItem.hidesBackButton = YES;
+        [appDelegate.amazonPagerViewController.navivationBar pushNavigationItem:newNavItem animated:NO];
+        
+        
+        
     }
     
-  [[self navigationController] setNavigationBarHidden:NO animated:YES];
+  [[self navigationController] setNavigationBarHidden:YES animated:YES];
     
-//    NSLog(@"x       = %f", self.webViewNavigationBar.titleView.frame.origin.x);
-//    NSLog(@"y      = %f", self.webViewNavigationBar.titleView.frame.size.height);
-//    
-//    
-//    
-//    //  NSLog(@"height     = %f", self.view.frame.size.height);
-//    
-//    CGRect cgRect;
-//    
-//    //self.view.frame.size.height= 320;
-//    cgRect.origin.y=0;
-//    cgRect.size.height=460;
-//    cgRect.size.width=320;
-//    self.view.frame= cgRect;
-//    //self.view.frame.origin.y=0;
-//    [self loadView];
-    
-    
-    self.view.frame = CGRectMake(0, 0, 320, 460);
-
-    
-
-    
-    NSLog(@"height     = %f", self.view.frame.size.height);
-    NSLog(@"x       = %f", self.view.frame.origin.x);
-    NSLog(@"y      = %f", self.view.frame.origin.y);
 
 
 	// Do any additional setup after loading the view.
 }
--(void)viewWillAppear:(BOOL)animated{
-    
-    self.view.frame = CGRectMake(0, 0, 480, 960);
 
-//    CGRect cgRect;
-//    cgRect.origin.x=0;
-//    cgRect.origin.y=0;
-//    cgRect.size.height=960;
-//    cgRect.size.width=320;
-//    self.view.frame= cgRect;
-    //[self loadView];
-
-    NSLog(@"height     = %f", self.view.frame.size.height);
-    NSLog(@"x       = %f", self.view.frame.origin.x);
-    NSLog(@"y      = %f", self.view.frame.origin.y);
-
-
-}
 
 
 - (void)didReceiveMemoryWarning
@@ -138,88 +203,91 @@
     
 }
 
-- (IBAction)doneButton:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
 
-}
-- (IBAction)shareButton:(id)sender {
-    
-    
-    
-    
-    NSString *imageURL=item.largeImage.url;
-    
-     UIImageView *imageV=[[UIImageView alloc]init];
-    
-    
-    __weak typeof(imageV) weakImageV = imageV;
 
-    [imageV setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-        
-        if(image)
-            
-        {
-            weakImageV.image=image;
-            [weakImageV setNeedsLayout];
-        }
-        
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-        NSLog(@"Fail");
-        
-    }];
-    
-    
-    
-    NSString *urlString = item.detailPageURL;
-    NSURL *url1 = [NSURL URLWithString:urlString];
-    
-    
-    
-   // UIImage *secondImage=[UIImage imageNamed:@"home"];
-    
-    NSString *secondMsg=@"It's just an great App";
-    
-    NSArray *activityItems = @[url1,secondMsg];
-    
 
- 
+//- (IBAction)doneButton:(id)sender {
+//    [self dismissViewControllerAnimated:YES completion:nil];
 //
-//    NSString *caption =item.itemAttributes.title;
+//}
+//- (IBAction)shareButton:(id)sender {
 //    
 //    
-//    NSArray *activityItems = @[caption,imageV.image,secondMsg];
-    
-    
-    // Initialize Activity View Controller
-   UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-    
-    
-    //after share successful massage to user
-    
-
-//    if (vc) {
+//    
+//    
+//    NSString *imageURL=item.largeImage.url;
+//    
+//     UIImageView *imageV=[[UIImageView alloc]init];
+//    
+//    
+//    __weak typeof(imageV) weakImageV = imageV;
+//
+//    [imageV setImageWithURLRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]] placeholderImage:[UIImage new] success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
 //        
-//  
-//    
-//    [vc setCompletionHandler:^(NSString *activityType, BOOL completed) {
+//        if(image)
+//            
+//        {
+//            weakImageV.image=image;
+//            [weakImageV setNeedsLayout];
+//        }
 //        
-//        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:nil message:@"Shared Successfully" delegate:self cancelButtonTitle:@"Done" otherButtonTitles: nil];
-//        [alert show];
-//     NSLog(@"completed dialog - activity: %@ - finished flag: %d", activityType, completed);
+//    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+//        NSLog(@"Fail");
+//        
 //    }];
-//
-//      }
+//    
+//    
+//    
+//    NSString *urlString = item.detailPageURL;
+//    NSURL *url1 = [NSURL URLWithString:urlString];
+//    
+//    
+//    
+//   // UIImage *secondImage=[UIImage imageNamed:@"home"];
+//    
+//    NSString *secondMsg=@"It's just an great App";
+//    
+//    NSArray *activityItems = @[url1,secondMsg];
 //    
 //
-//       NSLog(@"Failed to share");
-//   
-//    // Present Activity View Controller
-    [self presentViewController:vc animated:YES completion:nil];
-    
-   // [self initWithActivityItems:activityItems applicationActivities:activityItems];
-    
-    
-}
+// 
+////
+////    NSString *caption =item.itemAttributes.title;
+////    
+////    
+////    NSArray *activityItems = @[caption,imageV.image,secondMsg];
+//    
+//    
+//    // Initialize Activity View Controller
+//   UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+//    
+//    
+//    //after share successful massage to user
+//    
+//
+////    if (vc) {
+////        
+////  
+////    
+////    [vc setCompletionHandler:^(NSString *activityType, BOOL completed) {
+////        
+////        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:nil message:@"Shared Successfully" delegate:self cancelButtonTitle:@"Done" otherButtonTitles: nil];
+////        [alert show];
+////     NSLog(@"completed dialog - activity: %@ - finished flag: %d", activityType, completed);
+////    }];
+////
+////      }
+////    
+////
+////       NSLog(@"Failed to share");
+////   
+////    // Present Activity View Controller
+//    [self presentViewController:vc animated:YES completion:nil];
+//    
+//   // [self initWithActivityItems:activityItems applicationActivities:activityItems];
+//    
+//    
+//}
 //
 //- (id)initWithActivityItems:(NSArray *)activityItems applicationActivities:(NSArray *)applicationActivities{
 //
