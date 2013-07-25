@@ -25,7 +25,7 @@
 @property (strong, nonatomic) NSMutableArray *menu;
 
 @property (strong, nonatomic) NSString *url;
-
+@property (strong, nonatomic) NSString *countryNames;
 
 
 

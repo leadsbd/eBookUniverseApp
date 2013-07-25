@@ -17,11 +17,13 @@
 @implementation LeftAmazonMenuViewController
 {
     
+    
 }
 
 @synthesize menu;
 @synthesize delegate;
 @synthesize catagoryDict;
+@synthesize countryNames;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,9 +36,10 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
        
-    
+    countryNames = @"USA";
     catagoryDict =[[NSMutableDictionary alloc] init];
     
     
@@ -145,7 +148,8 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if(section==0) return @"Book Categories";
+   // if(section==0) return  @"Book Categories";
+    if(section==0) return  [NSString stringWithFormat: @"%@ - %@",@"Categories",countryNames];
     else return nil;
 }
 

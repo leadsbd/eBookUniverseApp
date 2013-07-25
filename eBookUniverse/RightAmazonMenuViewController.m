@@ -10,15 +10,18 @@
 #import "ECSlidingViewController.h"
 #import "AppDelegate.h"
 #import "LeftAmazonMenuViewController.h"
+#import "AmazonPagerViewController.h"
 @interface RightAmazonMenuViewController ()
 {
     NSMutableDictionary *countriesDict;
+    UITableViewCell *oldCell;
 }
 @property (strong, nonatomic) NSArray *menu;
 @end
 
 @implementation RightAmazonMenuViewController
 @synthesize menu;
+@synthesize delegate;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -36,7 +39,7 @@
     
        
       
-countriesDict =[[NSMutableDictionary alloc] init];
+   countriesDict =[[NSMutableDictionary alloc] init];
 
     NSMutableDictionary *categoryUSA =[[NSMutableDictionary alloc] init];
 
@@ -87,7 +90,7 @@ countriesDict =[[NSMutableDictionary alloc] init];
     NSMutableDictionary *categoryGermany =[[NSMutableDictionary alloc] init];
     
     [categoryGermany setObject:@"Film, Kunst & Kultur" forKey:[NSNumber numberWithInt:548400]];
-    [categoryGermany setObject:@" Biografien & Erinnerungen" forKey:[NSNumber numberWithInt:187254]];
+    [categoryGermany setObject:@"Biografien & Erinnerungen" forKey:[NSNumber numberWithInt:187254]];
     
     [categoryGermany setObject:@"Business, Karriere & Geld" forKey:[NSNumber numberWithInt:403434]];
     
@@ -176,7 +179,7 @@ countriesDict =[[NSMutableDictionary alloc] init];
     
     [categoryItaly setObject:@"Gialli e Thriller" forKey:[NSNumber numberWithInt:508771031]];
     [categoryItaly setObject:@"Fantasy" forKey:[NSNumber numberWithInt:508772031]];
-    [categoryItaly setObject:@" Libri universitari e professionali" forKey:[NSNumber numberWithInt:2007176031]];
+    [categoryItaly setObject:@"Libri universitari e professionali" forKey:[NSNumber numberWithInt:2007176031]];
     
     [countriesDict setObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"https://webservices.amazon.it/onca/soap?Service=AWSECommerceService",@"url",categoryItaly, @"category", nil] forKey:@"Italy"];
     
@@ -250,6 +253,25 @@ countriesDict =[[NSMutableDictionary alloc] init];
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    
+    if(oldCell)
+    {
+        oldCell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+    if (newCell.accessoryType == UITableViewCellAccessoryNone) {
+        newCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        oldCell=newCell;
+        
+    }else {
+        newCell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+    
+    
+    
     NSString *countryName = [NSString stringWithFormat:@"%@", [self.menu objectAtIndex:indexPath.row]];
     
       
@@ -260,6 +282,8 @@ countriesDict =[[NSMutableDictionary alloc] init];
       NSMutableDictionary *dict=  [countriesDict objectForKey:countryName];
                
       LeftAmazonMenuViewController *leftAMVC= (LeftAmazonMenuViewController*) appDelegate.amazonPagerViewController.slidingViewController.underLeftViewController;
+        
+        leftAMVC.countryNames = countryName;
         
                 
         NSLog(@"menu: %@",leftAMVC.menu);
@@ -282,8 +306,21 @@ countriesDict =[[NSMutableDictionary alloc] init];
         
         leftAMVC.url=[dict objectForKey:@"url"];
         
+        
+        
+        /*
+        AmazonPagerViewController *amazonPagerViewController = (AmazonPagerViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"amazonPager"];
+        
+        self.delegate=amazonPagerViewController;
+        
+        NSNumber *key=  [self.menu objectAtIndex:indexPath.row];
+        NSString *value=[leftAMVC.catagoryDict objectForKey:key];
+        //[self.delegate didSelectedMenuItemWithTitle:value andCategoryId:key andUrl:self.url];
+        
+        [self.delegate didSelectedMenuItemWithTitle:value andCategoryId:key andUrl:self.url]; */
             
     }
+    
     
    // UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
     
@@ -295,6 +332,9 @@ countriesDict =[[NSMutableDictionary alloc] init];
          self.slidingViewController.topViewController = appDelegate.amazonPagerViewController;
          self.slidingViewController.topViewController.view.frame = frame;
          [self.slidingViewController resetTopView];
+         
+         
+         
      }];
     
    // self.delegate=appDelegate.amazonPagerViewController;
